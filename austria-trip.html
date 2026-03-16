@@ -1,0 +1,1335 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>رحلة النمسا 2026 🇦🇹</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;900&family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #f5f2ed;
+  --bg2: #ede9e2;
+  --card: #ffffff;
+  --ink: #1a1612;
+  --ink2: #4a443c;
+  --ink3: #8a7f74;
+  --alpine: #2d5a3d;
+  --alpine2: #4a8c60;
+  --glacier: #2b7ba8;
+  --glacier2: #4fa3d1;
+  --gold: #b8860b;
+  --gold2: #d4a017;
+  --rose: #c0392b;
+  --warm: #e8602c;
+  --border: rgba(26,22,18,0.1);
+  --shadow: 0 2px 20px rgba(26,22,18,0.08);
+  --shadow-lg: 0 8px 40px rgba(26,22,18,0.12);
+  --r: 16px;
+}
+
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; font-size:16px; }
+body { font-family:'Cairo',sans-serif; background:var(--bg); color:var(--ink); overflow-x:hidden; }
+
+/* ─── CUSTOM SCROLLBAR ─── */
+::-webkit-scrollbar { width:6px; }
+::-webkit-scrollbar-track { background:var(--bg2); }
+::-webkit-scrollbar-thumb { background:var(--alpine); border-radius:3px; }
+
+/* ─── HERO ─── */
+.hero {
+  min-height:100vh; position:relative; overflow:hidden;
+  background: linear-gradient(160deg, #1a2f1e 0%, #0f2030 40%, #1a1210 100%);
+  display:flex; align-items:center; justify-content:center;
+}
+.hero-img {
+  position:absolute; inset:0; width:100%; height:100%; object-fit:cover;
+  opacity:.25; filter:saturate(0.8);
+}
+.hero-overlay {
+  position:absolute; inset:0;
+  background: linear-gradient(to bottom, rgba(15,32,48,0.4) 0%, rgba(26,22,18,0.7) 100%);
+}
+.hero-content { position:relative; z-index:2; text-align:center; padding:2rem; max-width:800px; }
+.hero-eyebrow {
+  display:inline-flex; align-items:center; gap:.6rem;
+  background:rgba(255,255,255,.1); border:1px solid rgba(255,255,255,.2);
+  backdrop-filter:blur(10px);
+  padding:.5rem 1.4rem; border-radius:50px; margin-bottom:2rem;
+  font-size:.78rem; letter-spacing:3px; color:rgba(255,255,255,.8);
+  text-transform:uppercase;
+  animation: fadeUp .8s ease both;
+}
+.hero h1 {
+  font-family:'Playfair Display',serif;
+  font-size: clamp(2.8rem, 9vw, 6.5rem);
+  font-weight:900; line-height:1.05;
+  color:#fff;
+  animation: fadeUp 1s ease .15s both;
+}
+.hero h1 em { font-style:italic; color:#a8d4b8; }
+.hero-tagline {
+  font-size:1.1rem; color:rgba(255,255,255,.65);
+  margin:1.2rem 0 2.5rem;
+  animation: fadeUp 1s ease .3s both;
+}
+.hero-pills {
+  display:flex; gap:.7rem; justify-content:center; flex-wrap:wrap;
+  animation: fadeUp 1s ease .45s both;
+}
+.hpill {
+  background:rgba(255,255,255,.12); border:1px solid rgba(255,255,255,.2);
+  backdrop-filter:blur(8px);
+  padding:.55rem 1.2rem; border-radius:50px; font-size:.82rem; color:#fff;
+}
+.hpill strong { color:#a8d4b8; }
+
+/* ─── NAV ─── */
+.nav-wrap {
+  position:sticky; top:0; z-index:200;
+  background:rgba(245,242,237,0.92); backdrop-filter:blur(20px) saturate(1.5);
+  border-bottom:1px solid var(--border);
+}
+.nav-inner {
+  max-width:1200px; margin:0 auto;
+  padding:.6rem 1.5rem;
+  display:flex; align-items:center; gap:.3rem; justify-content:center; flex-wrap:wrap;
+}
+.nav-inner a {
+  color:var(--ink2); text-decoration:none; font-size:.78rem; font-weight:600;
+  padding:.4rem .9rem; border-radius:50px;
+  transition:all .25s; white-space:nowrap;
+}
+.nav-inner a:hover { background:var(--alpine); color:#fff; }
+
+/* ─── PAGE LAYOUT ─── */
+.page { max-width:1200px; margin:0 auto; padding:0 1.5rem; }
+
+/* ─── SECTION HEADER ─── */
+.sec-header { margin-bottom:2.5rem; }
+.sec-eyebrow {
+  font-size:.7rem; font-weight:700; letter-spacing:3px; text-transform:uppercase;
+  color:var(--alpine); margin-bottom:.5rem;
+}
+.sec-title {
+  font-family:'Playfair Display',serif;
+  font-size:clamp(1.8rem,3.5vw,2.8rem);
+  font-weight:700; color:var(--ink); line-height:1.2;
+}
+.sec-title em { font-style:italic; color:var(--glacier); }
+.sec-rule { width:48px; height:3px; background:var(--alpine); border-radius:2px; margin-top:.8rem; }
+
+/* ─── TABS ─── */
+.tab-bar {
+  display:flex; gap:.5rem; flex-wrap:wrap;
+  margin-bottom:2rem;
+  background:var(--bg2); padding:.4rem; border-radius:50px; width:fit-content;
+}
+.tab-btn {
+  padding:.45rem 1.2rem; border-radius:50px; border:none; cursor:pointer;
+  font-family:'Cairo',sans-serif; font-size:.82rem; font-weight:600;
+  background:transparent; color:var(--ink2); transition:all .25s;
+}
+.tab-btn.active { background:#fff; color:var(--alpine); box-shadow:var(--shadow); }
+.tab-content { display:none; animation:fadeIn .4s ease; }
+.tab-content.active { display:block; }
+
+/* ─── FLIGHT SECTION ─── */
+.flight-ticket {
+  background:var(--card); border-radius:20px; overflow:hidden;
+  box-shadow:var(--shadow-lg); margin-bottom:1.5rem;
+  border:1px solid var(--border);
+}
+.ft-header {
+  background:linear-gradient(135deg,var(--alpine) 0%,var(--glacier) 100%);
+  padding:1rem 1.8rem;
+  display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:.5rem;
+}
+.ft-airline { display:flex; align-items:center; gap:.8rem; }
+.ft-logo { font-weight:900; font-size:1.1rem; color:#fff; letter-spacing:-.5px; }
+.ft-ref { background:rgba(255,255,255,.2); color:#fff; padding:.25rem .9rem; border-radius:50px; font-size:.78rem; font-weight:700; }
+.ft-body { padding:1.8rem; }
+.ft-route {
+  display:grid; grid-template-columns:1fr auto 1fr;
+  align-items:center; gap:1rem; margin-bottom:1.5rem;
+}
+.ft-city { text-align:center; }
+.ft-code { font-family:'Playfair Display',serif; font-size:2.2rem; font-weight:700; color:var(--ink); }
+.ft-cname { font-size:.78rem; color:var(--ink3); margin-top:.2rem; }
+.ft-time { font-size:1.4rem; font-weight:700; color:var(--alpine); margin-top:.3rem; }
+.ft-mid { text-align:center; }
+.ft-arrow {
+  display:flex; align-items:center; gap:.5rem; color:var(--ink3);
+  font-size:.78rem;
+}
+.ft-arrow::before,.ft-arrow::after { content:''; flex:1; height:1px; background:var(--border); }
+.ft-dur { font-size:.85rem; color:var(--ink3); margin-top:.3rem; }
+.ft-direct { font-size:.75rem; color:var(--alpine); font-weight:700; margin-top:.2rem; }
+.ft-date { text-align:center; background:var(--bg2); border-radius:10px; padding:.6rem 1rem; margin-bottom:1.2rem; font-size:.85rem; font-weight:700; color:var(--ink); }
+.pax-row { display:grid; grid-template-columns:repeat(auto-fill,minmax(220px,1fr)); gap:.8rem; }
+.pax-card {
+  background:var(--bg); border:1px solid var(--border); border-radius:12px; padding:.9rem;
+  display:flex; gap:.7rem; align-items:center;
+}
+.pax-icon { font-size:1.6rem; flex-shrink:0; }
+.pax-name { font-size:.85rem; font-weight:700; color:var(--ink); }
+.pax-det { font-size:.73rem; color:var(--ink3); margin-top:.15rem; }
+.pax-seat {
+  display:inline-block; background:var(--alpine); color:#fff;
+  padding:.15rem .65rem; border-radius:50px; font-size:.7rem; font-weight:700; margin-top:.3rem;
+}
+.ft-total {
+  background:linear-gradient(135deg,var(--alpine) 0%,var(--alpine2) 100%);
+  border-radius:12px; padding:1rem 1.5rem;
+  display:flex; justify-content:space-between; align-items:center;
+  margin-top:1.5rem; flex-wrap:wrap; gap:.5rem;
+}
+.ft-total-lbl { font-size:.85rem; color:rgba(255,255,255,.8); }
+.ft-total-amt { font-size:1.5rem; font-weight:900; color:#fff; }
+
+/* ─── HOTELS ─── */
+.hotels-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(320px,1fr)); gap:1.5rem; }
+.hotel-card {
+  background:var(--card); border-radius:var(--r); overflow:hidden;
+  box-shadow:var(--shadow); border:1px solid var(--border);
+  transition:transform .3s, box-shadow .3s;
+}
+.hotel-card:hover { transform:translateY(-4px); box-shadow:var(--shadow-lg); }
+.hc-img { width:100%; height:200px; object-fit:cover; display:block; }
+.hc-body { padding:1.4rem; }
+.hc-city-tag {
+  display:inline-block; background:var(--alpine); color:#fff;
+  padding:.2rem .8rem; border-radius:50px; font-size:.7rem; font-weight:700;
+  margin-bottom:.8rem;
+}
+.hc-name { font-size:1.1rem; font-weight:700; color:var(--ink); margin-bottom:.4rem; }
+.hc-addr { font-size:.78rem; color:var(--ink3); margin-bottom:.9rem; display:flex; gap:.3rem; align-items:flex-start; }
+.hc-meta { display:flex; gap:.4rem; flex-wrap:wrap; margin-bottom:.9rem; }
+.hbadge {
+  font-size:.72rem; font-weight:600; padding:.22rem .7rem; border-radius:50px;
+  border:1px solid;
+}
+.hb-g { background:#e8f5e9; color:#2e7d32; border-color:#a5d6a7; }
+.hb-b { background:#e3f2fd; color:#1565c0; border-color:#90caf9; }
+.hb-o { background:#fff8e1; color:#e65100; border-color:#ffcc80; }
+.hc-amenities { display:flex; gap:.3rem; flex-wrap:wrap; margin-bottom:1rem; }
+.amen {
+  font-size:.68rem; padding:.18rem .6rem; border-radius:50px;
+  background:var(--bg2); color:var(--ink2); border:1px solid var(--border);
+}
+.amen.yes { background:#e8f5e9; color:#2e7d32; border-color:#a5d6a7; }
+.amen.ask { background:#fff3e0; color:#e65100; border-color:#ffcc80; }
+.hc-confirm {
+  display:flex; gap:.5rem; flex-wrap:wrap; padding-top:1rem;
+  border-top:1px solid var(--border);
+}
+.hc-ref { background:var(--bg2); border-radius:8px; padding:.5rem .8rem; }
+.hc-ref-lbl { font-size:.65rem; color:var(--ink3); margin-bottom:.1rem; }
+.hc-ref-val { font-size:.82rem; font-weight:700; color:var(--ink); }
+.note-box {
+  background:#fff8e1; border:1px solid #ffcc80; border-radius:10px;
+  padding:.7rem .9rem; margin-top:.9rem; font-size:.78rem; color:#5d4037; line-height:1.6;
+}
+.note-box.red { background:#fce4ec; border-color:#ef9a9a; color:#880e4f; }
+.note-box strong { color:#e65100; }
+.note-box.red strong { color:#c62828; }
+
+/* ─── ARRIVAL / MAPS ─── */
+.arrival-steps { display:flex; flex-direction:column; gap:1px; }
+.astep {
+  background:var(--card); border:1px solid var(--border);
+  border-radius:0; padding:1.2rem 1.5rem;
+  display:flex; gap:1.2rem; align-items:flex-start;
+  transition:background .2s;
+}
+.astep:first-child { border-radius:var(--r) var(--r) 0 0; }
+.astep:last-child { border-radius:0 0 var(--r) var(--r); }
+.astep:hover { background:var(--bg2); }
+.astep-num {
+  width:36px; height:36px; border-radius:50%;
+  background:var(--alpine); color:#fff;
+  display:flex; align-items:center; justify-content:center;
+  font-size:.85rem; font-weight:700; flex-shrink:0;
+}
+.astep-content { flex:1; }
+.astep-title { font-size:.95rem; font-weight:700; color:var(--ink); margin-bottom:.3rem; }
+.astep-desc { font-size:.83rem; color:var(--ink2); line-height:1.7; }
+.astep-tags { display:flex; gap:.4rem; flex-wrap:wrap; margin-top:.5rem; }
+.atag {
+  font-size:.72rem; font-weight:600; padding:.2rem .7rem; border-radius:50px;
+  border:1px solid;
+}
+.atag-g { background:#e8f5e9; color:#2e7d32; border-color:#a5d6a7; }
+.atag-b { background:#e3f2fd; color:#1565c0; border-color:#90caf9; }
+.atag-r { background:#fce4ec; color:#c62828; border-color:#ef9a9a; }
+.map-btn {
+  display:inline-flex; align-items:center; gap:.5rem;
+  background:var(--glacier); color:#fff;
+  padding:.5rem 1.1rem; border-radius:50px;
+  text-decoration:none; font-size:.8rem; font-weight:700;
+  transition:all .25s; margin-top:.6rem;
+  box-shadow:0 2px 8px rgba(43,123,168,.3);
+}
+.map-btn:hover { background:var(--glacier2); transform:translateY(-1px); box-shadow:0 4px 16px rgba(43,123,168,.4); }
+.map-frame {
+  width:100%; height:380px; border:none; border-radius:var(--r);
+  box-shadow:var(--shadow); display:block; margin-top:1.2rem;
+}
+.route-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(270px,1fr)); gap:1rem; margin-top:1.5rem; }
+.route-card {
+  background:var(--card); border:1px solid var(--border); border-radius:var(--r);
+  padding:1.3rem; box-shadow:var(--shadow);
+}
+.route-card-title {
+  font-size:.9rem; font-weight:700; color:var(--alpine); margin-bottom:.8rem;
+  display:flex; align-items:center; gap:.5rem;
+}
+.rcs { font-size:.8rem; color:var(--ink2); padding:.35rem 0; border-bottom:1px solid var(--border); display:flex; gap:.5rem; line-height:1.5; }
+.rcs:last-of-type { border:none; }
+.rcs-icon { flex-shrink:0; width:18px; }
+
+/* ─── ROADMAP ─── */
+.timeline { position:relative; padding-right:2.5rem; }
+.timeline::before {
+  content:''; position:absolute; right:10px; top:0; bottom:0; width:2px;
+  background:linear-gradient(to bottom, var(--alpine), var(--glacier), var(--gold));
+}
+@media(max-width:640px) {
+  .timeline { padding-right:2rem; }
+  .timeline::before { right:8px; }
+}
+.tl-item { display:flex; gap:1.5rem; margin-bottom:2rem; position:relative; }
+.tl-dot {
+  position:absolute; right:-2.5rem; top:1.2rem;
+  width:20px; height:20px; border-radius:50%;
+  background:var(--card); border:3px solid var(--alpine);
+  box-shadow:0 0 0 4px var(--bg);
+  z-index:2; flex-shrink:0;
+}
+.tl-dot.emerald { border-color:var(--alpine2); }
+.tl-dot.gold { border-color:var(--gold); }
+.tl-dot.rose { border-color:var(--rose); }
+.tl-card {
+  flex:1; background:var(--card); border:1px solid var(--border);
+  border-radius:var(--r); padding:1.4rem; box-shadow:var(--shadow);
+  transition:transform .3s, box-shadow .3s;
+}
+.tl-card:hover { transform:translateY(-2px); box-shadow:var(--shadow-lg); }
+.tl-label { font-size:.68rem; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:var(--ink3); margin-bottom:.3rem; }
+.tl-title { font-size:1.15rem; font-weight:700; color:var(--ink); margin-bottom:.4rem; }
+.tl-date {
+  display:inline-block; background:var(--bg2); border-radius:50px;
+  padding:.18rem .75rem; font-size:.75rem; font-weight:600; color:var(--ink2);
+  margin-bottom:.7rem;
+}
+.tl-acts { list-style:none; display:flex; flex-direction:column; gap:.3rem; }
+.tl-acts li { font-size:.83rem; color:var(--ink2); display:flex; gap:.5rem; align-items:flex-start; }
+.tl-acts li::before { content:'→'; color:var(--alpine); flex-shrink:0; font-weight:700; }
+
+/* ─── BUDGET ─── */
+.budget-hero {
+  background:linear-gradient(135deg,var(--alpine) 0%,var(--glacier) 100%);
+  border-radius:20px; padding:2.5rem; text-align:center; margin-bottom:1.5rem;
+  color:#fff; box-shadow:var(--shadow-lg);
+}
+.bh-num { font-family:'Playfair Display',serif; font-size:5rem; font-weight:900; line-height:1; }
+.bh-sub { opacity:.75; font-size:.9rem; margin-top:.3rem; }
+.budget-cards { display:grid; grid-template-columns:repeat(auto-fill,minmax(170px,1fr)); gap:1rem; margin-bottom:1.5rem; }
+.bc {
+  background:var(--card); border:1px solid var(--border); border-radius:14px;
+  padding:1.2rem; text-align:center; box-shadow:var(--shadow);
+  transition:transform .3s;
+}
+.bc:hover { transform:translateY(-3px); }
+.bc-icon { font-size:1.8rem; margin-bottom:.5rem; }
+.bc-lbl { font-size:.73rem; color:var(--ink3); margin-bottom:.2rem; }
+.bc-amt { font-size:1.15rem; font-weight:700; color:var(--alpine); }
+.savings-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(115px,1fr)); gap:.7rem; }
+.sav-item {
+  background:var(--card); border:1px solid var(--border); border-radius:10px;
+  padding:.8rem; border-right:3px solid transparent;
+}
+.sav-item.done { border-right-color:var(--alpine2); }
+.sav-item.partial { border-right-color:var(--gold); }
+.sav-item.soon { border-right-color:var(--border); }
+.sav-name { font-size:.68rem; color:var(--ink3); margin-bottom:.15rem; }
+.sav-amt { font-size:.92rem; font-weight:700; }
+.sav-item.done .sav-amt { color:var(--alpine); }
+.sav-item.partial .sav-amt { color:var(--gold); }
+.sav-item.soon .sav-amt { color:var(--ink3); }
+.sav-st { font-size:.62rem; margin-top:.1rem; }
+.prog-bar { height:8px; background:var(--bg2); border-radius:50px; overflow:hidden; margin:.6rem 0 .3rem; }
+.prog-fill { height:100%; background:linear-gradient(90deg,var(--alpine),var(--glacier)); border-radius:50px; }
+
+/* ─── ACTIVITIES ─── */
+.act-tabs { margin-bottom:1.5rem; }
+.act-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:1rem; }
+.act-card {
+  background:var(--card); border:1px solid var(--border); border-radius:14px;
+  overflow:hidden; box-shadow:var(--shadow);
+  transition:transform .3s, box-shadow .3s; cursor:pointer;
+}
+.act-card:hover { transform:translateY(-3px); box-shadow:var(--shadow-lg); }
+.act-card-top { padding:1.2rem; display:flex; gap:.9rem; align-items:flex-start; }
+.act-emoji { font-size:2rem; flex-shrink:0; }
+.act-name { font-size:.92rem; font-weight:700; color:var(--ink); margin-bottom:.2rem; }
+.act-price { font-size:.8rem; font-weight:600; color:var(--alpine); }
+.act-note { font-size:.72rem; color:var(--ink3); margin-top:.15rem; }
+.act-tag {
+  display:inline-block; font-size:.65rem; font-weight:700; padding:.15rem .6rem;
+  border-radius:50px; margin-top:.3rem;
+}
+.at-free { background:#e8f5e9; color:#2e7d32; }
+.at-paid { background:#fff8e1; color:#e65100; }
+.at-must { background:#fce4ec; color:#c62828; }
+
+/* ─── FOOD ─── */
+.food-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(230px,1fr)); gap:1rem; }
+.food-card {
+  background:var(--card); border:1px solid var(--border); border-radius:14px;
+  padding:1.2rem; box-shadow:var(--shadow);
+  transition:transform .3s, box-shadow .3s;
+  display:flex; gap:.9rem; align-items:flex-start;
+}
+.food-card:hover { transform:translateY(-3px); box-shadow:var(--shadow-lg); }
+.food-emoji { font-size:2rem; flex-shrink:0; }
+.food-type { font-size:.65rem; font-weight:700; text-transform:uppercase; letter-spacing:1.5px; color:var(--ink3); margin-bottom:.2rem; }
+.food-name { font-size:.9rem; font-weight:700; color:var(--ink); }
+.food-addr { font-size:.73rem; color:var(--ink3); margin-top:.2rem; }
+.food-tag { display:inline-block; font-size:.65rem; font-weight:700; padding:.15rem .6rem; border-radius:50px; margin-top:.3rem; }
+.ft-halal { background:#e8f5e9; color:#2e7d32; }
+.ft-arab { background:#e3f2fd; color:#1565c0; }
+.ft-shop { background:#fff8e1; color:#e65100; }
+
+/* ─── PACKING CHECKLIST ─── */
+.pack-section { background:var(--card); border:1px solid var(--border); border-radius:var(--r); padding:1.5rem; margin-bottom:1.2rem; box-shadow:var(--shadow); }
+.pack-section-title { font-size:.85rem; font-weight:700; color:var(--alpine); margin-bottom:1rem; display:flex; align-items:center; gap:.4rem; }
+.pack-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(160px,1fr)); gap:.5rem; }
+.pack-item {
+  display:flex; gap:.6rem; align-items:center;
+  padding:.6rem .8rem; border-radius:9px; border:1px solid var(--border);
+  background:var(--bg); cursor:pointer; transition:all .2s;
+  font-size:.8rem; color:var(--ink2); user-select:none;
+}
+.pack-item:hover { border-color:var(--alpine); background:#f0f7f0; }
+.pack-item.done { background:#e8f5e9; border-color:#a5d6a7; color:#2e7d32; }
+.pcb {
+  width:18px; height:18px; border-radius:4px; border:2px solid var(--border);
+  flex-shrink:0; display:flex; align-items:center; justify-content:center;
+  font-size:.65rem; transition:all .2s;
+}
+.pack-item.done .pcb { background:var(--alpine2); border-color:var(--alpine2); color:#fff; }
+
+/* ─── ENVELOPES ─── */
+.env-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:1.2rem; }
+.env-card {
+  border-radius:var(--r); padding:1.5rem; text-align:center;
+  box-shadow:var(--shadow); transition:transform .3s;
+  border:1px solid;
+}
+.env-card:hover { transform:translateY(-4px); }
+.env-card.c1 { background:#f0f7f0; border-color:#a5d6a7; }
+.env-card.c2 { background:#fff8e1; border-color:#ffcc80; }
+.env-card.c3 { background:#e3f2fd; border-color:#90caf9; }
+.env-card.c4 { background:#fce4ec; border-color:#ef9a9a; }
+.env-icon { font-size:2.4rem; margin-bottom:.7rem; }
+.env-lbl { font-size:.8rem; color:var(--ink2); margin-bottom:.3rem; }
+.env-amt { font-size:1.6rem; font-weight:900; }
+.env-card.c1 .env-amt { color:var(--alpine); }
+.env-card.c2 .env-amt { color:var(--gold); }
+.env-card.c3 .env-amt { color:var(--glacier); }
+.env-card.c4 .env-amt { color:var(--rose); }
+.env-sub { font-size:.7rem; color:var(--ink3); margin-top:.2rem; }
+
+/* ─── TASKS ─── */
+.tasks-list { display:flex; flex-direction:column; gap:.5rem; }
+.task-item {
+  background:var(--card); border:1px solid var(--border); border-radius:12px;
+  padding:.9rem 1.2rem; display:flex; gap:.8rem; align-items:flex-start;
+  cursor:pointer; transition:all .2s; user-select:none;
+}
+.task-item.done { opacity:.5; background:var(--bg2); }
+.task-item:hover { border-color:var(--alpine); }
+.task-cb {
+  width:22px; height:22px; border-radius:6px; border:2px solid var(--border);
+  flex-shrink:0; display:flex; align-items:center; justify-content:center;
+  transition:all .2s; margin-top:.1rem;
+}
+.task-item.done .task-cb { background:var(--alpine); border-color:var(--alpine); color:#fff; }
+.task-urgency {
+  display:inline-block; font-size:.65rem; font-weight:700; padding:.1rem .55rem;
+  border-radius:50px; margin-right:.3rem;
+}
+.urg-high { background:#fce4ec; color:#c62828; }
+.urg-med { background:#fff8e1; color:#e65100; }
+.urg-low { background:#e8f5e9; color:#2e7d32; }
+.task-text { font-size:.85rem; color:var(--ink); flex:1; line-height:1.5; }
+
+/* ─── UTILITY ─── */
+.divider-sec { padding:4rem 0 0; }
+.divider-sec:first-child { padding:3rem 0 0; }
+.card-grid-2 { display:grid; grid-template-columns:repeat(auto-fill,minmax(320px,1fr)); gap:1.5rem; }
+.info-box {
+  background:var(--card); border:1px solid var(--border); border-radius:var(--r);
+  padding:1.4rem; box-shadow:var(--shadow);
+}
+.info-box-title { font-size:.85rem; font-weight:700; color:var(--alpine); margin-bottom:.8rem; }
+.email-block {
+  background:var(--bg2); border-radius:10px; padding:1.2rem;
+  font-family:monospace; font-size:.8rem; color:var(--ink2);
+  line-height:2; direction:ltr; white-space:pre-line;
+}
+.pass-items { display:grid; grid-template-columns:repeat(auto-fill,minmax(170px,1fr)); gap:.5rem; margin-top:.8rem; }
+.pass-item {
+  background:var(--bg2); border-radius:9px; padding:.55rem .9rem;
+  font-size:.8rem; color:var(--ink2); display:flex; gap:.4rem; align-items:center;
+  border:1px solid var(--border);
+}
+.pass-item::before { content:'✓'; color:var(--alpine); font-weight:700; }
+
+/* ─── FOOTER ─── */
+footer {
+  background:var(--ink); color:rgba(255,255,255,.6);
+  padding:3rem 1.5rem; text-align:center; margin-top:4rem;
+}
+footer .f-logo { font-family:'Playfair Display',serif; font-size:1.8rem; color:#fff; margin-bottom:.5rem; }
+footer p { font-size:.82rem; }
+footer a { color:var(--glacier2); text-decoration:none; }
+
+/* ─── ANIMATIONS ─── */
+@keyframes fadeUp { from{opacity:0;transform:translateY(24px)} to{opacity:1;transform:translateY(0)} }
+@keyframes fadeIn { from{opacity:0} to{opacity:1} }
+.reveal { opacity:0; transform:translateY(20px); transition:opacity .6s ease, transform .6s ease; }
+.reveal.visible { opacity:1; transform:translateY(0); }
+
+/* ─── RESPONSIVE ─── */
+@media(max-width:640px) {
+  .ft-route { grid-template-columns:1fr; text-align:center; }
+  .ft-arrow { justify-content:center; }
+  .tl-dot { right:-2rem; }
+  .timeline { padding-right:2rem; }
+}
+
+/* ─── SPECIAL SUNDAY CARD ─── */
+.sunday-card {
+  background:linear-gradient(135deg,#fffde7,#f3e5d0);
+  border:1px solid #ffcc80; border-radius:var(--r);
+  padding:1.5rem; margin-top:1.2rem; box-shadow:var(--shadow);
+}
+.sunday-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(120px,1fr)); gap:.7rem; margin-top:1rem; }
+.sunday-item { background:rgba(255,255,255,.7); border-radius:10px; padding:.8rem; text-align:center; font-size:.8rem; color:var(--ink2); }
+.si-icon { font-size:1.5rem; margin-bottom:.2rem; }
+
+/* ─── SECTION SPACING ─── */
+.sec-wrap { padding:4rem 0; }
+.sec-wrap:first-child { padding-top:3rem; }
+hr.sec-divider { border:none; border-top:1px solid var(--border); margin:0; }
+
+/* scroll-up button */
+#scrollUp {
+  position:fixed; bottom:2rem; left:2rem; z-index:300;
+  width:44px; height:44px; border-radius:50%;
+  background:var(--alpine); color:#fff; border:none; cursor:pointer;
+  font-size:1.1rem; box-shadow:var(--shadow-lg);
+  opacity:0; pointer-events:none;
+  transition:opacity .3s, transform .3s;
+  display:flex; align-items:center; justify-content:center;
+}
+#scrollUp.show { opacity:1; pointer-events:all; }
+#scrollUp:hover { transform:translateY(-2px); }
+</style>
+</head>
+<body>
+
+<!-- ▸ HERO -->
+<div class="hero">
+  <img class="hero-img" src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600&q=80" alt="Austrian Alps">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">🇦🇹 Austria Trip 2026</div>
+    <h1>رحلة النمسا<br><em>الذهبية</em></h1>
+    <p class="hero-tagline">فيينا · كابرون · هالشتات · سالزبورغ</p>
+    <div class="hero-pills">
+      <div class="hpill">✈️ المغادرة <strong>24 يونيو 08:35</strong></div>
+      <div class="hpill">🏔 كابرون <strong>25–30 يونيو</strong></div>
+      <div class="hpill">🏛 فيينا <strong>30 يونيو–3 يوليو</strong></div>
+      <div class="hpill">🏠 العودة <strong>3 يوليو 14:30</strong></div>
+    </div>
+  </div>
+</div>
+
+<!-- ▸ NAV -->
+<div class="nav-wrap">
+  <div class="nav-inner">
+    <a href="#sec-flight">✈️ الطيران</a>
+    <a href="#sec-hotels">🏨 الفنادق</a>
+    <a href="#sec-arrival">🗺 الوصول</a>
+    <a href="#sec-roadmap">📅 الخطة</a>
+    <a href="#sec-budget">💰 الميزانية</a>
+    <a href="#sec-activities">🎯 الأنشطة</a>
+    <a href="#sec-food">🍽 مطاعم</a>
+    <a href="#sec-packing">🧳 أمتعة</a>
+    <a href="#sec-tasks">✅ مهام</a>
+  </div>
+</div>
+
+<!-- ======================================================
+     FLIGHT
+====================================================== -->
+<div id="sec-flight" class="sec-wrap">
+<div class="page">
+  <div class="sec-header reveal">
+    <div class="sec-eyebrow">SalamAir · J14PDW</div>
+    <div class="sec-title">تفاصيل <em>الطيران</em></div>
+    <div class="sec-rule"></div>
+  </div>
+
+  <!-- GO -->
+  <div class="flight-ticket reveal">
+    <div class="ft-header">
+      <div class="ft-airline">
+        <div class="ft-logo">✈ SalamAir</div>
+        <span style="font-size:.73rem;color:rgba(255,255,255,.7)">سلام إير</span>
+      </div>
+      <div style="display:flex;gap:.5rem;align-items:center">
+        <div class="ft-ref">J14PDW</div>
+        <div style="background:rgba(255,255,255,.15);color:#fff;padding:.2rem .8rem;border-radius:50px;font-size:.72rem">مباشر · OV811</div>
+      </div>
+    </div>
+    <div class="ft-body">
+      <div class="ft-date">☀️ الأربعاء، 24 يونيو 2026</div>
+      <div class="ft-route">
+        <div class="ft-city">
+          <div class="ft-code">MCT</div>
+          <div class="ft-cname">مسقط · عُمان</div>
+          <div class="ft-time">08:35</div>
+        </div>
+        <div class="ft-mid">
+          <div class="ft-arrow">✈️</div>
+          <div class="ft-dur">6 ساعات 55 دقيقة</div>
+          <div class="ft-direct">✓ رحلة مباشرة</div>
+        </div>
+        <div class="ft-city">
+          <div class="ft-code">VIE</div>
+          <div class="ft-cname">فيينا · النمسا</div>
+          <div class="ft-time">13:30</div>
+        </div>
+      </div>
+      <div class="pax-row">
+        <div class="pax-card">
+          <div class="pax-icon">👩</div>
+          <div>
+            <div class="pax-name">Ruqaiya Al Ofi</div>
+            <div class="pax-det">بالغة · 20 كغ + يد 5 كغ · تأمين ✓ · واتساب ✓</div>
+            <div class="pax-seat">مقعد 9F</div>
+          </div>
+        </div>
+        <div class="pax-card">
+          <div class="pax-icon">👨</div>
+          <div>
+            <div class="pax-name">Ibrahim Al Aufi</div>
+            <div class="pax-det">بالغ · 20 كغ + يد 5 كغ · تأمين ✓</div>
+            <div class="pax-seat">مقعد 9E</div>
+          </div>
+        </div>
+        <div class="pax-card">
+          <div class="pax-icon">🧒</div>
+          <div>
+            <div class="pax-name">Waad Al Rashdi</div>
+            <div class="pax-det">طفل · 20 كغ + يد 5 كغ · تأمين ✓</div>
+            <div class="pax-seat">مقعد 9D</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- RETURN -->
+  <div class="flight-ticket reveal">
+    <div class="ft-header">
+      <div class="ft-airline">
+        <div class="ft-logo">✈ SalamAir</div>
+        <span style="font-size:.73rem;color:rgba(255,255,255,.7)">سلام إير</span>
+      </div>
+      <div style="display:flex;gap:.5rem;align-items:center">
+        <div class="ft-ref">J14PDW</div>
+        <div style="background:rgba(255,255,255,.15);color:#fff;padding:.2rem .8rem;border-radius:50px;font-size:.72rem">مباشر · OV812</div>
+      </div>
+    </div>
+    <div class="ft-body">
+      <div class="ft-date">🌙 الجمعة، 3 يوليو 2026</div>
+      <div class="ft-route">
+        <div class="ft-city">
+          <div class="ft-code">VIE</div>
+          <div class="ft-cname">فيينا · النمسا</div>
+          <div class="ft-time">14:30</div>
+        </div>
+        <div class="ft-mid">
+          <div class="ft-arrow">✈️</div>
+          <div class="ft-dur">6 ساعات</div>
+          <div class="ft-direct">✓ رحلة مباشرة</div>
+        </div>
+        <div class="ft-city">
+          <div class="ft-code">MCT</div>
+          <div class="ft-cname">مسقط · عُمان</div>
+          <div class="ft-time">22:30</div>
+        </div>
+      </div>
+      <div class="pax-row">
+        <div class="pax-card"><div class="pax-icon">👩</div><div><div class="pax-name">Ruqaiya Al Ofi</div><div class="pax-det">20 كغ + يد 5 كغ</div><div class="pax-seat">مقعد 7F</div></div></div>
+        <div class="pax-card"><div class="pax-icon">👨</div><div><div class="pax-name">Ibrahim Al Aufi</div><div class="pax-det">20 كغ + يد 5 كغ</div><div class="pax-seat">مقعد 7E</div></div></div>
+        <div class="pax-card"><div class="pax-icon">🧒</div><div><div class="pax-name">Waad Al Rashdi</div><div class="pax-det">20 كغ + يد 5 كغ</div><div class="pax-seat">مقعد 7D</div></div></div>
+      </div>
+      <div class="ft-total">
+        <div class="ft-total-lbl">💳 إجمالي التذاكر – 3 أشخاص</div>
+        <div class="ft-total-amt">526.618 ر.ع</div>
+      </div>
+    </div>
+  </div>
+  <div class="note-box red reveal"><strong>⏰ مهم جداً:</strong> الوصول للمطار قبل 4 ساعات من الإقلاع (أي قبل 04:35 صباحاً). كاونتر الصعود يُغلق قبل 60 دقيقة. نوع الصعود: Counter Check-in (مش أونلاين).</div>
+</div>
+</div>
+<hr class="sec-divider">
+
+<!-- ======================================================
+     HOTELS
+====================================================== -->
+<div id="sec-hotels" class="sec-wrap">
+<div class="page">
+  <div class="sec-header reveal">
+    <div class="sec-eyebrow">3 حجوزات مؤكدة</div>
+    <div class="sec-title">الفنادق <em>المحجوزة</em></div>
+    <div class="sec-rule"></div>
+  </div>
+  <div class="hotels-grid">
+
+    <!-- Hotel 1 -->
+    <div class="hotel-card reveal">
+      <img class="hc-img" src="https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=600&q=80" alt="Vienna">
+      <div class="hc-body">
+        <div class="hc-city-tag">🏛 فيينا · الليلة الأولى</div>
+        <div class="hc-name">PLAZA Premium Wien</div>
+        <div class="hc-addr">📍 5 Hertha-Firnberg-Strasse, 1100 Vienna <br>☎ +43 1 605300</div>
+        <div class="hc-meta">
+          <span class="hbadge hb-g">✅ دخول 24 يونيو بعد 15:00</span>
+          <span class="hbadge hb-g">🚪 خروج 25 يونيو قبل 11:00</span>
+          <span class="hbadge hb-b">🌙 ليلة واحدة</span>
+          <span class="hbadge hb-o">💰 37 ر.ع (84 يورو)</span>
+        </div>
+        <div class="hc-amenities">
+          <span class="amen yes">❄️ تكييف ✓</span>
+          <span class="amen ask">🚿 شطاف؟ راسلي</span>
+          <span class="amen yes">📶 واي فاي ✓</span>
+          <span class="amen yes">🛗 مصعد ✓</span>
+          <span class="amen yes">🛁 حمام خاص ✓</span>
+        </div>
+        <div class="hc-confirm">
+          <div class="hc-ref"><div class="hc-ref-lbl">رقم التأكيد</div><div class="hc-ref-val">6489.753.828</div></div>
+          <div class="hc-ref"><div class="hc-ref-lbl">PIN</div><div class="hc-ref-val">7603</div></div>
+          <div class="hc-ref"><div class="hc-ref-lbl">نوع الغرفة</div><div class="hc-ref-val">Twin Room</div></div>
+        </div>
+        <div class="note-box"><strong>⚠️ ضمان:</strong> يُطلب EUR 250 عند الوصول ببطاقة الائتمان، يُعاد خلال 7 أيام.</div>
+      </div>
+    </div>
+
+    <!-- Hotel 2 -->
+    <div class="hotel-card reveal">
+      <img class="hc-img" src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" alt="Kaprun">
+      <div class="hc-body">
+        <div class="hc-city-tag">🏔 كابرون · 5 ليالٍ</div>
+        <div class="hc-name">Falcon Suites Kaprun</div>
+        <div class="hc-addr">📍 19 Falkenstraße, 5710 Kaprun <br>☎ +43 676 845594500</div>
+        <div class="hc-meta">
+          <span class="hbadge hb-g">✅ دخول 25 يونيو 16:00–20:00</span>
+          <span class="hbadge hb-g">🚪 خروج 30 يونيو 06:00–10:00</span>
+          <span class="hbadge hb-b">🌙 5 ليالٍ</span>
+          <span class="hbadge hb-o">💰 513 ر.ع (1,165 يورو)</span>
+        </div>
+        <div class="hc-amenities">
+          <span class="amen yes">❄️ تكييف (مفرد) ✓</span>
+          <span class="amen yes">🚿 بيدي ✓</span>
+          <span class="amen yes">🍳 مطبخ كامل ✓</span>
+          <span class="amen yes">🛁 بانيو+دش ✓</span>
+          <span class="amen yes">🌿 شرفة + إطلالة ✓</span>
+          <span class="amen yes">📶 واي فاي ✓</span>
+        </div>
+        <div class="hc-confirm">
+          <div class="hc-ref"><div class="hc-ref-lbl">رقم التأكيد</div><div class="hc-ref-val">6849.386.193</div></div>
+          <div class="hc-ref"><div class="hc-ref-lbl">PIN</div><div class="hc-ref-val">4909</div></div>
+          <div class="hc-ref"><div class="hc-ref-lbl">نوع الوحدة</div><div class="hc-ref-val">شقة 2 غرفة</div></div>
+        </div>
+        <div class="note-box"><strong>💰 التفصيل:</strong> 396 ر.ع + ضريبة 40 + تنظيف 66 + مدينة 11 = <strong>513 ر.ع</strong></div>
+        <div class="note-box red" style="margin-top:.5rem"><strong>🗓 آخر إلغاء مجاني:</strong> 10 يونيو 2026 قبل 11:59 م</div>
+      </div>
+    </div>
+
+    <!-- Hotel 3 -->
+    <div class="hotel-card reveal">
+      <img class="hc-img" src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=600&q=80" alt="Vienna">
+      <div class="hc-body">
+        <div class="hc-city-tag">🏙 فيينا · الليالي الأخيرة</div>
+        <div class="hc-name">Garner Hotel Vienna ⭐⭐⭐</div>
+        <div class="hc-addr">📍 Wiedner Gürtel 34, 1040 Wien<br>Agoda رقم: 1966712075</div>
+        <div class="hc-meta">
+          <span class="hbadge hb-g">✅ دخول 30 يونيو بعد 15:00</span>
+          <span class="hbadge hb-g">🚪 خروج 3 يوليو قبل 12:00</span>
+          <span class="hbadge hb-b">🌙 3 ليالٍ</span>
+          <span class="hbadge hb-o">💰 469.52 يورو</span>
+        </div>
+        <div class="hc-amenities">
+          <span class="amen ask">❄️ تكييف؟ راسلي</span>
+          <span class="amen ask">🚿 شطاف؟ راسلي</span>
+          <span class="amen yes">📶 واي فاي ✓</span>
+        </div>
+        <div class="hc-confirm">
+          <div class="hc-ref"><div class="hc-ref-lbl">Agoda رقم</div><div class="hc-ref-val">1966712075</div></div>
+          <div class="hc-ref"><div class="hc-ref-lbl">نوع الغرفة</div><div class="hc-ref-val">1 Queen Standard</div></div>
+        </div>
+        <div class="note-box"><strong>💳 الدفع:</strong> يُخصم 469.52 يورو في <strong>14 يونيو 2026</strong> تلقائياً من البطاقة ••••4570</div>
+        <div class="note-box red" style="margin-top:.5rem"><strong>📧 مهمة:</strong> راسلي الفندق تسألين عن التكييف والشطاف!</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</div>
+<hr class="sec-divider">
+
+<!-- ======================================================
+     ARRIVAL & MAPS
+====================================================== -->
+<div id="sec-arrival" class="sec-wrap">
+<div class="page">
+  <div class="sec-header reveal">
+    <div class="sec-eyebrow">خطوة خطوة</div>
+    <div class="sec-title">خطة الوصول <em>والتنقل</em></div>
+    <div class="sec-rule"></div>
+  </div>
+
+  <!-- Tab bar -->
+  <div class="tab-bar reveal" id="arrivalTabs">
+    <button class="tab-btn active" onclick="switchTab('arr','t1',this)">🛬 المطار → فيينا</button>
+    <button class="tab-btn" onclick="switchTab('arr','t2',this)">🚂 فيينا → كابرون</button>
+    <button class="tab-btn" onclick="switchTab('arr','t3',this)">🗺 مسارات داخلية</button>
+    <button class="tab-btn" onclick="switchTab('arr','t4',this)">🏛 كابرون → فيينا</button>
+  </div>
+
+  <!-- TAB 1 -->
+  <div class="tab-content active" id="arr-t1">
+    <div style="margin-bottom:1.2rem">
+      <div class="sec-eyebrow">24 يونيو · بعد الوصول 13:30</div>
+      <div style="font-size:1rem;font-weight:700;color:var(--ink)">مطار فيينا VIE ← Plaza Premium Wien</div>
+    </div>
+    <div class="arrival-steps reveal">
+      <div class="astep"><div class="astep-num">1</div><div class="astep-content"><div class="astep-title">🛬 الوصول ومسح الجوازات</div><div class="astep-desc">الوصول مطار VIE الساعة 13:30 – مرور الجمارك والأمتعة (~45–60 دقيقة)</div></div></div>
+      <div class="astep"><div class="astep-num">2</div><div class="astep-content"><div class="astep-title">🪧 ابحثي عن لافتة "Train / S-Bahn"</div><div class="astep-desc">اتجهي للطابق السفلي من Terminal 1 أو 3 – تبعي لافتات S-Bahn بدون توقف</div></div></div>
+      <div class="astep"><div class="astep-num">3</div><div class="astep-content"><div class="astep-title">🎫 اشتري تذكرة S7</div><div class="astep-desc">من الآلة التلقائية – 4.40 يورو/شخص = <strong>13.2 يورو للثلاثة</strong> ≈ 5.96 ر.ع<br>اضغطي "Zone 1+2" أو "Core Zone + Airport"</div><div class="astep-tags"><span class="atag atag-g">✓ أوفر خيار</span><span class="atag atag-b">⏱ 30 دقيقة</span></div></div></div>
+      <div class="astep"><div class="astep-num">4</div><div class="astep-content"><div class="astep-title">🚂 قطار S7 → Wien Mitte</div><div class="astep-desc">قطار مباشر يصل وسط فيينا في 30 دقيقة – لا تحتاجين تغيير</div></div></div>
+      <div class="astep"><div class="astep-num">5</div><div class="astep-content"><div class="astep-title">🚇 مترو U1 → Reumannplatz</div><div class="astep-desc">من Wien Mitte: ركبي مترو U1 باتجاه الجنوب ← 5 محطات حتى <strong>Reumannplatz</strong></div></div></div>
+      <div class="astep"><div class="astep-num">6</div><div class="astep-content"><div class="astep-title">🚶 مشي 8 دقائق للفندق</div><div class="astep-desc">Plaza Premium Wien: 5 Hertha-Firnberg-Strasse – المشي واضح ومباشر</div><div class="astep-tags"><span class="atag atag-g">✓ 55 دقيقة إجمالاً</span><span class="atag atag-b">💰 ~2 ر.ع/شخص</span></div>
+        <a class="map-btn" href="https://www.google.com/maps/dir/Vienna+International+Airport,+Schwechat/PLAZA+Premium+Wien,+Hertha-Firnberg-Stra%C3%9Fe+5,+1100+Wien/@48.14,16.45,12z/data=!4m14!4m13!1m5!1m1!1s0x476c5453010d3c15:0x11a8fba3fa8ade5f!2m2!1d16.5685!2d48.1197!1m5!1m1!1s0x476d07a02af5d6b7:0x1!2m2!1d16.3737!2d48.1662!3e3" target="_blank">🗺 افتح في خرائط جوجل ←</a>
+      </div></div>
+    </div>
+    <iframe class="map-frame reveal" src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d84028!2d16.47!2d48.15!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1s0x476c5453010d3c15%3A0x11a8fba3fa8ade5f!2sVienna+International+Airport!3m2!1d48.1102!2d16.5697!4m5!1s0x476d07a02af5d6b7%3A0x1!2sPLAZA+Premium+Wien!3m2!1d48.1662!2d16.3737!5e0!3m2!1sen!2sat!4v1" loading="lazy" allowfullscreen></iframe>
+  </div>
+
+  <!-- TAB 2 -->
+  <div class="tab-content" id="arr-t2">
+    <div style="margin-bottom:1.2rem">
+      <div class="sec-eyebrow">25 يونيو · الانطلاق صباحاً</div>
+      <div style="font-size:1rem;font-weight:700;color:var(--ink)">فيينا Wien Hbf ← كابرون (Falcon Suites)</div>
+    </div>
+    <div class="arrival-steps reveal">
+      <div class="astep"><div class="astep-num">1</div><div class="astep-content"><div class="astep-title">🏨 مغادرة Plaza Wien</div><div class="astep-desc">المغادرة قبل 11:00 (وقت الـ Check-out)</div></div></div>
+      <div class="astep"><div class="astep-num">2</div><div class="astep-content"><div class="astep-title">🚇 مترو U1 → Wien Hauptbahnhof</div><div class="astep-desc">من Reumannplatz ← Wien Hbf (3 محطات فقط)</div></div></div>
+      <div class="astep"><div class="astep-num">3</div><div class="astep-content"><div class="astep-title">🎫 احجزي مسبقاً على oebb.at</div><div class="astep-desc">قطار ÖBB من <strong>Wien Hbf ← Zell am See</strong> – المدة ~3.5 ساعة<br>احجزي مسبقاً لتوفير المال والمقاعد المضمونة</div><div class="astep-tags"><span class="atag atag-r">⚠️ احجزي الآن!</span><span class="atag atag-b">💰 ~24 ر.ع/شخص</span></div>
+        <a class="map-btn" href="https://www.oebb.at" target="_blank">🎫 موقع ÖBB للحجز ←</a>
+      </div></div>
+      <div class="astep"><div class="astep-num">4</div><div class="astep-content"><div class="astep-title">🚌 Bus 680: Zell am See → Kaprun</div><div class="astep-desc">من محطة Zell am See – حافلة Bus 680 مباشرة لكابرون (~15 دقيقة)</div></div></div>
+      <div class="astep"><div class="astep-num">5</div><div class="astep-content"><div class="astep-title">🏔 Falcon Suites: تسجيل الدخول</div><div class="astep-desc">19 Falkenstraße, Kaprun – الوصول بين 16:00–20:00<br>التأكيد: 6849.386.193 · PIN: 4909</div><div class="astep-tags"><span class="atag atag-g">⏱ ~4 ساعات إجمالاً</span></div>
+        <a class="map-btn" href="https://www.google.com/maps/dir/Wien+Hauptbahnhof,+Vienna/Falkenstra%C3%9Fe+19,+5710+Kaprun,+Austria/@47.7,13.8,9z/data=!4m13!4m12!1m5!1m1!1s0x476d079e5136ca9f:0x1c282a0da90b5c7f!2m2!1d16.3758!2d48.1852!1m5!1m1!1s0x47769b80a73ecf4b:0x1!2m2!1d12.7442!2d47.2733!3e3" target="_blank">🗺 افتح في خرائط جوجل ←</a>
+      </div></div>
+    </div>
+    <iframe class="map-frame reveal" src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d663421!2d14.2!2d47.7!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1s0x476d079e5136ca9f%3A0x1c282a0da90b5c7f!2sWien+Hauptbahnhof!3m2!1d48.1852!2d16.3758!4m5!1s0x47769b80a73ecf4b%3A0x6e5cb76c3f24cd96!2sKaprun%2C+Austria!3m2!1d47.2703!2d12.7147!5e0!3m2!1sen!2sat!4v1" loading="lazy" allowfullscreen></iframe>
+  </div>
+
+  <!-- TAB 3 -->
+  <div class="tab-content" id="arr-t3">
+    <div style="margin-bottom:1.2rem;font-size:1rem;font-weight:700;color:var(--ink)">التنقل داخل منطقة كابرون / زيلامسي</div>
+    <div class="route-grid reveal">
+      <div class="route-card">
+        <div class="route-card-title">🏔 كابرون ↔ زيلامسي</div>
+        <div class="rcs"><div class="rcs-icon">🚌</div><div>حافلة Bus 680 أو 696 · ~15 دقيقة · ~2 يورو</div></div>
+        <div class="rcs"><div class="rcs-icon">🚲</div><div>دراجة هوائية ~30 دقيقة (مريح جداً!)</div></div>
+        <a class="map-btn" style="font-size:.75rem;padding:.4rem .9rem" href="https://www.google.com/maps/dir/Kaprun,+Austria/Zell+am+See,+Austria/@47.3,12.77,12z" target="_blank">🗺 الخريطة</a>
+      </div>
+      <div class="route-card">
+        <div class="route-card-title">🏘 زيلامسي ← هالشتات</div>
+        <div class="rcs"><div class="rcs-icon">🚂</div><div>قطار Zell am See ← Hallstatt Bahnhof</div></div>
+        <div class="rcs"><div class="rcs-icon">⛴</div><div>فيري قصير للقرية (5 دقائق)</div></div>
+        <div class="rcs"><div class="rcs-icon">⏱</div><div>~1.5–2 ساعة | ~10 ر.ع/شخص</div></div>
+        <a class="map-btn" style="font-size:.75rem;padding:.4rem .9rem" href="https://www.google.com/maps/dir/Zell+am+See,+Austria/Hallstatt,+Austria/@47.45,13.3,10z" target="_blank">🗺 الخريطة</a>
+      </div>
+      <div class="route-card">
+        <div class="route-card-title">🎵 زيلامسي ← سالزبورغ</div>
+        <div class="rcs"><div class="rcs-icon">🚂</div><div>قطار مباشر ~1.5 ساعة</div></div>
+        <div class="rcs"><div class="rcs-icon">💰</div><div>~8 ر.ع/شخص</div></div>
+        <div class="rcs"><div class="rcs-icon">🎭</div><div>مدينة موتزارت التاريخية</div></div>
+        <a class="map-btn" style="font-size:.75rem;padding:.4rem .9rem" href="https://www.google.com/maps/dir/Zell+am+See,+Austria/Salzburg,+Austria/@47.5,13.0,9z" target="_blank">🗺 الخريطة</a>
+      </div>
+    </div>
+    <iframe class="map-frame reveal" src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d330842!2d13.2!2d47.55!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e0!4m3!3m2!1d47.2703!2d12.7147!4m3!3m2!1d47.5622!2d13.6493!4m3!3m2!1d47.8095!2d13.0550!5e0!3m2!1sen!2sat!4v1" loading="lazy" allowfullscreen></iframe>
+  </div>
+
+  <!-- TAB 4 -->
+  <div class="tab-content" id="arr-t4">
+    <div style="margin-bottom:1.2rem">
+      <div class="sec-eyebrow">30 يونيو · العودة لفيينا</div>
+      <div style="font-size:1rem;font-weight:700;color:var(--ink)">كابرون ← Wien Hbf ← Garner Hotel Vienna</div>
+    </div>
+    <div class="arrival-steps reveal">
+      <div class="astep"><div class="astep-num">1</div><div class="astep-content"><div class="astep-title">🏔 مغادرة Falcon Suites</div><div class="astep-desc">المغادرة بين 06:00–10:00 حسب موعد القطار</div></div></div>
+      <div class="astep"><div class="astep-num">2</div><div class="astep-content"><div class="astep-title">🚌 Bus → Zell am See Station</div><div class="astep-desc">Bus 680 من كابرون لمحطة قطار زيلامسي</div></div></div>
+      <div class="astep"><div class="astep-num">3</div><div class="astep-content"><div class="astep-title">🚂 قطار Zell am See → Wien Hbf</div><div class="astep-desc">~3.5 ساعة | ~24 ر.ع/شخص – احجزي مع رحلة الذهاب على oebb.at</div><div class="astep-tags"><span class="atag atag-r">⚠️ احجزي مسبقاً</span></div></div></div>
+      <div class="astep"><div class="astep-num">4</div><div class="astep-content"><div class="astep-title">🚇 مترو U1 → Südtiroler Platz</div><div class="astep-desc">من Wien Hbf ← محطة Südtiroler Platz ← مشي 10 دقائق للفندق</div></div></div>
+      <div class="astep"><div class="astep-num">5</div><div class="astep-content"><div class="astep-title">🏙 Garner Hotel Vienna</div><div class="astep-desc">Wiedner Gürtel 34, 1040 Wien – تسجيل دخول بعد 15:00</div>
+        <a class="map-btn" href="https://www.google.com/maps/dir/Zell+am+See,+Austria/Wiedner+G%C3%BCrtel+34,+1040+Wien/@47.8,14.5,8z" target="_blank">🗺 افتح في خرائط جوجل ←</a>
+      </div></div>
+    </div>
+    <iframe class="map-frame reveal" src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d2723735!2d14.5!2d47.8!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1s0x47769b80a73ecf4b%3A0x6e5cb76c3f24cd96!2sZell+am+See!3m2!1d47.2703!2d12.7147!4m5!1s0x476d079aaee6c63f%3A0x1!2sWiedner+G%C3%BCrtel+34%2C+1040+Wien!3m2!1d48.1870!2d16.3630!5e0!3m2!1sen!2sat!4v1" loading="lazy" allowfullscreen></iframe>
+  </div>
+
+</div>
+</div>
+<hr class="sec-divider">
+
+<!-- ======================================================
+     ROADMAP
+====================================================== -->
+<div id="sec-roadmap" class="sec-wrap">
+<div class="page">
+  <div class="sec-header reveal">
+    <div class="sec-eyebrow">24 يونيو → 3 يوليو</div>
+    <div class="sec-title">خريطة الرحلة <em>اليومية</em></div>
+    <div class="sec-rule"></div>
+  </div>
+  <div class="timeline">
+    <div class="tl-item reveal"><div class="tl-dot"></div><div class="tl-card"><div class="tl-label">اليوم 1</div><div class="tl-title">🛫 الإقلاع من مسقط</div><div class="tl-date">الأربعاء 24 يونيو</div><ul class="tl-acts"><li>وصول مطار مسقط قبل 04:35 صباحاً</li><li>رحلة OV811 تقلع 08:35 ← فيينا 13:30</li><li>S-Bahn S7 + مترو U1 ← Plaza Premium Wien</li><li>تسجيل دخول الفندق بعد 15:00 – نوم مبكر 🌙</li></ul></div></div>
+    <div class="tl-item reveal"><div class="tl-dot emerald"></div><div class="tl-card"><div class="tl-label">اليوم 2</div><div class="tl-title">🚂 الانتقال لكابرون</div><div class="tl-date">الخميس 25 يونيو</div><ul class="tl-acts"><li>مغادرة Plaza Wien قبل 11:00</li><li>مترو U1 ← Wien Hbf ← قطار ÖBB لزيلامسي</li><li>Bus 680 من زيلامسي ← كابرون</li><li>تسجيل دخول Falcon Suites 16:00–20:00 🏔</li><li>استلام بطاقة الصيف والاستكشاف</li></ul></div></div>
+    <div class="tl-item reveal"><div class="tl-dot emerald"></div><div class="tl-card"><div class="tl-label">اليوم 3</div><div class="tl-title">❄️ الجبال والبحيرات</div><div class="tl-date">الجمعة 26 يونيو</div><ul class="tl-acts"><li>قمة كابرون الثلجية (Kitzsteinhorn 3000م) – مجاني بالبطاقة</li><li>بحيرة هنترسي الفيروزية</li><li>جولة بالسفينة على بحيرة زيلامسي ⛵</li><li>خوانق زغموند الطبيعية</li></ul></div></div>
+    <div class="tl-item reveal"><div class="tl-dot emerald"></div><div class="tl-card"><div class="tl-label">اليوم 4</div><div class="tl-title">🎵 سالزبورغ أو هالشتات</div><div class="tl-date">السبت 27 يونيو</div><ul class="tl-acts"><li>قطار ليوم رحلة (سالزبورغ أو هالشتات)</li><li>استكشاف المدينة التاريخية وقلعة موتزارت</li><li>🛒 بعد العودة: اشتري مستلزمات الطبخ لليوم التالي</li></ul></div></div>
+    <div class="tl-item reveal"><div class="tl-dot gold"></div><div class="tl-card"><div class="tl-label">اليوم 5 ⭐ خاص</div><div class="tl-title">🚴 يوم الأحد السحري</div><div class="tl-date">الأحد 28 يونيو</div><ul class="tl-acts"><li>🚲 استئجار دراجات والتجول بين القرى والأرياف</li><li>🍗 طبخ كبسة دجاج للغداء</li><li>🌊 الغداء على ضفاف بحيرة زيلامسي</li><li>🍔 برجر للعشاء + 🎂 كيكة شوكولاتة</li></ul></div></div>
+    <div class="tl-item reveal"><div class="tl-dot emerald"></div><div class="tl-card"><div class="tl-label">اليوم 6</div><div class="tl-title">🎿 المغامرات</div><div class="tl-date">الاثنين 29 يونيو</div><ul class="tl-acts"><li>🎿 زحليقة سالفدين (18 يورو كبار / 13 صغار)</li><li>💧 شلالات كريمل (مجاني بالبطاقة)</li><li>💎 بحيرة جوساسوس</li><li>☕ مصنع اللوكر وكوفي</li></ul></div></div>
+    <div class="tl-item reveal"><div class="tl-dot rose"></div><div class="tl-card"><div class="tl-label">اليوم 7–10</div><div class="tl-title">🏛 العودة لفيينا</div><div class="tl-date">30 يونيو – 3 يوليو</div><ul class="tl-acts"><li>30 يونيو: قطار كابرون ← فيينا ← Garner Hotel</li><li>استكشاف فيينا: قصر شونبرون، كاتدرائية ستيفان</li><li>🎡 عجلة براتر الشهيرة</li><li>🛍 تسوق ماريا هيلفر شتراسه</li><li>3 يوليو 14:30: رحلة OV812 ← مسقط 22:30 🏠</li></ul></div></div>
+  </div>
+</div>
+</div>
+<hr class="sec-divider">
+
+<!-- ======================================================
+     BUDGET
+====================================================== -->
+<div id="sec-budget" class="sec-wrap">
+<div class="page">
+  <div class="sec-header reveal">
+    <div class="sec-eyebrow">تخطيط مالي</div>
+    <div class="sec-title">الميزانية <em>التفصيلية</em></div>
+    <div class="sec-rule"></div>
+  </div>
+  <div class="budget-hero reveal">
+    <div class="bh-num">800</div>
+    <div style="font-size:1.1rem;font-weight:700">ريال عُماني</div>
+    <div class="bh-sub">الميزانية المخصصة لكل شخص</div>
+  </div>
+  <div class="budget-cards">
+    <div class="bc reveal"><div class="bc-icon">✈️</div><div class="bc-lbl">تذاكر + تأمين</div><div class="bc-amt">~175 ر.ع</div></div>
+    <div class="bc reveal"><div class="bc-icon">🏨</div><div class="bc-lbl">الفنادق/شخص</div><div class="bc-amt">235.25 ر.ع</div></div>
+    <div class="bc reveal"><div class="bc-icon">🛂</div><div class="bc-lbl">تأشيرة شنغن</div><div class="bc-amt">~50 ر.ع</div></div>
+    <div class="bc reveal"><div class="bc-icon">🚂</div><div class="bc-lbl">مواصلات</div><div class="bc-amt">~56 ر.ع</div></div>
+    <div class="bc reveal"><div class="bc-icon">🍽</div><div class="bc-lbl">أكل وترفيه</div><div class="bc-amt">~283 ر.ع</div></div>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.2rem;margin-bottom:1.5rem">
+    <div class="info-box reveal">
+      <div class="info-box-title">👩‍👩 أنتِ وعَوَد</div>
+      <div style="font-size:.84rem;color:var(--ink2);line-height:1.8">تدفعان <strong style="color:var(--alpine)">472 ر.ع</strong> للفنادق + <strong>100 ر.ع</strong> تأشيرة<br>Garner Hotel يُخصم 14 يونيو من البطاقة ••••4570</div>
+    </div>
+    <div class="info-box reveal">
+      <div class="info-box-title">👤 إبراهيم</div>
+      <div style="font-size:.84rem;color:var(--ink2);line-height:1.8">دفع <strong style="color:var(--alpine)">330 ر.ع</strong> | باقي 145 ر.ع على الفندق + 90 ر.ع إضافية</div>
+    </div>
+    <div class="info-box reveal" style="grid-column:1/-1;background:linear-gradient(135deg,#f0f7f0,#e8f4f8);">
+      <div class="info-box-title">🤝 الصندوق المشترك</div>
+      <div style="font-size:2rem;font-weight:900;color:var(--alpine)">1,017 ر.ع</div>
+      <div style="font-size:.8rem;color:var(--ink3);margin-top:.2rem">3 أشخاص × 339 ر.ع = مواصلات + أكل + أنشطة</div>
+    </div>
+  </div>
+  <div class="info-box reveal">
+    <div class="info-box-title">📈 جدول التوفير الشهري</div>
+    <div class="savings-grid">
+      <div class="sav-item done"><div class="sav-name">ديسمبر 2025</div><div class="sav-amt">327 ر.ع</div><div class="sav-st" style="color:var(--alpine)">✓ تم</div></div>
+      <div class="sav-item done"><div class="sav-name">يناير</div><div class="sav-amt">300 ر.ع</div><div class="sav-st" style="color:var(--gold)">+145 إبراهيم</div></div>
+      <div class="sav-item done"><div class="sav-name">فبراير</div><div class="sav-amt">625 ر.ع</div><div class="sav-st" style="color:var(--alpine)">✓ تم</div></div>
+      <div class="sav-item done"><div class="sav-name">مارس</div><div class="sav-amt">1,421 ر.ع</div><div class="sav-st" style="color:var(--alpine)">✓ دُفع 800</div></div>
+      <div class="sav-item soon"><div class="sav-name">أبريل</div><div class="sav-amt">300 ر.ع</div><div class="sav-st">قادم</div></div>
+      <div class="sav-item soon"><div class="sav-name">مايو</div><div class="sav-amt">300 ر.ع</div><div class="sav-st">قادم</div></div>
+      <div class="sav-item soon"><div class="sav-name">يونيو</div><div class="sav-amt">300 ر.ع</div><div class="sav-st">آخر راتب</div></div>
+      <div class="sav-item partial"><div class="sav-name">المتوقع</div><div class="sav-amt">~2,600</div><div class="sav-st" style="color:var(--gold)">🎉 كافي!</div></div>
+    </div>
+    <div style="margin-top:1rem">
+      <div style="font-size:.72rem;color:var(--ink3);margin-bottom:.3rem">التقدم (ديسمبر–مارس من أصل 2,600 ر.ع)</div>
+      <div class="prog-bar"><div class="prog-fill" style="width:55%"></div></div>
+    </div>
+  </div>
+</div>
+</div>
+<hr class="sec-divider">
+
+<!-- ======================================================
+     ACTIVITIES
+====================================================== -->
+<div id="sec-activities" class="sec-wrap">
+<div class="page">
+  <div class="sec-header reveal">
+    <div class="sec-eyebrow">10 أيام ممتلئة</div>
+    <div class="sec-title">الأنشطة <em>والأماكن</em></div>
+    <div class="sec-rule"></div>
+  </div>
+
+  <div class="tab-bar reveal" id="actTabs">
+    <button class="tab-btn active" onclick="switchTab('act','a1',this)">🏔 كابرون/زيلامسي</button>
+    <button class="tab-btn" onclick="switchTab('act','a2',this)">🏛 فيينا</button>
+    <button class="tab-btn" onclick="switchTab('act','a3',this)">🗺 رحلات يوم</button>
+    <button class="tab-btn" onclick="switchTab('act','a4',this)">💧 رياضات مائية</button>
+  </div>
+
+  <!-- KAPRUN activities -->
+  <div class="tab-content active" id="act-a1">
+    <div class="act-grid">
+      <div class="act-card reveal"><div class="act-card-top"><div class="act-emoji">🏔</div><div><div class="act-name">Kitzsteinhorn قمة كابرون</div><div class="act-price">مجاني بالبطاقة الصيفية</div><div class="act-note">ثلج في الصيف على ارتفاع 3000م! Gipfelwelt 3000</div><span class="act-tag at-free">مجاني ✓</span></div></div></div>
+      <div class="act-card reveal"><div class="act-card-top"><div class="act-emoji">🎿</div><div><div class="act-name">زحليقة ألبية Maisi Flitzer</div><div class="act-price">~18 يورو كبار | ~13 يورو صغار</div><div class="act-note">تجربة رائعة في كابرون – half coaster half toboggan</div><span class="act-tag at-paid">مدفوع</span><span class="act-tag at-must">يجب!</span></div></div></div>
+      <div class="act-card reveal"><div class="act-card-top"><div class="act-emoji">⛵</div><div><div class="act-name">جولة سفينة بحيرة زيلامسي</div><div class="act-price">مجاني بالبطاقة الصيفية</div><div class="act-note">جولة كاملة حول البحيرة مع ترراس للمشروبات</div><span class="act-tag at-free">مجاني ✓</span></div></div></div>
+      <div class="act-card reveal"><div class="act-card-top"><div class="act-emoji">🌊</div><div><div class="act-name">بحيرة هنترسي</div><div class="act-price">مجاني</div><div class="act-note">مياه كريستالية شفافة لا تُصدق – ابعد عن الحشود</div><span class="act-tag at-free">مجاني ✓</span></div></div></div>
+      <div class="act-card reveal"><div class="act-card-top"><div class="act-emoji">💎</div><div><div class="act-name">بحيرة جوساسوس</div><div class="act-price">مجاني</div><div class="act-note">بحيرة جبلية مخفية بلون زمرد رائع</div><span class="act-tag at-free">مجاني ✓</span></div></div></div>
+      <div class="act-card reveal"><div class="act-card-top"><div class="act-emoji">🌿</div><div><div class="act-name">خوانق زغموند Seisenbergklamm</div><div class="act-price">مجاني بالبطاقة / ~5 يورو</div><div class="act-note">ممرات ضيقة بين الصخور والشلالات</div><span class="act-tag at-free">بطاقة ✓</span></div></div></div>
+      <div class="act-card reveal"><div class="act-card-top"><div class="act-emoji">💧</div><div><div class="act-name">شلالات كريمل</div><div class="act-price">مجاني بالبطاقة الصيفية</div><div class="act-note">أكبر شلالات النمسا وأجملها – Krimml Waterfalls</div><span class="act-tag at-free">مجاني ✓</span></div></div></div>
+      <div class="act-card reveal"><div class="act-card-top"><div class="act-emoji">🚲</div><div><div class="act-name">تأجير دراجات هوائية</div><div class="act-price">~15–20 يورو/ساعة أو يومي</div><div class="act-note">التجول بين القرى والأرياف – مسارات رائعة</div><span class="act-tag at-paid">مدفوع</span></div></div></div>
+      <div class="act-card reveal"><div class="act-card-top"><div class="act-emoji">🏊</div><div><div class="act-name">Strandbad – شاطئ البحيرة</div><div class="act-price">مجاني بالبطاقة</div><div class="act-note">سباحة في البحيرة مع ترامبولين مائي وشاطئ</div><span class="act-tag at-free">مجاني ✓</span></div></div></div>
+      <div class="act-card reveal"><div class="act-card-top"><div class="act-emoji">🏰</div><div><div class="act-name">قلعة كابرون Kaprun Castle</div><div class="act-price">مجاني للدخول</div><div class="act-note">قلعة من القرن 12 – مهرجان موسيقي في يوليو</div><span class="act-tag at-free">مجاني ✓</span></div></div></div>
+      <div class="act-card reveal"><div class="act-card-top"><div class="act-emoji">♨️</div><div><div class="act-name">Tauern Spa كابرون</div><div class="act-price">~30–45 يورو/يوم</div><div class="act-note">أكبر مركز صحي في النمسا – 13 ساونا، 12 حوض</div><span class="act-tag at-paid">مدفوع</span></div></div></div>
+      <div class="act-card reveal"><div class="act-card-top"><div class="act-emoji">☕</div><div><div class="act-name">مصنع اللوكر Reber</div><div class="act-price">دخول مجاني + اشتري شوكولاتة</div><div class="act-note">موزارت كوجلن الشهيرة – تجربة مصنع الشوكولاتة</div><span class="act-tag at-free">دخول مجاني</span></div></div></div>
+    </div>
+    <div style="background:linear-gradient(135deg,#f0f7f0,#e8f4f8);border:1px solid #a5d6a7;border-radius:var(--r);padding:1.5rem;margin-top:1.5rem" class="reveal">
+      <div style="font-weight:700;color:var(--alpine);margin-bottom:.8rem">🎫 بطاقة زيلامسي الصيفية – مشمولة مع الإقامة في Falcon Suites</div>
+      <div class="pass-items">
+        <div class="pass-item">Kitzsteinhorn (كابرون)</div>
+        <div class="pass-item">Schmittenhöhe</div>
+        <div class="pass-item">جولة السفينة</div>
+        <div class="pass-item">خوانق زغموند</div>
+        <div class="pass-item">شلالات كريمل</div>
+        <div class="pass-item">شواطئ البحيرة</div>
+        <div class="pass-item">المواصلات العامة</div>
+      </div>
+      <div style="font-size:.75rem;color:var(--ink3);margin-top:.7rem">⚠️ تحققي من Falcon Suites أن بطاقتك الصيفية مشمولة تلقائياً مع الحجز</div>
+    </div>
+  </div>
+
+  <!-- VIENNA -->
+  <div class="tab-content" id="act-a2">
+    <div class="act-grid">
+      <div class="act-card reveal"><div class="act-card-top"><div class="act-emoji">🏰</div><div><div class="act-name">قصر شونبرون</div><div class="act-price">~18–22 يورو (داخل) | مجاني الحدائق</div><div class="act-note">قصر هابسبورغ الشهير – مقر ماريا تيريزيا</div><span class="act-tag at-must">يجب!</span></div></div></div>
+      <div class="act-card reveal"><div class="act-card-top"><div class="act-emoji">⛪</div><div><div class="act-name">كاتدرائية سانت ستيفان</div><div class="act-price">مجاني (دخول الكنيسة) | ~6 يورو للبرج</div><div class="act-note">رمز فيينا في القلب التاريخي</div><span class="act-tag at-free">مجاني ✓</span></div></div></div>
+      <div class="act-card reveal"><div class="act-card-top"><div class="act-emoji">🎡</div><div><div class="act-name">عجلة براتر Riesenrad</div><div class="act-price">~14 يورو</div><div class="act-note">عجلة القرن 19 الشهيرة – إطلالة بانورامية</div><span class="act-tag at-must">أيقوني!</span></div></div></div>
+      <div class="act-card reveal"><div class="act-card-top"><div class="act-emoji">🖼</div><div><div class="act-name">متحف تاريخ الفن KHM</div><div class="act-price">~18 يورو</div><div class="act-note">من أعظم المتاحف في أوروبا</div><span class="act-tag at-paid">مدفوع</span></div></div></div>
+      <div class="act-card reveal"><div class="act-card-top"><div class="act-emoji">🛍</div><div><div class="act-name">ماريا هيلفر شتراسه</div><div class="act-price">مجاني (التجول)</div><div class="act-note">أشهر شارع تسوق في فيينا – 2 كم من المحلات</div><span class="act-tag at-free">مجاني ✓</span></div></div></div>
+      <div class="act-card reveal"><div class="act-card-top"><div class="act-emoji">🌿</div><div><div class="act-name">حدائق بيلفيدير</div><div class="act-price">مجاني الحدائق</div><div class="act-note">حدائق باروكية رائعة مع قصر تاريخي</div><span class="act-tag at-free">مجاني ✓</span></div></div></div>
+      <div class="act-card reveal"><div class="act-card-top"><div class="act-emoji">🎭</div><div><div class="act-name">أوبرا فيينا</div><div class="act-price">~10 يورو (وقوف) – ~200 يورو (مقعد)</div><div class="act-note">دار أوبرا فيينا الأشهر في العالم</div><span class="act-tag at-paid">مدفوع</span></div></div></div>
+      <div class="act-card reveal"><div class="act-card-top"><div class="act-emoji">☕</div><div><div class="act-name">قهوة فيينا التقليدية</div><div class="act-price">~5–10 يورو</div><div class="act-note">Café Central أو Landtmann – تراث UNESCO</div><span class="act-tag at-must">لا تفوتي!</span></div></div></div>
+    </div>
+  </div>
+
+  <!-- DAY TRIPS -->
+  <div class="tab-content" id="act-a3">
+    <div class="act-grid">
+      <div class="act-card reveal"><div class="act-card-top"><div class="act-emoji">🏘</div><div><div class="act-name">هالشتات Hallstatt</div><div class="act-price">~10 ر.ع تذكرة | دخول مجاني</div><div class="act-note">أجمل قرية في النمسا – قائمة UNESCO – جولة قارب<br>من زيلامسي: ~1.5 ساعة قطار</div><span class="act-tag at-must">لا تفوتي!</span></div></div></div>
+      <div class="act-card reveal"><div class="act-card-top"><div class="act-emoji">🎵</div><div><div class="act-name">سالزبورغ Salzburg</div><div class="act-price">~8 ر.ع تذكرة</div><div class="act-note">مدينة موتزارت التاريخية – قلعة هوهنسالزبورغ<br>من زيلامسي: ~1.5 ساعة قطار</div><span class="act-tag at-must">رائعة!</span></div></div></div>
+      <div class="act-card reveal"><div class="act-card-top"><div class="act-emoji">🏔</div><div><div class="act-name">Großglockner Road طريق جروسغلوكنر</div><div class="act-price">~38 يورو للسيارة / Glockner Bus ~20 يورو</div><div class="act-note">أجمل طريق جبلي في النمسا – أعلى قمة في النمسا<br>الحافلة تنطلق من زيلامسي أيام الثلاثاء والخميس</div><span class="act-tag at-must">مذهل!</span></div></div></div>
+      <div class="act-card reveal"><div class="act-card-top"><div class="act-emoji">🌊</div><div><div class="act-name">بحيرة اخن سي Achensee</div><div class="act-price">~15 ر.ع تذكرة</div><div class="act-note">أكبر بحيرة في تيرول – مياه زرقاء صافية</div><span class="act-tag at-paid">رحلة يوم</span></div></div></div>
+      <div class="act-card reveal"><div class="act-card-top"><div class="act-emoji">🏰</div><div><div class="act-name">Hohenwerfen قلعة هوهنفيرفن</div><div class="act-price">~18 يورو</div><div class="act-note">قلعة قروسطية مذهلة فوق جبل – بالقرب من زيلامسي</div><span class="act-tag at-paid">مدفوع</span></div></div></div>
+    </div>
+  </div>
+
+  <!-- WATER SPORTS -->
+  <div class="tab-content" id="act-a4">
+    <div class="act-grid">
+      <div class="act-card reveal"><div class="act-card-top"><div class="act-emoji">🏄</div><div><div class="act-name">Stand-Up Paddleboard</div><div class="act-price">~15–20 يورو/ساعة</div><div class="act-note">متاح على شاطئ بحيرة زيلامسي</div><span class="act-tag at-paid">مدفوع</span></div></div></div>
+      <div class="act-card reveal"><div class="act-card-top"><div class="act-emoji">🚤</div><div><div class="act-name">زورق بدواسة Paddleboat</div><div class="act-price">~15–20 يورو/ساعة</div><div class="act-note">خيار هادئ ومريح – مناسب للعائلة</div><span class="act-tag at-paid">مدفوع</span></div></div></div>
+      <div class="act-card reveal"><div class="act-card-top"><div class="act-emoji">🎣</div><div><div class="act-name">صيد السمك</div><div class="act-price">~20–30 يورو ترخيص</div><div class="act-note">أسماك السالمون في البحيرة والأنهار</div><span class="act-tag at-paid">مدفوع</span></div></div></div>
+      <div class="act-card reveal"><div class="act-card-top"><div class="act-emoji">🏊</div><div><div class="act-name">سباحة في بحيرة زيلامسي</div><div class="act-price">مجاني (الشاطئ العام)</div><div class="act-note">المياه تصل 23 درجة في الصيف! ترامبولين مائي</div><span class="act-tag at-free">مجاني ✓</span></div></div></div>
+      <div class="act-card reveal"><div class="act-card-top"><div class="act-emoji">⛵</div><div><div class="act-name">قارب بحيرة زيلامسي</div><div class="act-price">20 يورو ≈ 8 ر.ع / 30 دقيقة</div><div class="act-note">جولة بالقارب مع إطلالات جبلية رائعة</div><span class="act-tag at-paid">مدفوع</span></div></div></div>
+    </div>
+  </div>
+
+</div>
+</div>
+<hr class="sec-divider">
+
+<!-- ======================================================
+     FOOD & RESTAURANTS
+====================================================== -->
+<div id="sec-food" class="sec-wrap">
+<div class="page">
+  <div class="sec-header reveal">
+    <div class="sec-eyebrow">حلال ومضمون</div>
+    <div class="sec-title">مطاعم <em>وبقالات</em></div>
+    <div class="sec-rule"></div>
+  </div>
+
+  <div class="tab-bar reveal" id="foodTabs">
+    <button class="tab-btn active" onclick="switchTab('food','f1',this)">🍽 زيلامسي/كابرون</button>
+    <button class="tab-btn" onclick="switchTab('food','f2',this)">🏛 فيينا</button>
+    <button class="tab-btn" onclick="switchTab('food','f3',this)">🛒 بقالات حلال</button>
+  </div>
+
+  <!-- ZELL food -->
+  <div class="tab-content active" id="food-f1">
+    <div class="food-grid">
+      <div class="food-card reveal"><div class="food-emoji">🏺</div><div><div class="food-type">مطعم عربي</div><div class="food-name">Ali Baba</div><div class="food-addr">📍 Zell am See وسط المدينة</div><span class="food-tag ft-halal">🟢 حلال مؤكد</span></div></div>
+      <div class="food-card reveal"><div class="food-emoji">🍚</div><div><div class="food-type">مطعم هندي / حلال</div><div class="food-name">Antonio's Basmati</div><div class="food-addr">📍 Bruckberg 1, 5700 Bruckberg, Zell am See</div><div class="food-addr" style="margin-top:.2rem">مطعم حلال مؤكد</div><span class="food-tag ft-halal">🟢 حلال مؤكد</span></div></div>
+      <div class="food-card reveal"><div class="food-emoji">🌮</div><div><div class="food-type">مطعم كباب</div><div class="food-name">Halal City Kebap</div><div class="food-addr">📍 Zell am See</div><span class="food-tag ft-halal">🟢 حلال</span></div></div>
+      <div class="food-card reveal"><div class="food-emoji">🍔</div><div><div class="food-type">برجر</div><div class="food-name">Burger Factory</div><div class="food-addr">📍 وسط Zell am See</div><div class="food-addr">يؤكدون حلال دجاج ولحم بقري</div><span class="food-tag ft-halal">🟢 حلال (تأكد)</span></div></div>
+      <div class="food-card reveal"><div class="food-emoji">🌯</div><div><div class="food-type">مطعم عربي</div><div class="food-name">مطعم بسمة</div><div class="food-addr">📍 Zell am See منطقة البحيرة</div><span class="food-tag ft-halal">🟢 حلال</span></div></div>
+      <div class="food-card reveal"><div class="food-emoji">🌊</div><div><div class="food-type">مطعم بإطلالة</div><div class="food-name">مطل زيلامسي</div><div class="food-addr">📍 على البحيرة مباشرة</div><div class="food-addr">إطلالة ساحرة – مناسب للخضروات</div><span class="food-tag ft-arab">🔵 خيارات نباتية</span></div></div>
+      <div class="food-card reveal"><div class="food-emoji">🥙</div><div><div class="food-type">شاورما وفرايز</div><div class="food-name">MMK</div><div class="food-addr">📍 Zell am See</div><span class="food-tag ft-halal">🟢 حلال</span></div></div>
+      <div class="food-card reveal"><div class="food-emoji">🧇</div><div><div class="food-type">مطعم وافل</div><div class="food-name">Waffle House</div><div class="food-addr">📍 Zell am See وسط</div><span class="food-tag ft-arab">🔵 نباتي آمن</span></div></div>
+    </div>
+  </div>
+
+  <!-- VIENNA food -->
+  <div class="tab-content" id="food-f2">
+    <div class="food-grid">
+      <div class="food-card reveal"><div class="food-emoji">🌿</div><div><div class="food-type">مطعم لبناني</div><div class="food-name">Al Zaytouna</div><div class="food-addr">📍 Vienna – مطبخ لبناني أصيل</div><span class="food-tag ft-halal">🟢 حلال</span></div></div>
+      <div class="food-card reveal"><div class="food-emoji">🥙</div><div><div class="food-type">مطعم تركي</div><div class="food-name">Xtanbul Restaurant</div><div class="food-addr">📍 Vienna – مطبخ تركي مميز</div><span class="food-tag ft-halal">🟢 حلال</span></div></div>
+      <div class="food-card reveal"><div class="food-emoji">🍔</div><div><div class="food-type">برجر حلال</div><div class="food-name">Arizona Burger & Bar</div><div class="food-addr">📍 Landstraßer Hauptstraße 103, 1030 Wien</div><span class="food-tag ft-halal">🟢 حلال</span></div></div>
+      <div class="food-card reveal"><div class="food-emoji">🌯</div><div><div class="food-type">مطعم إيراني</div><div class="food-name">Nayeb</div><div class="food-addr">📍 Vienna</div><span class="food-tag ft-halal">🟢 حلال</span></div></div>
+      <div class="food-card reveal"><div class="food-emoji">🍜</div><div><div class="food-type">مطعم آسيوي</div><div class="food-name">Nam Nam</div><div class="food-addr">📍 Vienna – أكل آسيوي حلال</div><span class="food-tag ft-halal">🟢 حلال</span></div></div>
+      <div class="food-card reveal"><div class="food-emoji">🇮🇩</div><div><div class="food-type">مطعم إندونيسي</div><div class="food-name">Warung Salam</div><div class="food-addr">📍 Jägerstraße 26/4, 1200 Wien</div><span class="food-tag ft-halal">🟢 حلال</span></div></div>
+      <div class="food-card reveal"><div class="food-emoji">🍽</div><div><div class="food-type">مطعم متوسطي</div><div class="food-name">Peace Kitchen</div><div class="food-addr">📍 منطقة Margareten, Vienna</div><span class="food-tag ft-halal">🟢 حلال</span></div></div>
+      <div class="food-card reveal"><div class="food-emoji">☕</div><div><div class="food-type">كافيه تاريخي</div><div class="food-name">Café Central</div><div class="food-addr">📍 Herrengasse 14, 1010 Wien</div><div class="food-addr">قهوة فيينا التقليدية – UNESCO تراث</div><span class="food-tag ft-arab">☕ تراثي</span></div></div>
+    </div>
+  </div>
+
+  <!-- GROCERIES -->
+  <div class="tab-content" id="food-f3">
+    <div class="food-grid">
+      <div class="food-card reveal"><div class="food-emoji">🥩</div><div><div class="food-type">بقالة حلال – زيلامسي</div><div class="food-name">آدم للحوم والدجاج</div><div class="food-addr">📍 Zell am See – لحوم طازجة حلال</div><span class="food-tag ft-halal">🟢 حلال مؤكد</span></div></div>
+      <div class="food-card reveal"><div class="food-emoji">🌙</div><div><div class="food-type">بقالة عربية – زيلامسي</div><div class="food-name">علاء الدين</div><div class="food-addr">📍 Zell am See – منتجات عربية وشرقية</div><span class="food-tag ft-arab">🔵 عربية</span></div></div>
+      <div class="food-card reveal"><div class="food-emoji">🛒</div><div><div class="food-type">سوبرماركت كبير</div><div class="food-name">Maxi Markt</div><div class="food-addr">📍 متوفر في المنطقة – تسوق عام</div><span class="food-tag ft-shop">🟡 عام</span></div></div>
+      <div class="food-card reveal"><div class="food-emoji">🌊</div><div><div class="food-type">بقالة + مطعم</div><div class="food-name">مطعم الخليج</div><div class="food-addr">📍 Zell am See – فيه قسم بقالة عربية</div><span class="food-tag ft-halal">🟢 حلال</span></div></div>
+      <div class="food-card reveal"><div class="food-emoji">🏪</div><div><div class="food-type">سوبرماركت – فيينا</div><div class="food-name">BILLA / SPAR</div><div class="food-addr">📍 في كل مكان في فيينا</div><span class="food-tag ft-shop">🟡 عام</span></div></div>
+      <div class="food-card reveal"><div class="food-emoji">🥗</div><div><div class="food-type">نصيحة مهمة</div><div class="food-name">HOFER (Aldi)</div><div class="food-addr">الأرخص في النمسا – للمستلزمات اليومية</div><span class="food-tag ft-shop">💰 وفير</span></div></div>
+    </div>
+    <div class="note-box reveal" style="margin-top:1.2rem"><strong>💡 نصيحة:</strong> اشتري الفواكه والخضروات والمشروبات من HOFER أو BILLA – أسعارها أقل بكثير من محلات التحاضر. بطاقة الصيف قد تشمل مواصلات للأسواق.</div>
+  </div>
+
+</div>
+</div>
+<hr class="sec-divider">
+
+<!-- ======================================================
+     PACKING
+====================================================== -->
+<div id="sec-packing" class="sec-wrap">
+<div class="page">
+  <div class="sec-header reveal">
+    <div class="sec-eyebrow">تجهيز الحقيبة</div>
+    <div class="sec-title">قائمة <em>الأمتعة</em></div>
+    <div class="sec-rule"></div>
+  </div>
+  <div style="font-size:.82rem;color:var(--ink3);margin-bottom:1.5rem">اضغط/ي على الغرض لتشطيبه ✓</div>
+
+  <div class="pack-section reveal">
+    <div class="pack-section-title">🍳 مستلزمات الطبخ (من عُمان)</div>
+    <div class="pack-grid" id="p1">
+      <div class="pack-item" onclick="tog(this)"><div class="pcb"></div>بهارات كاملة</div>
+      <div class="pack-item" onclick="tog(this)"><div class="pcb"></div>عيش (أرز)</div>
+      <div class="pack-item" onclick="tog(this)"><div class="pcb"></div>خضروات مجففة</div>
+      <div class="pack-item" onclick="tog(this)"><div class="pcb"></div>عدة القهوة</div>
+      <div class="pack-item" onclick="tog(this)"><div class="pcb"></div>بخور وفحم</div>
+      <div class="pack-item" onclick="tog(this)"><div class="pcb"></div>أدوات طبخ</div>
+      <div class="pack-item" onclick="tog(this)"><div class="pcb"></div>زيت طبخ</div>
+      <div class="pack-item" onclick="tog(this)"><div class="pcb"></div>ملح وبهارات</div>
+    </div>
+  </div>
+
+  <div class="pack-section reveal">
+    <div class="pack-section-title">👕 ملابس</div>
+    <div class="pack-grid">
+      <div class="pack-item" onclick="tog(this)"><div class="pcb"></div>ملابس صيفية خفيفة</div>
+      <div class="pack-item" onclick="tog(this)"><div class="pcb"></div>جاكيت للجبال</div>
+      <div class="pack-item" onclick="tog(this)"><div class="pcb"></div>حذاء مشي جبلي</div>
+      <div class="pack-item" onclick="tog(this)"><div class="pcb"></div>شنطة ظهر يومية</div>
+      <div class="pack-item" onclick="tog(this)"><div class="pcb"></div>لباس سباحة</div>
+      <div class="pack-item" onclick="tog(this)"><div class="pcb"></div>مناشف خفيفة</div>
+    </div>
+  </div>
+
+  <div class="pack-section reveal">
+    <div class="pack-section-title">📱 إلكترونيات وأساسيات</div>
+    <div class="pack-grid">
+      <div class="pack-item" onclick="tog(this)"><div class="pcb"></div>جواز السفر ✈️</div>
+      <div class="pack-item" onclick="tog(this)"><div class="pcb"></div>وثائق الحجوزات</div>
+      <div class="pack-item" onclick="tog(this)"><div class="pcb"></div>تأمين السفر</div>
+      <div class="pack-item" onclick="tog(this)"><div class="pcb"></div>شاحن هاتف</div>
+      <div class="pack-item" onclick="tog(this)"><div class="pcb"></div>محول أوروبي 🔌</div>
+      <div class="pack-item" onclick="tog(this)"><div class="pcb"></div>باور بنك</div>
+      <div class="pack-item" onclick="tog(this)"><div class="pcb"></div>سماعات</div>
+      <div class="pack-item" onclick="tog(this)"><div class="pcb"></div>كاميرا</div>
+    </div>
+  </div>
+
+  <div class="pack-section reveal">
+    <div class="pack-section-title">🌞 للخارج والطبيعة</div>
+    <div class="pack-grid">
+      <div class="pack-item" onclick="tog(this)"><div class="pcb"></div>نظارة شمسية</div>
+      <div class="pack-item" onclick="tog(this)"><div class="pcb"></div>واقي شمس SPF 50</div>
+      <div class="pack-item" onclick="tog(this)"><div class="pcb"></div>كريم للثلج</div>
+      <div class="pack-item" onclick="tog(this)"><div class="pcb"></div>قبعة صيفية</div>
+      <div class="pack-item" onclick="tog(this)"><div class="pcb"></div>مظلة خفيفة</div>
+      <div class="pack-item" onclick="tog(this)"><div class="pcb"></div>قفازات خفيفة</div>
+    </div>
+  </div>
+
+</div>
+</div>
+<hr class="sec-divider">
+
+<!-- ======================================================
+     ENVELOPES
+====================================================== -->
+<div class="sec-wrap">
+<div class="page">
+  <div class="sec-header reveal">
+    <div class="sec-eyebrow">تنظيم المال</div>
+    <div class="sec-title">الأظرف <em>المالية</em></div>
+    <div class="sec-rule"></div>
+  </div>
+  <div class="env-grid">
+    <div class="env-card c1 reveal"><div class="env-icon">✈️</div><div class="env-lbl">طيران + تأشيرة</div><div class="env-amt">~225 ر.ع</div><div class="env-sub">لكل شخص | محجوز ✓</div></div>
+    <div class="env-card c2 reveal"><div class="env-icon">🏨</div><div class="env-lbl">الفنادق</div><div class="env-amt">235 ر.ع</div><div class="env-sub">لكل شخص | محجوز ✓</div></div>
+    <div class="env-card c3 reveal"><div class="env-icon">🚂</div><div class="env-lbl">مواصلات قطارات</div><div class="env-amt">~56 ر.ع</div><div class="env-sub">لكل شخص | احجزي الآن</div></div>
+    <div class="env-card c4 reveal"><div class="env-icon">🍽</div><div class="env-lbl">أكل وترفيه</div><div class="env-amt">~283 ر.ع</div><div class="env-sub">لكل شخص | يومي</div></div>
+  </div>
+</div>
+</div>
+<hr class="sec-divider">
+
+<!-- ======================================================
+     TASKS
+====================================================== -->
+<div id="sec-tasks" class="sec-wrap">
+<div class="page">
+  <div class="sec-header reveal">
+    <div class="sec-eyebrow">أولويات عاجلة</div>
+    <div class="sec-title">قائمة <em>المهام</em></div>
+    <div class="sec-rule"></div>
+  </div>
+
+  <div class="tasks-list" id="tasksList">
+    <div class="task-item reveal" onclick="doneTask(this)"><div class="task-cb"></div><div class="task-text"><span class="task-urgency urg-high">🔴 عاجل</span> احجزي قطار فيينا → زيلامسي (25 يونيو) على <a href="https://www.oebb.at" target="_blank" style="color:var(--glacier)">oebb.at</a></div></div>
+    <div class="task-item reveal" onclick="doneTask(this)"><div class="task-cb"></div><div class="task-text"><span class="task-urgency urg-high">🔴 عاجل</span> احجزي قطار زيلامسي → هالشتات ورحلة سالزبورغ</div></div>
+    <div class="task-item reveal" onclick="doneTask(this)"><div class="task-cb"></div><div class="task-text"><span class="task-urgency urg-high">🔴 عاجل</span> احجزي قطار زيلامسي → فيينا (30 يونيو)</div></div>
+    <div class="task-item reveal" onclick="doneTask(this)"><div class="task-cb"></div><div class="task-text"><span class="task-urgency urg-high">🔴 عاجل</span> تقديم طلب تأشيرة شنغن (إذا لم تُقدَّم)</div></div>
+    <div class="task-item reveal" onclick="doneTask(this)"><div class="task-cb"></div><div class="task-text"><span class="task-urgency urg-med">🟡 مهم</span> راسلي Plaza Wien وGarner Hotel: سؤال عن التكييف والشطاف</div></div>
+    <div class="task-item reveal" onclick="doneTask(this)"><div class="task-cb"></div><div class="task-text"><span class="task-urgency urg-med">🟡 مهم</span> تأكد رصيد البطاقة ••••4570 قبل 14 يونيو (خصم Garner Hotel)</div></div>
+    <div class="task-item reveal" onclick="doneTask(this)"><div class="task-cb"></div><div class="task-text"><span class="task-urgency urg-med">🟡 مهم</span> شراء تأمين سفر شامل للثلاثة</div></div>
+    <div class="task-item reveal" onclick="doneTask(this)"><div class="task-cb"></div><div class="task-text"><span class="task-urgency urg-med">🟡 مهم</span> تأكيد بطاقة الصيف مع Falcon Suites</div></div>
+    <div class="task-item reveal" onclick="doneTask(this)"><div class="task-cb"></div><div class="task-text"><span class="task-urgency urg-low">🟢 مخطط</span> تحميل تطبيقات: ÖBB + Wiener Linien + Google Maps (offline)</div></div>
+    <div class="task-item reveal" onclick="doneTask(this)"><div class="task-cb"></div><div class="task-text"><span class="task-urgency urg-low">🟢 مخطط</span> تحضير يورو كاش (بعض الأماكن لا تقبل بطاقة)</div></div>
+    <div class="task-item reveal" onclick="doneTask(this)"><div class="task-cb"></div><div class="task-text"><span class="task-urgency urg-low">🟢 مخطط</span> شراء مستلزمات الطبخ يوم السبت 27 يونيو</div></div>
+    <div class="task-item reveal" onclick="doneTask(this)"><div class="task-cb"></div><div class="task-text"><span class="task-urgency urg-low">🟢 مخطط</span> حجز زحليقة سالفدين مسبقاً عبر الإنترنت</div></div>
+  </div>
+
+  <div class="info-box reveal" style="margin-top:2rem">
+    <div class="info-box-title">📧 نص الإيميل للفنادق – انسخيه</div>
+    <div class="email-block">Dear Hotel Team,
+
+I have a reservation under RUQAIYA OFI for [dates].
+Booking Reference: [CONFIRMATION NUMBER]
+
+Please confirm:
+1. Is there air conditioning in the room/apartment?
+2. Is there a bidet (shattaf) in the bathroom?
+
+Thank you very much.
+Best regards,
+Ruqaiya Al Ofi</div>
+  </div>
+
+  <div style="margin-top:1.5rem" class="reveal">
+    <div class="info-box-title" style="font-size:.85rem;font-weight:700;color:var(--alpine);margin-bottom:1rem">🛡 التأمين – لا تنسي!</div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:1rem">
+      <div style="background:#fff8e1;border:1px solid #ffcc80;border-radius:12px;padding:1.1rem;text-align:center"><div style="font-size:2rem;margin-bottom:.4rem">🌍</div><div style="font-weight:700;color:var(--ink)">تأمين السفر</div><div style="font-size:.75rem;color:var(--ink3);margin-top:.2rem">طبي + إلغاء رحلة</div><div style="font-size:.7rem;background:#fce4ec;color:#c62828;padding:.15rem .6rem;border-radius:50px;margin-top:.5rem;display:inline-block">⚠️ اشتريه الآن</div></div>
+      <div style="background:#fff8e1;border:1px solid #ffcc80;border-radius:12px;padding:1.1rem;text-align:center"><div style="font-size:2rem;margin-bottom:.4rem">🧳</div><div style="font-weight:700;color:var(--ink)">تأمين الحقائب</div><div style="font-size:.75rem;color:var(--ink3);margin-top:.2rem">ضياع أو تلف</div><div style="font-size:.7rem;background:#fce4ec;color:#c62828;padding:.15rem .6rem;border-radius:50px;margin-top:.5rem;display:inline-block">⚠️ اشتريه الآن</div></div>
+      <div style="background:#f0f7f0;border:1px solid #a5d6a7;border-radius:12px;padding:1.1rem;text-align:center"><div style="font-size:2rem;margin-bottom:.4rem">✅</div><div style="font-weight:700;color:var(--ink)">Tune Insurance</div><div style="font-size:.75rem;color:var(--ink3);margin-top:.2rem">رقية ووعَد: مشمول من سلام إير</div><div style="font-size:.7rem;background:#e8f5e9;color:#2e7d32;padding:.15rem .6rem;border-radius:50px;margin-top:.5rem;display:inline-block">✓ محجوز</div></div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="f-logo">🇦🇹 النمسا 2026</div>
+  <p>فيينا · كابرون · هالشتات · سالزبورغ</p>
+  <p style="margin-top:.5rem">✈️ <strong style="color:#fff">24 يونيو – 3 يوليو 2026</strong></p>
+  <p style="margin-top:1rem;font-size:.75rem;opacity:.4">رقية · إبراهيم · وعَد</p>
+</footer>
+
+<!-- Scroll-up -->
+<button id="scrollUp" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+<script>
+/* ── TABS ── */
+function switchTab(group, id, btn) {
+  document.querySelectorAll('[id^="'+group+'-"]').forEach(t => t.classList.remove('active'));
+  document.getElementById(group+'-'+id).classList.add('active');
+  btn.closest('.tab-bar').querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+}
+
+/* ── CHECKLIST ── */
+function tog(el) {
+  el.classList.toggle('done');
+  el.querySelector('.pcb').textContent = el.classList.contains('done') ? '✓' : '';
+}
+
+/* ── TASKS ── */
+function doneTask(el) {
+  el.classList.toggle('done');
+  el.querySelector('.task-cb').textContent = el.classList.contains('done') ? '✓' : '';
+}
+
+/* ── SCROLL REVEAL ── */
+const revObs = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('visible');
+      revObs.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.05, rootMargin: '0px 0px -40px 0px' });
+
+document.querySelectorAll('.reveal').forEach((el, i) => {
+  el.style.transitionDelay = (i % 6) * 0.07 + 's';
+  revObs.observe(el);
+});
+
+/* ── SCROLL UP BUTTON ── */
+window.addEventListener('scroll', () => {
+  const btn = document.getElementById('scrollUp');
+  if (window.scrollY > 400) btn.classList.add('show');
+  else btn.classList.remove('show');
+});
+</script>
+</body>
+</html>
