@@ -1,1643 +1,1047 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
 <title>رحلة النمسا 2026 🇦🇹</title>
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;900&family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&family=Cormorant+Garamond:wght@500;700&display=swap" rel="stylesheet">
+
 <style>
-:root {
-  --bg: #f5f2ed;
-  --bg2: #ede9e2;
-  --card: #ffffff;
-  --ink: #1a1612;
-  --ink2: #4a443c;
-  --ink3: #8a7f74;
-  --alpine: #2d5a3d;
-  --alpine2: #4a8c60;
-  --glacier: #2b7ba8;
-  --glacier2: #4fa3d1;
-  --gold: #b8860b;
-  --gold2: #d4a017;
-  --rose: #c0392b;
-  --warm: #e8602c;
-  --border: rgba(26,22,18,0.1);
-  --shadow: 0 2px 20px rgba(26,22,18,0.08);
-  --shadow-lg: 0 8px 40px rgba(26,22,18,0.12);
-  --r: 16px;
+
+:root{
+  --bg:#f6f2ed;
+  --bg2:#efe8df;
+  --card:#ffffff;
+  --text:#171412;
+  --text2:#5b534d;
+  --text3:#94877b;
+
+  --green:#284d3a;
+  --green2:#4e8265;
+
+  --blue:#4678a5;
+  --gold:#c59a44;
+
+  --shadow:0 10px 35px rgba(0,0,0,.08);
+  --shadow2:0 18px 45px rgba(0,0,0,.12);
+
+  --radius:26px;
 }
 
-*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
-html { scroll-behavior:smooth; font-size:16px; }
-body { font-family:'Cairo',sans-serif; background:var(--bg); color:var(--ink); overflow-x:hidden; }
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
 
-::-webkit-scrollbar { width:6px; }
-::-webkit-scrollbar-track { background:var(--bg2); }
-::-webkit-scrollbar-thumb { background:var(--alpine); border-radius:3px; }
+html{
+  scroll-behavior:smooth;
+}
 
-/* ─── HERO ─── */
-.hero {
-  min-height:100vh; position:relative; overflow:hidden;
-  background: linear-gradient(160deg, #1a2f1e 0%, #0f2030 40%, #1a1210 100%);
-  display:flex; align-items:center; justify-content:center;
+body{
+  background:linear-gradient(to bottom,#f7f3ee,#efe8df);
+  color:var(--text);
+  font-family:'Tajawal',sans-serif;
+  overflow-x:hidden;
 }
-.hero-img {
-  position:absolute; inset:0; width:100%; height:100%; object-fit:cover;
-  opacity:.25; filter:saturate(0.8);
+
+/* scrollbar */
+
+::-webkit-scrollbar{
+  width:7px;
 }
-.hero-overlay {
-  position:absolute; inset:0;
-  background: linear-gradient(to bottom, rgba(15,32,48,0.4) 0%, rgba(26,22,18,0.7) 100%);
+
+::-webkit-scrollbar-thumb{
+  background:var(--green);
+  border-radius:20px;
 }
-.hero-content { position:relative; z-index:2; text-align:center; padding:2rem; max-width:800px; }
-.hero-eyebrow {
-  display:inline-flex; align-items:center; gap:.6rem;
-  background:rgba(255,255,255,.1); border:1px solid rgba(255,255,255,.2);
+
+::-webkit-scrollbar-track{
+  background:#ddd;
+}
+
+/* hero */
+
+.hero{
+  min-height:100vh;
+  position:relative;
+  overflow:hidden;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+}
+
+.hero::before{
+  content:'';
+  position:absolute;
+  inset:0;
+  background:
+  linear-gradient(to bottom,rgba(0,0,0,.45),rgba(0,0,0,.55)),
+  url('https://images.unsplash.com/photo-1508264165352-258859e62245?q=80&w=1600&auto=format&fit=crop') center/cover;
+  transform:scale(1.05);
+}
+
+.hero-content{
+  position:relative;
+  z-index:2;
+  max-width:900px;
+  padding:2rem;
+  animation:fadeUp 1s ease;
+}
+
+.hero-small{
+  display:inline-block;
+  padding:.7rem 1.5rem;
+  border-radius:999px;
   backdrop-filter:blur(10px);
-  padding:.5rem 1.4rem; border-radius:50px; margin-bottom:2rem;
-  font-size:.78rem; letter-spacing:3px; color:rgba(255,255,255,.8);
-  text-transform:uppercase;
-  animation: fadeUp .8s ease both;
-}
-.hero h1 {
-  font-family:'Playfair Display',serif;
-  font-size: clamp(2.8rem, 9vw, 6.5rem);
-  font-weight:900; line-height:1.05;
+  background:rgba(255,255,255,.15);
+  border:1px solid rgba(255,255,255,.25);
   color:#fff;
-  animation: fadeUp 1s ease .15s both;
-}
-.hero h1 em { font-style:italic; color:#a8d4b8; }
-.hero-tagline {
-  font-size:1.1rem; color:rgba(255,255,255,.65);
-  margin:1.2rem 0 2.5rem;
-  animation: fadeUp 1s ease .3s both;
-}
-.hero-pills {
-  display:flex; gap:.7rem; justify-content:center; flex-wrap:wrap;
-  animation: fadeUp 1s ease .45s both;
-}
-.hpill {
-  background:rgba(255,255,255,.12); border:1px solid rgba(255,255,255,.2);
-  backdrop-filter:blur(8px);
-  padding:.55rem 1.2rem; border-radius:50px; font-size:.82rem; color:#fff;
-}
-.hpill strong { color:#a8d4b8; }
-
-/* ─── NAV ─── */
-.nav-wrap {
-  position:sticky; top:0; z-index:200;
-  background:rgba(245,242,237,0.92); backdrop-filter:blur(20px) saturate(1.5);
-  border-bottom:1px solid var(--border);
-}
-.nav-inner {
-  max-width:1200px; margin:0 auto;
-  padding:.6rem 1.5rem;
-  display:flex; align-items:center; gap:.3rem; justify-content:center; flex-wrap:wrap;
-}
-.nav-inner a {
-  color:var(--ink2); text-decoration:none; font-size:.78rem; font-weight:600;
-  padding:.4rem .9rem; border-radius:50px;
-  transition:all .25s; white-space:nowrap;
-}
-.nav-inner a:hover { background:var(--alpine); color:#fff; }
-
-/* ─── PAGE LAYOUT ─── */
-.page { max-width:1200px; margin:0 auto; padding:0 1.5rem; }
-
-/* ─── SECTION HEADER ─── */
-.sec-header { margin-bottom:2.5rem; }
-.sec-eyebrow {
-  font-size:.7rem; font-weight:700; letter-spacing:3px; text-transform:uppercase;
-  color:var(--alpine); margin-bottom:.5rem;
-}
-.sec-title {
-  font-family:'Playfair Display',serif;
-  font-size:clamp(1.8rem,3.5vw,2.8rem);
-  font-weight:700; color:var(--ink); line-height:1.2;
-}
-.sec-title em { font-style:italic; color:var(--glacier); }
-.sec-rule { width:48px; height:3px; background:var(--alpine); border-radius:2px; margin-top:.8rem; }
-
-/* ─── TABS ─── */
-.tab-bar {
-  display:flex; gap:.5rem; flex-wrap:wrap;
+  font-size:.82rem;
+  letter-spacing:2px;
   margin-bottom:2rem;
-  background:var(--bg2); padding:.4rem; border-radius:50px; width:fit-content;
 }
-.tab-btn {
-  padding:.45rem 1.2rem; border-radius:50px; border:none; cursor:pointer;
-  font-family:'Cairo',sans-serif; font-size:.82rem; font-weight:600;
-  background:transparent; color:var(--ink2); transition:all .25s;
-}
-.tab-btn.active { background:#fff; color:var(--alpine); box-shadow:var(--shadow); }
-.tab-content { display:none; animation:fadeIn .4s ease; }
-.tab-content.active { display:block; }
 
-/* ─── FLIGHT SECTION ─── */
-.flight-ticket {
-  background:var(--card); border-radius:20px; overflow:hidden;
-  box-shadow:var(--shadow-lg); margin-bottom:1.5rem;
-  border:1px solid var(--border);
+.hero h1{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(4rem,11vw,7rem);
+  line-height:.95;
+  color:#fff;
+  font-weight:700;
 }
-.ft-header {
-  background:linear-gradient(135deg,var(--alpine) 0%,var(--glacier) 100%);
-  padding:1rem 1.8rem;
-  display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:.5rem;
-}
-.ft-airline { display:flex; align-items:center; gap:.8rem; }
-.ft-logo { font-weight:900; font-size:1.1rem; color:#fff; letter-spacing:-.5px; }
-.ft-ref { background:rgba(255,255,255,.2); color:#fff; padding:.25rem .9rem; border-radius:50px; font-size:.78rem; font-weight:700; }
-.ft-body { padding:1.8rem; }
-.ft-route {
-  display:grid; grid-template-columns:1fr auto 1fr;
-  align-items:center; gap:1rem; margin-bottom:1.5rem;
-}
-.ft-city { text-align:center; }
-.ft-code { font-family:'Playfair Display',serif; font-size:2.2rem; font-weight:700; color:var(--ink); }
-.ft-cname { font-size:.78rem; color:var(--ink3); margin-top:.2rem; }
-.ft-time { font-size:1.4rem; font-weight:700; color:var(--alpine); margin-top:.3rem; }
-.ft-mid { text-align:center; }
-.ft-arrow { display:flex; align-items:center; gap:.5rem; color:var(--ink3); font-size:.78rem; }
-.ft-arrow::before,.ft-arrow::after { content:''; flex:1; height:1px; background:var(--border); }
-.ft-dur { font-size:.85rem; color:var(--ink3); margin-top:.3rem; }
-.ft-direct { font-size:.75rem; color:var(--alpine); font-weight:700; margin-top:.2rem; }
-.ft-date { text-align:center; background:var(--bg2); border-radius:10px; padding:.6rem 1rem; margin-bottom:1.2rem; font-size:.85rem; font-weight:700; color:var(--ink); }
-.pax-row { display:grid; grid-template-columns:repeat(auto-fill,minmax(220px,1fr)); gap:.8rem; }
-.pax-card {
-  background:var(--bg); border:1px solid var(--border); border-radius:12px; padding:.9rem;
-  display:flex; gap:.7rem; align-items:center;
-}
-.pax-icon { font-size:1.6rem; flex-shrink:0; }
-.pax-name { font-size:.85rem; font-weight:700; color:var(--ink); }
-.pax-det { font-size:.73rem; color:var(--ink3); margin-top:.15rem; }
-.pax-seat {
-  display:inline-block; background:var(--alpine); color:#fff;
-  padding:.15rem .65rem; border-radius:50px; font-size:.7rem; font-weight:700; margin-top:.3rem;
-}
-.ft-total {
-  background:linear-gradient(135deg,var(--alpine) 0%,var(--alpine2) 100%);
-  border-radius:12px; padding:1rem 1.5rem;
-  display:flex; justify-content:space-between; align-items:center;
-  margin-top:1.5rem; flex-wrap:wrap; gap:.5rem;
-}
-.ft-total-lbl { font-size:.85rem; color:rgba(255,255,255,.8); }
-.ft-total-amt { font-size:1.5rem; font-weight:900; color:#fff; }
 
-/* ─── HOTELS ─── */
-.hotels-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(320px,1fr)); gap:1.5rem; }
-.hotel-card {
-  background:var(--card); border-radius:var(--r); overflow:hidden;
-  box-shadow:var(--shadow); border:1px solid var(--border);
-  transition:transform .3s, box-shadow .3s;
+.hero h1 span{
+  color:#d6e7da;
+  font-style:italic;
 }
-.hotel-card:hover { transform:translateY(-4px); box-shadow:var(--shadow-lg); }
-.hc-img { width:100%; height:200px; object-fit:cover; display:block; }
-.hc-body { padding:1.4rem; }
-.hc-city-tag {
-  display:inline-block; background:var(--alpine); color:#fff;
-  padding:.2rem .8rem; border-radius:50px; font-size:.7rem; font-weight:700;
-  margin-bottom:.8rem;
-}
-.hc-name { font-size:1.1rem; font-weight:700; color:var(--ink); margin-bottom:.4rem; }
-.hc-addr { font-size:.78rem; color:var(--ink3); margin-bottom:.9rem; display:flex; gap:.3rem; align-items:flex-start; }
-.hc-meta { display:flex; gap:.4rem; flex-wrap:wrap; margin-bottom:.9rem; }
-.hbadge {
-  font-size:.72rem; font-weight:600; padding:.22rem .7rem; border-radius:50px;
-  border:1px solid;
-}
-.hb-g { background:#e8f5e9; color:#2e7d32; border-color:#a5d6a7; }
-.hb-b { background:#e3f2fd; color:#1565c0; border-color:#90caf9; }
-.hb-o { background:#fff8e1; color:#e65100; border-color:#ffcc80; }
-.hc-amenities { display:flex; gap:.3rem; flex-wrap:wrap; margin-bottom:1rem; }
-.amen {
-  font-size:.68rem; padding:.18rem .6rem; border-radius:50px;
-  background:var(--bg2); color:var(--ink2); border:1px solid var(--border);
-}
-.amen.yes { background:#e8f5e9; color:#2e7d32; border-color:#a5d6a7; }
-.amen.ask { background:#fff3e0; color:#e65100; border-color:#ffcc80; }
-.hc-confirm {
-  display:flex; gap:.5rem; flex-wrap:wrap; padding-top:1rem;
-  border-top:1px solid var(--border);
-}
-.hc-ref { background:var(--bg2); border-radius:8px; padding:.5rem .8rem; }
-.hc-ref-lbl { font-size:.65rem; color:var(--ink3); margin-bottom:.1rem; }
-.hc-ref-val { font-size:.82rem; font-weight:700; color:var(--ink); }
-.note-box {
-  background:#fff8e1; border:1px solid #ffcc80; border-radius:10px;
-  padding:.7rem .9rem; margin-top:.9rem; font-size:.78rem; color:#5d4037; line-height:1.6;
-}
-.note-box.red { background:#fce4ec; border-color:#ef9a9a; color:#880e4f; }
-.note-box strong { color:#e65100; }
-.note-box.red strong { color:#c62828; }
 
-/* ─── ARRIVAL / MAPS ─── */
-.arrival-steps { display:flex; flex-direction:column; gap:1px; }
-.astep {
-  background:var(--card); border:1px solid var(--border);
-  border-radius:0; padding:1.2rem 1.5rem;
-  display:flex; gap:1.2rem; align-items:flex-start;
-  transition:background .2s;
+.hero p{
+  margin-top:1.5rem;
+  color:rgba(255,255,255,.8);
+  font-size:1.1rem;
+  line-height:2;
 }
-.astep:first-child { border-radius:var(--r) var(--r) 0 0; }
-.astep:last-child { border-radius:0 0 var(--r) var(--r); }
-.astep:hover { background:var(--bg2); }
-.astep-num {
-  width:36px; height:36px; border-radius:50%;
-  background:var(--alpine); color:#fff;
-  display:flex; align-items:center; justify-content:center;
-  font-size:.85rem; font-weight:700; flex-shrink:0;
-}
-.astep-content { flex:1; }
-.astep-title { font-size:.95rem; font-weight:700; color:var(--ink); margin-bottom:.3rem; }
-.astep-desc { font-size:.83rem; color:var(--ink2); line-height:1.7; }
-.astep-tags { display:flex; gap:.4rem; flex-wrap:wrap; margin-top:.5rem; }
-.atag {
-  font-size:.72rem; font-weight:600; padding:.2rem .7rem; border-radius:50px;
-  border:1px solid;
-}
-.atag-g { background:#e8f5e9; color:#2e7d32; border-color:#a5d6a7; }
-.atag-b { background:#e3f2fd; color:#1565c0; border-color:#90caf9; }
-.atag-r { background:#fce4ec; color:#c62828; border-color:#ef9a9a; }
-.atag-o { background:#fff8e1; color:#e65100; border-color:#ffcc80; }
-.map-btn {
-  display:inline-flex; align-items:center; gap:.5rem;
-  background:var(--glacier); color:#fff;
-  padding:.5rem 1.1rem; border-radius:50px;
-  text-decoration:none; font-size:.8rem; font-weight:700;
-  transition:all .25s; margin-top:.6rem;
-  box-shadow:0 2px 8px rgba(43,123,168,.3);
-}
-.map-btn:hover { background:var(--glacier2); transform:translateY(-1px); }
-.map-frame {
-  width:100%; height:380px; border:none; border-radius:var(--r);
-  box-shadow:var(--shadow); display:block; margin-top:1.2rem;
-}
-.route-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(270px,1fr)); gap:1rem; margin-top:1.5rem; }
-.route-card {
-  background:var(--card); border:1px solid var(--border); border-radius:var(--r);
-  padding:1.3rem; box-shadow:var(--shadow);
-}
-.route-card-title {
-  font-size:.9rem; font-weight:700; color:var(--alpine); margin-bottom:.8rem;
-  display:flex; align-items:center; gap:.5rem;
-}
-.rcs { font-size:.8rem; color:var(--ink2); padding:.35rem 0; border-bottom:1px solid var(--border); display:flex; gap:.5rem; line-height:1.5; }
-.rcs:last-of-type { border:none; }
-.rcs-icon { flex-shrink:0; width:18px; }
 
-/* ─── ROADMAP ─── */
-.timeline { position:relative; padding-right:2.5rem; }
-.timeline::before {
-  content:''; position:absolute; right:10px; top:0; bottom:0; width:2px;
-  background:linear-gradient(to bottom, var(--alpine), var(--glacier), var(--gold));
+.hero-pills{
+  display:flex;
+  gap:1rem;
+  justify-content:center;
+  flex-wrap:wrap;
+  margin-top:2rem;
 }
-.tl-item { display:flex; gap:1.5rem; margin-bottom:2rem; position:relative; }
-.tl-dot {
-  position:absolute; right:-2.5rem; top:1.2rem;
-  width:20px; height:20px; border-radius:50%;
-  background:var(--card); border:3px solid var(--alpine);
-  box-shadow:0 0 0 4px var(--bg);
-  z-index:2; flex-shrink:0;
+
+.hpill{
+  background:rgba(255,255,255,.12);
+  border:1px solid rgba(255,255,255,.18);
+  backdrop-filter:blur(10px);
+  color:#fff;
+  border-radius:999px;
+  padding:.75rem 1.3rem;
+  font-size:.82rem;
 }
-.tl-dot.emerald { border-color:var(--alpine2); }
-.tl-dot.gold { border-color:var(--gold); }
-.tl-dot.rose { border-color:var(--rose); }
-.tl-card {
-  flex:1; background:var(--card); border:1px solid var(--border);
-  border-radius:var(--r); padding:1.4rem; box-shadow:var(--shadow);
-  transition:transform .3s, box-shadow .3s;
+
+/* nav */
+
+.nav{
+  position:sticky;
+  top:0;
+  z-index:999;
+  background:rgba(255,255,255,.78);
+  backdrop-filter:blur(20px);
+  border-bottom:1px solid rgba(0,0,0,.06);
 }
-.tl-card:hover { transform:translateY(-2px); box-shadow:var(--shadow-lg); }
-.tl-label { font-size:.68rem; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:var(--ink3); margin-bottom:.3rem; }
-.tl-title { font-size:1.15rem; font-weight:700; color:var(--ink); margin-bottom:.4rem; }
-.tl-date {
-  display:inline-block; background:var(--bg2); border-radius:50px;
-  padding:.18rem .75rem; font-size:.75rem; font-weight:600; color:var(--ink2);
+
+.nav-inner{
+  max-width:1300px;
+  margin:auto;
+  padding:1rem;
+  display:flex;
+  gap:.7rem;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+
+.nav a{
+  text-decoration:none;
+  color:var(--text2);
+  font-weight:700;
+  padding:.7rem 1.1rem;
+  border-radius:999px;
+  transition:.25s;
+  font-size:.85rem;
+}
+
+.nav a:hover{
+  background:var(--green);
+  color:#fff;
+}
+
+/* page */
+
+.page{
+  max-width:1250px;
+  margin:auto;
+  padding:5rem 1.4rem;
+}
+
+/* section */
+
+.section-head{
+  margin-bottom:3rem;
+}
+
+.section-mini{
+  color:var(--green);
+  letter-spacing:3px;
+  font-size:.7rem;
+  font-weight:800;
   margin-bottom:.7rem;
 }
-.tl-acts { list-style:none; display:flex; flex-direction:column; gap:.3rem; }
-.tl-acts li { font-size:.83rem; color:var(--ink2); display:flex; gap:.5rem; align-items:flex-start; }
-.tl-acts li::before { content:'→'; color:var(--alpine); flex-shrink:0; font-weight:700; }
 
-/* ─── ACTIVITIES ─── */
-.act-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:1rem; }
-.act-card {
-  background:var(--card); border:1px solid var(--border); border-radius:14px;
-  overflow:hidden; box-shadow:var(--shadow);
-  transition:transform .3s, box-shadow .3s;
+.section-title{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(2.4rem,5vw,4rem);
+  line-height:1;
 }
-.act-card:hover { transform:translateY(-3px); box-shadow:var(--shadow-lg); }
-.act-card-top { padding:1.2rem; display:flex; gap:.9rem; align-items:flex-start; }
-.act-emoji { font-size:2rem; flex-shrink:0; }
-.act-name { font-size:.92rem; font-weight:700; color:var(--ink); margin-bottom:.2rem; }
-.act-price { font-size:.8rem; font-weight:600; color:var(--alpine); }
-.act-note { font-size:.72rem; color:var(--ink3); margin-top:.15rem; }
-.act-tag {
-  display:inline-block; font-size:.65rem; font-weight:700; padding:.15rem .6rem;
-  border-radius:50px; margin-top:.3rem;
-}
-.at-free { background:#e8f5e9; color:#2e7d32; }
-.at-paid { background:#fff8e1; color:#e65100; }
-.at-must { background:#fce4ec; color:#c62828; }
 
-/* ─── FOOD ─── */
-.food-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(230px,1fr)); gap:1rem; }
-.food-card {
-  background:var(--card); border:1px solid var(--border); border-radius:14px;
-  padding:1.2rem; box-shadow:var(--shadow);
-  transition:transform .3s, box-shadow .3s;
-  display:flex; gap:.9rem; align-items:flex-start;
+.section-title span{
+  color:var(--blue);
+  font-style:italic;
 }
-.food-card:hover { transform:translateY(-3px); box-shadow:var(--shadow-lg); }
-.food-emoji { font-size:2rem; flex-shrink:0; }
-.food-type { font-size:.65rem; font-weight:700; text-transform:uppercase; letter-spacing:1.5px; color:var(--ink3); margin-bottom:.2rem; }
-.food-name { font-size:.9rem; font-weight:700; color:var(--ink); }
-.food-addr { font-size:.73rem; color:var(--ink3); margin-top:.2rem; }
-.food-tag { display:inline-block; font-size:.65rem; font-weight:700; padding:.15rem .6rem; border-radius:50px; margin-top:.3rem; }
-.ft-halal { background:#e8f5e9; color:#2e7d32; }
-.ft-arab { background:#e3f2fd; color:#1565c0; }
-.ft-shop { background:#fff8e1; color:#e65100; }
 
-/* ─── PACKING CHECKLIST ─── */
-.pack-section { background:var(--card); border:1px solid var(--border); border-radius:var(--r); padding:1.5rem; margin-bottom:1.2rem; box-shadow:var(--shadow); }
-.pack-section-title { font-size:.85rem; font-weight:700; color:var(--alpine); margin-bottom:1rem; display:flex; align-items:center; gap:.4rem; }
-.pack-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(160px,1fr)); gap:.5rem; }
-.pack-item {
-  display:flex; gap:.6rem; align-items:center;
-  padding:.6rem .8rem; border-radius:9px; border:1px solid var(--border);
-  background:var(--bg); cursor:pointer; transition:all .2s;
-  font-size:.8rem; color:var(--ink2); user-select:none;
+.section-line{
+  width:70px;
+  height:4px;
+  border-radius:10px;
+  background:var(--green);
+  margin-top:1rem;
 }
-.pack-item:hover { border-color:var(--alpine); background:#f0f7f0; }
-.pack-item.done { background:#e8f5e9; border-color:#a5d6a7; color:#2e7d32; }
-.pcb {
-  width:18px; height:18px; border-radius:4px; border:2px solid var(--border);
-  flex-shrink:0; display:flex; align-items:center; justify-content:center;
-  font-size:.65rem; transition:all .2s;
-}
-.pack-item.done .pcb { background:var(--alpine2); border-color:var(--alpine2); color:#fff; }
 
-/* ─── PLAN CARDS (NEW) ─── */
-.plan-section {
-  background:var(--card); border:1px solid var(--border); border-radius:var(--r);
-  overflow:hidden; box-shadow:var(--shadow); margin-bottom:1.5rem;
-}
-.plan-header {
-  padding:1rem 1.5rem;
-  display:flex; align-items:center; gap:.8rem;
-  border-bottom:1px solid var(--border);
-}
-.plan-header-icon { font-size:1.8rem; }
-.plan-header-title { font-size:1rem; font-weight:700; color:var(--ink); }
-.plan-header-sub { font-size:.78rem; color:var(--ink3); margin-top:.1rem; }
-.plan-steps { padding:1.2rem 1.5rem; display:flex; flex-direction:column; gap:.8rem; }
-.plan-step {
-  display:grid; grid-template-columns:auto 1fr auto;
-  gap:.9rem; align-items:start;
-  padding:.9rem; background:var(--bg); border-radius:12px;
-  border:1px solid var(--border);
-}
-.plan-step-num {
-  width:30px; height:30px; border-radius:50%;
-  background:var(--alpine); color:#fff;
-  display:flex; align-items:center; justify-content:center;
-  font-size:.78rem; font-weight:700; flex-shrink:0;
-}
-.plan-step-body {}
-.plan-step-title { font-size:.88rem; font-weight:700; color:var(--ink); margin-bottom:.2rem; }
-.plan-step-desc { font-size:.78rem; color:var(--ink2); line-height:1.65; }
-.plan-step-badge {
-  font-size:.68rem; font-weight:700; padding:.25rem .65rem; border-radius:50px;
-  white-space:nowrap; align-self:start;
-}
-.psb-green { background:#e8f5e9; color:#2e7d32; border:1px solid #a5d6a7; }
-.psb-blue { background:#e3f2fd; color:#1565c0; border:1px solid #90caf9; }
-.psb-orange { background:#fff8e1; color:#e65100; border:1px solid #ffcc80; }
-.psb-red { background:#fce4ec; color:#c62828; border:1px solid #ef9a9a; }
+/* cards */
 
-.plan-tip {
-  margin:0 1.5rem 1.2rem;
-  background:#e8f4f8; border:1px solid #b3d9ee; border-radius:10px;
-  padding:.75rem 1rem; font-size:.8rem; color:#1565c0; line-height:1.6;
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+  gap:2rem;
 }
-.plan-tip strong { color:#0d47a1; }
 
-.plan-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:1.5rem; }
+/* hotel */
 
-/* time badge */
-.time-badge {
-  display:inline-flex; align-items:center; gap:.35rem;
-  background:var(--alpine); color:#fff;
-  padding:.2rem .75rem; border-radius:50px; font-size:.72rem; font-weight:700;
+.hotel{
+  background:var(--card);
+  border-radius:var(--radius);
+  overflow:hidden;
+  box-shadow:var(--shadow);
+  transition:.35s;
+  border:1px solid rgba(0,0,0,.05);
+}
+
+.hotel:hover{
+  transform:translateY(-7px);
+  box-shadow:var(--shadow2);
+}
+
+.hotel-img{
+  width:100%;
+  height:260px;
+  object-fit:cover;
+}
+
+.hotel-body{
+  padding:1.6rem;
+}
+
+.hotel-tag{
+  display:inline-block;
+  background:var(--green);
+  color:#fff;
+  border-radius:999px;
+  padding:.35rem .9rem;
+  font-size:.7rem;
+  font-weight:700;
+  margin-bottom:1rem;
+}
+
+.hotel h3{
+  font-size:1.35rem;
+  margin-bottom:.6rem;
+}
+
+.hotel-info{
+  color:var(--text3);
+  line-height:2;
+  font-size:.84rem;
+}
+
+.hotel-badges{
+  display:flex;
+  flex-wrap:wrap;
+  gap:.5rem;
+  margin-top:1rem;
+}
+
+.badge{
+  background:#eef6f0;
+  color:var(--green);
+  border-radius:999px;
+  padding:.45rem .8rem;
+  font-size:.7rem;
+  font-weight:700;
+}
+
+.note{
+  margin-top:1.3rem;
+  background:#fff8ea;
+  border:1px solid #f0d28d;
+  border-radius:18px;
+  padding:1rem;
+  line-height:1.9;
+  color:#755217;
+  font-size:.82rem;
+}
+
+/* flight */
+
+.flight{
+  background:#fff;
+  border-radius:35px;
+  overflow:hidden;
+  box-shadow:var(--shadow2);
+  margin-bottom:2rem;
+}
+
+.flight-top{
+  background:linear-gradient(135deg,var(--green),#0d2231);
+  padding:1.4rem 1.8rem;
+  color:#fff;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:1rem;
+}
+
+.flight-body{
+  padding:2rem;
+}
+
+.route{
+  display:grid;
+  grid-template-columns:1fr auto 1fr;
+  align-items:center;
+  gap:2rem;
+}
+
+.air{
+  text-align:center;
+}
+
+.air-code{
+  font-size:3rem;
+  font-weight:900;
+}
+
+.air-city{
+  color:var(--text3);
+}
+
+.air-time{
+  margin-top:.4rem;
+  color:var(--green);
+  font-size:1.6rem;
+  font-weight:900;
+}
+
+.route-middle{
+  text-align:center;
+}
+
+.route-middle div{
+  color:var(--text3);
+}
+
+/* activity */
+
+.activities{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:1.2rem;
+}
+
+.activity{
+  background:#fff;
+  border-radius:24px;
+  padding:1.4rem;
+  box-shadow:var(--shadow);
+  transition:.3s;
+}
+
+.activity:hover{
+  transform:translateY(-6px);
+}
+
+.activity .emoji{
+  font-size:2.5rem;
+  margin-bottom:1rem;
+}
+
+.activity h4{
   margin-bottom:.5rem;
+  font-size:1rem;
 }
 
-/* route visual */
-.route-visual {
-  display:flex; align-items:center; gap:.5rem;
-  background:var(--bg2); border-radius:10px; padding:.6rem 1rem;
-  margin:.5rem 0; font-size:.82rem; font-weight:600; color:var(--ink);
-}
-.route-visual .rv-arrow { color:var(--alpine); font-size:1rem; }
-.route-visual .rv-city { display:flex; flex-direction:column; align-items:center; gap:.1rem; }
-.route-visual .rv-code { font-size:1rem; font-weight:800; }
-.route-visual .rv-name { font-size:.6rem; color:var(--ink3); }
-
-/* bike map section */
-.bike-route {
-  background:var(--card); border:2px solid #a5d6a7; border-radius:var(--r);
-  overflow:hidden; margin-bottom:1rem;
-}
-.bike-route-header {
-  background:linear-gradient(135deg,var(--alpine2),var(--glacier));
-  padding:.9rem 1.4rem; color:#fff;
-  display:flex; justify-content:space-between; align-items:center;
-}
-.bike-route-body { padding:1.2rem 1.4rem; }
-.bike-stops { display:flex; flex-direction:column; gap:0; }
-.bike-stop {
-  display:flex; gap:.9rem; align-items:stretch;
-}
-.bike-stop-line {
-  display:flex; flex-direction:column; align-items:center; gap:0; flex-shrink:0;
-}
-.bike-stop-dot {
-  width:14px; height:14px; border-radius:50%;
-  background:var(--alpine); border:2px solid var(--alpine2);
-  flex-shrink:0;
-}
-.bike-stop-line-bar {
-  width:2px; flex:1; background:var(--border); min-height:20px;
-}
-.bike-stop-content {
-  padding:.3rem 0 .8rem;
-  flex:1;
-}
-.bike-stop-name { font-size:.88rem; font-weight:700; color:var(--ink); }
-.bike-stop-note { font-size:.75rem; color:var(--ink3); margin-top:.1rem; }
-.bike-stop-dist {
-  font-size:.7rem; font-weight:700; color:var(--alpine);
-  background:#e8f5e9; border-radius:50px; padding:.1rem .55rem;
-  margin-top:.25rem; display:inline-block;
+.activity p{
+  color:var(--text3);
+  line-height:1.9;
+  font-size:.82rem;
 }
 
-/* ─── SECTION SPACING ─── */
-.sec-wrap { padding:4rem 0; }
-hr.sec-divider { border:none; border-top:1px solid var(--border); margin:0; }
+/* timeline */
 
-/* ─── FOOTER ─── */
-footer {
-  background:var(--ink); color:rgba(255,255,255,.6);
-  padding:3rem 1.5rem; text-align:center; margin-top:4rem;
-}
-footer .f-logo { font-family:'Playfair Display',serif; font-size:1.8rem; color:#fff; margin-bottom:.5rem; }
-footer p { font-size:.82rem; }
-
-/* ─── ANIMATIONS ─── */
-@keyframes fadeUp { from{opacity:0;transform:translateY(24px)} to{opacity:1;transform:translateY(0)} }
-@keyframes fadeIn { from{opacity:0} to{opacity:1} }
-.reveal { opacity:0; transform:translateY(20px); transition:opacity .6s ease, transform .6s ease; }
-.reveal.visible { opacity:1; transform:translateY(0); }
-
-/* ─── RESPONSIVE ─── */
-@media(max-width:640px) {
-  .ft-route { grid-template-columns:1fr; text-align:center; }
-  .tl-dot { right:-2rem; }
-  .timeline { padding-right:2rem; }
-  .plan-step { grid-template-columns:auto 1fr; }
-  .plan-step-badge { grid-column:2; }
+.timeline{
+  position:relative;
+  padding-right:2rem;
 }
 
-/* scroll-up button */
-#scrollUp {
-  position:fixed; bottom:2rem; left:2rem; z-index:300;
-  width:44px; height:44px; border-radius:50%;
-  background:var(--alpine); color:#fff; border:none; cursor:pointer;
-  font-size:1.1rem; box-shadow:var(--shadow-lg);
-  opacity:0; pointer-events:none;
-  transition:opacity .3s, transform .3s;
-  display:flex; align-items:center; justify-content:center;
+.timeline::before{
+  content:'';
+  position:absolute;
+  top:0;
+  bottom:0;
+  right:10px;
+  width:3px;
+  background:linear-gradient(to bottom,var(--green),var(--blue));
 }
-#scrollUp.show { opacity:1; pointer-events:all; }
-#scrollUp:hover { transform:translateY(-2px); }
 
-.info-box {
-  background:var(--card); border:1px solid var(--border); border-radius:var(--r);
-  padding:1.4rem; box-shadow:var(--shadow);
+.day{
+  position:relative;
+  margin-bottom:2rem;
 }
-.info-box-title { font-size:.85rem; font-weight:700; color:var(--alpine); margin-bottom:.8rem; }
-.pass-items { display:grid; grid-template-columns:repeat(auto-fill,minmax(170px,1fr)); gap:.5rem; margin-top:.8rem; }
-.pass-item {
-  background:var(--bg2); border-radius:9px; padding:.55rem .9rem;
-  font-size:.8rem; color:var(--ink2); display:flex; gap:.4rem; align-items:center;
-  border:1px solid var(--border);
+
+.day::before{
+  content:'';
+  position:absolute;
+  right:-2px;
+  top:25px;
+  width:24px;
+  height:24px;
+  border-radius:50%;
+  background:#fff;
+  border:4px solid var(--green);
 }
-.pass-item::before { content:'✓'; color:var(--alpine); font-weight:700; }
+
+.day-card{
+  background:#fff;
+  border-radius:24px;
+  box-shadow:var(--shadow);
+  padding:1.5rem;
+  margin-right:2rem;
+}
+
+.day-card h3{
+  margin-bottom:.7rem;
+}
+
+.day-card ul{
+  padding-right:1rem;
+  line-height:2.1;
+  color:var(--text2);
+}
+
+/* footer */
+
+footer{
+  background:#111;
+  color:rgba(255,255,255,.7);
+  text-align:center;
+  padding:4rem 1rem;
+  margin-top:5rem;
+}
+
+footer h2{
+  color:#fff;
+  margin-bottom:1rem;
+  font-family:'Cormorant Garamond',serif;
+  font-size:3rem;
+}
+
+/* animation */
+
+@keyframes fadeUp{
+  from{
+    opacity:0;
+    transform:translateY(40px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+/* responsive */
+
+@media(max-width:768px){
+
+.route{
+  grid-template-columns:1fr;
+}
+
+.hero h1{
+  font-size:4rem;
+}
+
+}
+
 </style>
 </head>
+
 <body>
 
-<!-- ▸ HERO -->
-<div class="hero">
-  <img class="hero-img" src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600&q=80" alt="Austrian Alps">
-  <div class="hero-overlay"></div>
-  <div class="hero-content">
-    <div class="hero-eyebrow">🇦🇹 Austria Trip 2026</div>
-    <h1>رحلة النمسا<br><em>الذهبية</em></h1>
-    <p class="hero-tagline">فيينا · كابرون · هالشتات · سالزبورغ</p>
-    <div class="hero-pills">
-      <div class="hpill">✈️ المغادرة <strong>24 يونيو 08:35</strong></div>
-      <div class="hpill">🏔 كابرون <strong>25–30 يونيو</strong></div>
-      <div class="hpill">🏛 فيينا <strong>30 يونيو–3 يوليو</strong></div>
-      <div class="hpill">🏠 العودة <strong>3 يوليو 14:30</strong></div>
-    </div>
-  </div>
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+<div class="hero-small">
+🇦🇹 Austria Summer Journey 2026
 </div>
 
-<!-- ▸ NAV -->
-<div class="nav-wrap">
-  <div class="nav-inner">
-    <a href="#sec-flight">✈️ الطيران</a>
-    <a href="#sec-hotels">🏨 الفنادق</a>
-    <a href="#sec-arrival">🗺 الوصول</a>
-    <a href="#sec-roadmap">📅 الخطة</a>
-    <a href="#sec-plans">🎯 خطط تفصيلية</a>
-    <a href="#sec-activities">🎯 الأنشطة</a>
-    <a href="#sec-food">🍽 مطاعم</a>
-    <a href="#sec-packing">🧳 أمتعة</a>
-  </div>
+<h1>
+رحلة النمسا
+<br>
+<span>الخيالية</span>
+</h1>
+
+<p>
+فيينا · كابرون · زيلامسي · هالشتات · سالزبورغ
+<br>
+رحلة صيفية وسط الجبال والبحيرات والطبيعة الأوروبية الساحرة
+</p>
+
+<div class="hero-pills">
+<div class="hpill">✈️ 24 يونيو – 3 يوليو</div>
+<div class="hpill">🏔 كابرون 5 ليالٍ</div>
+<div class="hpill">🏛 فيينا 4 ليالٍ</div>
+<div class="hpill">🚂 رحلات بالقطار</div>
 </div>
 
-<!-- ======================================================
-     FLIGHT
-====================================================== -->
-<div id="sec-flight" class="sec-wrap">
-<div class="page">
-  <div class="sec-header reveal">
-    <div class="sec-eyebrow">SalamAir · J14PDW</div>
-    <div class="sec-title">تفاصيل <em>الطيران</em></div>
-    <div class="sec-rule"></div>
-  </div>
-
-  <div class="flight-ticket reveal">
-    <div class="ft-header">
-      <div class="ft-airline">
-        <div class="ft-logo">✈ SalamAir</div>
-        <span style="font-size:.73rem;color:rgba(255,255,255,.7)">سلام إير</span>
-      </div>
-      <div style="display:flex;gap:.5rem;align-items:center">
-        <div class="ft-ref">J14PDW</div>
-        <div style="background:rgba(255,255,255,.15);color:#fff;padding:.2rem .8rem;border-radius:50px;font-size:.72rem">مباشر · OV811</div>
-      </div>
-    </div>
-    <div class="ft-body">
-      <div class="ft-date">☀️ الأربعاء، 24 يونيو 2026</div>
-      <div class="ft-route">
-        <div class="ft-city">
-          <div class="ft-code">MCT</div>
-          <div class="ft-cname">مسقط · عُمان</div>
-          <div class="ft-time">08:35</div>
-        </div>
-        <div class="ft-mid">
-          <div class="ft-arrow">✈️</div>
-          <div class="ft-dur">6 ساعات 55 دقيقة</div>
-          <div class="ft-direct">✓ رحلة مباشرة</div>
-        </div>
-        <div class="ft-city">
-          <div class="ft-code">VIE</div>
-          <div class="ft-cname">فيينا · النمسا</div>
-          <div class="ft-time">13:30</div>
-        </div>
-      </div>
-      <div class="pax-row">
-        <div class="pax-card"><div class="pax-icon">👩</div><div><div class="pax-name">Ruqaiya Al Ofi</div><div class="pax-det">بالغة · 20 كغ + يد 5 كغ · تأمين ✓</div><div class="pax-seat">مقعد 9F</div></div></div>
-        <div class="pax-card"><div class="pax-icon">👨</div><div><div class="pax-name">Ibrahim Al Aufi</div><div class="pax-det">بالغ · 20 كغ + يد 5 كغ · تأمين ✓</div><div class="pax-seat">مقعد 9E</div></div></div>
-        <div class="pax-card"><div class="pax-icon">🧒</div><div><div class="pax-name">Waad Al Rashdi</div><div class="pax-det">طفل · 20 كغ + يد 5 كغ · تأمين ✓</div><div class="pax-seat">مقعد 9D</div></div></div>
-      </div>
-    </div>
-  </div>
-
-  <div class="flight-ticket reveal">
-    <div class="ft-header">
-      <div class="ft-airline">
-        <div class="ft-logo">✈ SalamAir</div>
-        <span style="font-size:.73rem;color:rgba(255,255,255,.7)">سلام إير</span>
-      </div>
-      <div style="display:flex;gap:.5rem;align-items:center">
-        <div class="ft-ref">J14PDW</div>
-        <div style="background:rgba(255,255,255,.15);color:#fff;padding:.2rem .8rem;border-radius:50px;font-size:.72rem">مباشر · OV812</div>
-      </div>
-    </div>
-    <div class="ft-body">
-      <div class="ft-date">🌙 الجمعة، 3 يوليو 2026</div>
-      <div class="ft-route">
-        <div class="ft-city">
-          <div class="ft-code">VIE</div>
-          <div class="ft-cname">فيينا · النمسا</div>
-          <div class="ft-time">14:30</div>
-        </div>
-        <div class="ft-mid">
-          <div class="ft-arrow">✈️</div>
-          <div class="ft-dur">6 ساعات</div>
-          <div class="ft-direct">✓ رحلة مباشرة</div>
-        </div>
-        <div class="ft-city">
-          <div class="ft-code">MCT</div>
-          <div class="ft-cname">مسقط · عُمان</div>
-          <div class="ft-time">22:30</div>
-        </div>
-      </div>
-      <div class="pax-row">
-        <div class="pax-card"><div class="pax-icon">👩</div><div><div class="pax-name">Ruqaiya Al Ofi</div><div class="pax-det">20 كغ + يد 5 كغ</div><div class="pax-seat">مقعد 7F</div></div></div>
-        <div class="pax-card"><div class="pax-icon">👨</div><div><div class="pax-name">Ibrahim Al Aufi</div><div class="pax-det">20 كغ + يد 5 كغ</div><div class="pax-seat">مقعد 7E</div></div></div>
-        <div class="pax-card"><div class="pax-icon">🧒</div><div><div class="pax-name">Waad Al Rashdi</div><div class="pax-det">20 كغ + يد 5 كغ</div><div class="pax-seat">مقعد 7D</div></div></div>
-      </div>
-      <div class="ft-total">
-        <div class="ft-total-lbl">💳 إجمالي التذاكر – 3 أشخاص</div>
-        <div class="ft-total-amt">526.618 ر.ع</div>
-      </div>
-    </div>
-  </div>
-  <div class="note-box red reveal"><strong>⏰ مهم جداً:</strong> الوصول للمطار قبل 4 ساعات من الإقلاع (أي قبل 04:35 صباحاً). كاونتر الصعود يُغلق قبل 60 دقيقة. نوع الصعود: Counter Check-in.</div>
 </div>
-</div>
-<hr class="sec-divider">
 
-<!-- ======================================================
-     HOTELS
-====================================================== -->
-<div id="sec-hotels" class="sec-wrap">
-<div class="page">
-  <div class="sec-header reveal">
-    <div class="sec-eyebrow">3 حجوزات مؤكدة</div>
-    <div class="sec-title">الفنادق <em>المحجوزة</em></div>
-    <div class="sec-rule"></div>
-  </div>
-  <div class="hotels-grid">
+</section>
 
-    <!-- Hotel 1: PLAZA -->
-    <div class="hotel-card reveal">
-      <img class="hc-img" src="https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=600&q=80" alt="Vienna">
-      <div class="hc-body">
-        <div class="hc-city-tag">🏛 فيينا · الليلة الأولى</div>
-        <div class="hc-name">PLAZA Premium Wien</div>
-        <div class="hc-addr">📍 5 Hertha-Firnberg-Strasse, 1100 Vienna<br>☎ +43 1 605300</div>
-        <div class="hc-meta">
-          <span class="hbadge hb-g">✅ دخول 24 يونيو بعد 15:00</span>
-          <span class="hbadge hb-g">🚪 خروج 25 يونيو قبل 11:00</span>
-          <span class="hbadge hb-b">🌙 ليلة واحدة</span>
-          <span class="hbadge hb-o">💰 OMR 38.030</span>
-        </div>
-        <div class="hc-amenities">
-          <span class="amen yes">❄️ تكييف ✓</span>
-          <span class="amen ask">🚿 شطاف؟ راسلي</span>
-          <span class="amen yes">📶 واي فاي ✓</span>
-          <span class="amen yes">🛗 مصعد ✓</span>
-          <span class="amen yes">🛁 حمام خاص ✓</span>
-        </div>
-        <div class="hc-confirm">
-          <div class="hc-ref"><div class="hc-ref-lbl">رقم التأكيد</div><div class="hc-ref-val">6489.753.828</div></div>
-          <div class="hc-ref"><div class="hc-ref-lbl">PIN</div><div class="hc-ref-val">7603</div></div>
-          <div class="hc-ref"><div class="hc-ref-lbl">نوع الغرفة</div><div class="hc-ref-val">Twin Room</div></div>
-        </div>
-        <div class="note-box"><strong>⚠️ ضمان:</strong> يُطلب EUR 250 عند الوصول ببطاقة الائتمان، يُعاد خلال 7 أيام.</div>
-      </div>
-    </div>
+<!-- NAV -->
 
-    <!-- Hotel 2: Falcon Suites -->
-    <div class="hotel-card reveal">
-      <img class="hc-img" src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" alt="Kaprun">
-      <div class="hc-body">
-        <div class="hc-city-tag">🏔 كابرون · 5 ليالٍ</div>
-        <div class="hc-name">Falcon Suites Kaprun</div>
-        <div class="hc-addr">📍 19 Falkenstraße, 5710 Kaprun<br>☎ +43 676 845594500</div>
-        <div class="hc-meta">
-          <span class="hbadge hb-g">✅ دخول 25 يونيو 16:00–20:00</span>
-          <span class="hbadge hb-g">🚪 خروج 30 يونيو 06:00–10:00</span>
-          <span class="hbadge hb-b">🌙 5 ليالٍ</span>
-          <span class="hbadge hb-o">💰 OMR 526.460</span>
-        </div>
-        <div class="hc-amenities">
-          <span class="amen yes">❄️ تكييف ✓</span>
-          <span class="amen yes">🚿 بيدي ✓</span>
-          <span class="amen yes">🍳 مطبخ كامل ✓</span>
-          <span class="amen yes">🛁 بانيو+دش ✓</span>
-          <span class="amen yes">🌿 شرفة + إطلالة ✓</span>
-          <span class="amen yes">📶 واي فاي ✓</span>
-        </div>
-        <div class="hc-confirm">
-          <div class="hc-ref"><div class="hc-ref-lbl">رقم التأكيد</div><div class="hc-ref-val">6849.386.193</div></div>
-          <div class="hc-ref"><div class="hc-ref-lbl">PIN</div><div class="hc-ref-val">4909</div></div>
-          <div class="hc-ref"><div class="hc-ref-lbl">نوع الوحدة</div><div class="hc-ref-val">شقة 2 غرفة</div></div>
-        </div>
-        <div class="note-box red"><strong>🗓 بطاقة الصيف Summercard مشمولة ✓</strong> – تغطي الجبال والبحيرات والمواصلات</div>
-      </div>
-    </div>
+<div class="nav">
 
-    <!-- Hotel 3: Hotel Triester -->
-    <div class="hotel-card reveal">
-      <img class="hc-img" src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=600&q=80" alt="Hotel Triester Vienna">
-      <div class="hc-body">
-        <div class="hc-city-tag">🏙 فيينا · الليالي الأخيرة</div>
-        <div class="hc-name">Hotel Triester ⭐⭐⭐⭐</div>
-        <div class="hc-addr">📍 Wiedner Gürtel 34, 1040 Wien</div>
-        <div class="hc-meta">
-          <span class="hbadge hb-g">✅ دخول 30 يونيو بعد 15:00</span>
-          <span class="hbadge hb-g">🚪 خروج 3 يوليو قبل 12:00</span>
-          <span class="hbadge hb-b">🌙 3 ليالٍ</span>
-          <span class="hbadge hb-o">💰 OMR 193.780</span>
-        </div>
-        <div class="hc-amenities">
-          <span class="amen yes">❄️ تكييف ✓</span>
-          <span class="amen yes">📶 واي فاي ✓</span>
-          <span class="amen yes">🍳 إفطار متاح</span>
-        </div>
-        <div class="hc-confirm">
-          <div class="hc-ref"><div class="hc-ref-lbl">الموقع</div><div class="hc-ref-val">hotel-triester.at</div></div>
-          <div class="hc-ref"><div class="hc-ref-lbl">نوع الغرفة</div><div class="hc-ref-val">Standard Room</div></div>
-        </div>
-        <div class="note-box"><strong>📍 موقع ممتاز:</strong> قريب جداً من وسط فيينا ومحطات المترو</div>
-      </div>
-    </div>
+<div class="nav-inner">
 
-  </div>
-</div>
-</div>
-<hr class="sec-divider">
-
-<!-- ======================================================
-     ARRIVAL & MAPS
-====================================================== -->
-<div id="sec-arrival" class="sec-wrap">
-<div class="page">
-  <div class="sec-header reveal">
-    <div class="sec-eyebrow">خطوة خطوة</div>
-    <div class="sec-title">خطة الوصول <em>والتنقل</em></div>
-    <div class="sec-rule"></div>
-  </div>
-
-  <div class="tab-bar reveal" id="arrivalTabs">
-    <button class="tab-btn active" onclick="switchTab('arr','t1',this)">🛬 المطار → فيينا</button>
-    <button class="tab-btn" onclick="switchTab('arr','t2',this)">🚂 فيينا → كابرون</button>
-    <button class="tab-btn" onclick="switchTab('arr','t3',this)">🗺 مسارات داخلية</button>
-    <button class="tab-btn" onclick="switchTab('arr','t4',this)">🏛 كابرون → فيينا</button>
-  </div>
-
-  <div class="tab-content active" id="arr-t1">
-    <div style="margin-bottom:1.2rem">
-      <div class="sec-eyebrow">24 يونيو · بعد الوصول 13:30</div>
-      <div style="font-size:1rem;font-weight:700;color:var(--ink)">مطار فيينا VIE ← Plaza Premium Wien</div>
-    </div>
-    <div class="arrival-steps reveal">
-      <div class="astep"><div class="astep-num">1</div><div class="astep-content"><div class="astep-title">🛬 الوصول ومسح الجوازات</div><div class="astep-desc">الوصول مطار VIE الساعة 13:30 – مرور الجمارك والأمتعة (~45–60 دقيقة)</div></div></div>
-      <div class="astep"><div class="astep-num">2</div><div class="astep-content"><div class="astep-title">🪧 ابحثي عن لافتة "Train / S-Bahn"</div><div class="astep-desc">اتجهي للطابق السفلي من Terminal 1 أو 3 – تبعي لافتات S-Bahn</div></div></div>
-      <div class="astep"><div class="astep-num">3</div><div class="astep-content"><div class="astep-title">🎫 اشتري تذكرة S7</div><div class="astep-desc">من الآلة التلقائية – 4.40 يورو/شخص = <strong>13.2 يورو للثلاثة</strong><br>اضغطي "Zone 1+2" أو "Core Zone + Airport"</div><div class="astep-tags"><span class="atag atag-g">✓ أوفر خيار</span><span class="atag atag-b">⏱ 30 دقيقة</span></div></div></div>
-      <div class="astep"><div class="astep-num">4</div><div class="astep-content"><div class="astep-title">🚂 قطار S7 → Wien Mitte</div><div class="astep-desc">قطار مباشر يصل وسط فيينا في 30 دقيقة</div></div></div>
-      <div class="astep"><div class="astep-num">5</div><div class="astep-content"><div class="astep-title">🚇 مترو U1 → Reumannplatz</div><div class="astep-desc">من Wien Mitte: ركبي مترو U1 باتجاه الجنوب ← 5 محطات حتى <strong>Reumannplatz</strong></div></div></div>
-      <div class="astep"><div class="astep-num">6</div><div class="astep-content"><div class="astep-title">🚶 مشي 8 دقائق للفندق</div><div class="astep-desc">Plaza Premium Wien: 5 Hertha-Firnberg-Strasse</div><div class="astep-tags"><span class="atag atag-g">✓ 55 دقيقة إجمالاً</span><span class="atag atag-b">💰 ~4.40 يورو/شخص</span></div>
-        <a class="map-btn" href="https://www.google.com/maps/dir/Vienna+International+Airport/PLAZA+Premium+Wien,+Hertha-Firnberg-Stra%C3%9Fe+5,+1100+Wien/@48.14,16.45,12z/data=!3e3" target="_blank">🗺 افتح في خرائط جوجل ←</a>
-      </div></div>
-    </div>
-    <iframe class="map-frame reveal" src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d84028!2d16.47!2d48.15!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1s0x476c5453010d3c15%3A0x11a8fba3fa8ade5f!2sVienna+International+Airport!3m2!1d48.1102!2d16.5697!4m5!1s0x476d07a02af5d6b7%3A0x1!2sPLAZA+Premium+Wien!3m2!1d48.1662!2d16.3737!5e0!3m2!1sen!2sat!4v1" loading="lazy" allowfullscreen></iframe>
-  </div>
-
-  <div class="tab-content" id="arr-t2">
-    <div style="margin-bottom:1.2rem">
-      <div class="sec-eyebrow">25 يونيو · الانطلاق صباحاً</div>
-      <div style="font-size:1rem;font-weight:700;color:var(--ink)">فيينا Wien Hbf ← كابرون (Falcon Suites)</div>
-    </div>
-    <div class="arrival-steps reveal">
-      <div class="astep"><div class="astep-num">1</div><div class="astep-content"><div class="astep-title">🏨 مغادرة Plaza Wien</div><div class="astep-desc">المغادرة قبل 11:00 (وقت الـ Check-out)</div></div></div>
-      <div class="astep"><div class="astep-num">2</div><div class="astep-content"><div class="astep-title">🚇 مترو U1 → Wien Hauptbahnhof</div><div class="astep-desc">من Reumannplatz ← Wien Hbf (3 محطات فقط)</div></div></div>
-      <div class="astep"><div class="astep-num">3</div><div class="astep-content"><div class="astep-title">🚂 قطار ÖBB: Wien Hbf → Zell am See</div><div class="astep-desc">المدة ~3.5 ساعة | احجزي مسبقاً على oebb.at<br>رقم القطار: REX أو IC باتجاه Salzburg ثم تغيير لـ Zell am See</div><div class="astep-tags"><span class="atag atag-r">⚠️ احجزي مسبقاً!</span><span class="atag atag-b">💰 ~24 ر.ع/شخص</span></div>
-        <a class="map-btn" href="https://www.oebb.at" target="_blank">🎫 موقع ÖBB للحجز ←</a>
-      </div></div>
-      <div class="astep"><div class="astep-num">4</div><div class="astep-content"><div class="astep-title">🚌 Bus 680: Zell am See → Kaprun</div><div class="astep-desc">من محطة Zell am See – حافلة Bus 680 مباشرة لكابرون (~15 دقيقة)</div></div></div>
-      <div class="astep"><div class="astep-num">5</div><div class="astep-content"><div class="astep-title">🏔 Falcon Suites: تسجيل الدخول</div><div class="astep-desc">19 Falkenstraße, Kaprun – الوصول بين 16:00–20:00<br>التأكيد: 6849.386.193 · PIN: 4909</div><div class="astep-tags"><span class="atag atag-g">⏱ ~4 ساعات إجمالاً</span></div>
-        <a class="map-btn" href="https://www.google.com/maps/dir/Wien+Hauptbahnhof,+Vienna/Falkenstra%C3%9Fe+19,+5710+Kaprun/@47.7,13.8,9z/data=!3e3" target="_blank">🗺 افتح في خرائط جوجل ←</a>
-      </div></div>
-    </div>
-    <iframe class="map-frame reveal" src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d663421!2d14.2!2d47.7!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1s0x476d079e5136ca9f%3A0x1c282a0da90b5c7f!2sWien+Hauptbahnhof!3m2!1d48.1852!2d16.3758!4m5!1s0x47769b80a73ecf4b%3A0x6e5cb76c3f24cd96!2sKaprun%2C+Austria!3m2!1d47.2703!2d12.7147!5e0!3m2!1sen!2sat!4v1" loading="lazy" allowfullscreen></iframe>
-  </div>
-
-  <div class="tab-content" id="arr-t3">
-    <div style="margin-bottom:1.2rem;font-size:1rem;font-weight:700;color:var(--ink)">التنقل داخل منطقة كابرون / زيلامسي</div>
-    <div class="route-grid reveal">
-      <div class="route-card">
-        <div class="route-card-title">🏔 كابرون ↔ زيلامسي</div>
-        <div class="rcs"><div class="rcs-icon">🚌</div><div>حافلة Bus 680 أو 696 · ~15 دقيقة · ~2 يورو</div></div>
-        <div class="rcs"><div class="rcs-icon">🚲</div><div>دراجة هوائية ~30 دقيقة (مريح جداً!)</div></div>
-        <a class="map-btn" style="font-size:.75rem;padding:.4rem .9rem" href="https://www.google.com/maps/dir/Kaprun,+Austria/Zell+am+See,+Austria/@47.3,12.77,12z" target="_blank">🗺 الخريطة</a>
-      </div>
-      <div class="route-card">
-        <div class="route-card-title">🏘 زيلامسي ← هالشتات</div>
-        <div class="rcs"><div class="rcs-icon">🚂</div><div>قطار Zell am See ← Hallstatt Bahnhof</div></div>
-        <div class="rcs"><div class="rcs-icon">⛴</div><div>فيري قصير للقرية (5 دقائق)</div></div>
-        <div class="rcs"><div class="rcs-icon">⏱</div><div>~1.5–2 ساعة | ~10 ر.ع/شخص</div></div>
-        <a class="map-btn" style="font-size:.75rem;padding:.4rem .9rem" href="https://www.google.com/maps/dir/Zell+am+See,+Austria/Hallstatt,+Austria/@47.45,13.3,10z" target="_blank">🗺 الخريطة</a>
-      </div>
-      <div class="route-card">
-        <div class="route-card-title">🎵 زيلامسي ← سالزبورغ</div>
-        <div class="rcs"><div class="rcs-icon">🚂</div><div>قطار مباشر ~1.5 ساعة</div></div>
-        <div class="rcs"><div class="rcs-icon">💰</div><div>~8 ر.ع/شخص</div></div>
-        <div class="rcs"><div class="rcs-icon">🎭</div><div>مدينة موتزارت التاريخية</div></div>
-        <a class="map-btn" style="font-size:.75rem;padding:.4rem .9rem" href="https://www.google.com/maps/dir/Zell+am+See,+Austria/Salzburg,+Austria/@47.5,13.0,9z" target="_blank">🗺 الخريطة</a>
-      </div>
-    </div>
-    <iframe class="map-frame reveal" src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d330842!2d13.2!2d47.55!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e0!4m3!3m2!1d47.2703!2d12.7147!4m3!3m2!1d47.5622!2d13.6493!4m3!3m2!1d47.8095!2d13.0550!5e0!3m2!1sen!2sat!4v1" loading="lazy" allowfullscreen></iframe>
-  </div>
-
-  <div class="tab-content" id="arr-t4">
-    <div style="margin-bottom:1.2rem">
-      <div class="sec-eyebrow">30 يونيو · العودة لفيينا</div>
-      <div style="font-size:1rem;font-weight:700;color:var(--ink)">كابرون ← Wien Hbf ← Hotel Triester Vienna</div>
-    </div>
-    <div class="arrival-steps reveal">
-      <div class="astep"><div class="astep-num">1</div><div class="astep-content"><div class="astep-title">🏔 مغادرة Falcon Suites</div><div class="astep-desc">المغادرة بين 06:00–10:00 حسب موعد القطار</div></div></div>
-      <div class="astep"><div class="astep-num">2</div><div class="astep-content"><div class="astep-title">🚌 Bus 680 → Zell am See Station</div><div class="astep-desc">حافلة من كابرون لمحطة قطار زيلامسي (~15 دقيقة)</div></div></div>
-      <div class="astep"><div class="astep-num">3</div><div class="astep-content"><div class="astep-title">🚂 قطار Zell am See → Wien Hbf</div><div class="astep-desc">~3.5 ساعة | احجزي مع رحلة الذهاب على oebb.at</div><div class="astep-tags"><span class="atag atag-r">⚠️ احجزي مسبقاً</span></div></div></div>
-      <div class="astep"><div class="astep-num">4</div><div class="astep-content"><div class="astep-title">🚇 مترو U1 → Südtiroler Platz</div><div class="astep-desc">من Wien Hbf ← محطة Südtiroler Platz ← مشي 10 دقائق</div></div></div>
-      <div class="astep"><div class="astep-num">5</div><div class="astep-content"><div class="astep-title">🏙 Hotel Triester Vienna</div><div class="astep-desc">Wiedner Gürtel 34, 1040 Wien – تسجيل دخول بعد 15:00</div>
-        <a class="map-btn" href="https://www.google.com/maps/dir/Zell+am+See,+Austria/Wiedner+G%C3%BCrtel+34,+1040+Wien/@47.8,14.5,8z" target="_blank">🗺 افتح في خرائط جوجل ←</a>
-      </div></div>
-    </div>
-    <iframe class="map-frame reveal" src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d2723735!2d14.5!2d47.8!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1s0x47769b80a73ecf4b%3A0x6e5cb76c3f24cd96!2sZell+am+See!3m2!1d47.2703!2d12.7147!4m5!1s0x476d079aaee6c63f%3A0x1!2sWiedner+G%C3%BCrtel+34%2C+1040+Wien!3m2!1d48.1870!2d16.3630!5e0!3m2!1sen!2sat!4v1" loading="lazy" allowfullscreen></iframe>
-  </div>
+<a href="#flight">✈️ الطيران</a>
+<a href="#hotels">🏨 الفنادق</a>
+<a href="#plan">📅 الخطة</a>
+<a href="#activities">🎯 الأنشطة</a>
 
 </div>
-</div>
-<hr class="sec-divider">
-
-<!-- ======================================================
-     ROADMAP
-====================================================== -->
-<div id="sec-roadmap" class="sec-wrap">
-<div class="page">
-  <div class="sec-header reveal">
-    <div class="sec-eyebrow">24 يونيو → 3 يوليو</div>
-    <div class="sec-title">خريطة الرحلة <em>اليومية</em></div>
-    <div class="sec-rule"></div>
-  </div>
-  <div class="timeline">
-    <div class="tl-item reveal"><div class="tl-dot"></div><div class="tl-card"><div class="tl-label">اليوم 1</div><div class="tl-title">🛫 الإقلاع من مسقط</div><div class="tl-date">الأربعاء 24 يونيو</div><ul class="tl-acts"><li>وصول مطار مسقط قبل 04:35 صباحاً</li><li>رحلة OV811 تقلع 08:35 ← فيينا 13:30</li><li>S-Bahn S7 + مترو U1 ← Plaza Premium Wien</li><li>تسجيل دخول بعد 15:00 – نوم مبكر 🌙</li></ul></div></div>
-    <div class="tl-item reveal"><div class="tl-dot emerald"></div><div class="tl-card"><div class="tl-label">اليوم 2</div><div class="tl-title">🚂 الانتقال لكابرون</div><div class="tl-date">الخميس 25 يونيو</div><ul class="tl-acts"><li>مغادرة Plaza Wien قبل 11:00</li><li>مترو U1 ← Wien Hbf ← قطار ÖBB لزيلامسي</li><li>Bus 680 من زيلامسي ← كابرون</li><li>تسجيل دخول Falcon Suites 16:00–20:00 🏔</li><li>استلام بطاقة الصيف والاستكشاف</li></ul></div></div>
-    <div class="tl-item reveal"><div class="tl-dot emerald"></div><div class="tl-card"><div class="tl-label">اليوم 3</div><div class="tl-title">❄️ الجبال والبحيرات</div><div class="tl-date">الجمعة 26 يونيو</div><ul class="tl-acts"><li>قمة كابرون الثلجية (Kitzsteinhorn 3000م) – مجاني بالبطاقة</li><li>بحيرة هنترسي الفيروزية</li><li>جولة بالسفينة على بحيرة زيلامسي ⛵</li><li>خوانق زغموند الطبيعية</li></ul></div></div>
-    <div class="tl-item reveal"><div class="tl-dot emerald"></div><div class="tl-card"><div class="tl-label">اليوم 4</div><div class="tl-title">🎵 سالزبورغ أو هالشتات</div><div class="tl-date">السبت 27 يونيو</div><ul class="tl-acts"><li>قطار ليوم رحلة (سالزبورغ أو هالشتات)</li><li>استكشاف المدينة التاريخية وقلعة موتزارت</li><li>بعد العودة: اشتري مستلزمات الطبخ لليوم التالي</li></ul></div></div>
-    <div class="tl-item reveal"><div class="tl-dot gold"></div><div class="tl-card"><div class="tl-label">اليوم 5 ⭐ خاص</div><div class="tl-title">🚴 يوم الأحد السحري</div><div class="tl-date">الأحد 28 يونيو</div><ul class="tl-acts"><li>🚲 استئجار دراجات والتجول بين القرى والأرياف</li><li>🍗 طبخ كبسة دجاج للغداء</li><li>🌊 الغداء على ضفاف بحيرة زيلامسي</li><li>🍔 برجر للعشاء + 🎂 كيكة شوكولاتة</li></ul></div></div>
-    <div class="tl-item reveal"><div class="tl-dot emerald"></div><div class="tl-card"><div class="tl-label">اليوم 6</div><div class="tl-title">🎿 المغامرات</div><div class="tl-date">الاثنين 29 يونيو</div><ul class="tl-acts"><li>🎿 زحليقة سالفدين (18 يورو كبار / 13 صغار)</li><li>💧 شلالات كريمل (مجاني بالبطاقة)</li><li>💎 بحيرة جوساسوس</li><li>☕ مصنع اللوكر وكوفي</li></ul></div></div>
-    <div class="tl-item reveal"><div class="tl-dot rose"></div><div class="tl-card"><div class="tl-label">اليوم 7–10</div><div class="tl-title">🏛 العودة لفيينا</div><div class="tl-date">30 يونيو – 3 يوليو</div><ul class="tl-acts"><li>30 يونيو: قطار كابرون ← فيينا ← Hotel Triester</li><li>استكشاف فيينا: قصر شونبرون، كاتدرائية ستيفان</li><li>🎡 عجلة براتر الشهيرة</li><li>🛍 تسوق ماريا هيلفر شتراسه</li><li>3 يوليو 14:30: رحلة OV812 ← مسقط 22:30 🏠</li></ul></div></div>
-  </div>
-</div>
-</div>
-<hr class="sec-divider">
-
-<!-- ======================================================
-     DETAILED PLANS (NEW SECTION)
-====================================================== -->
-<div id="sec-plans" class="sec-wrap">
-<div class="page">
-  <div class="sec-header reveal">
-    <div class="sec-eyebrow">خطوة بخطوة</div>
-    <div class="sec-title">الخطط <em>التفصيلية</em></div>
-    <div class="sec-rule"></div>
-  </div>
-
-  <div class="tab-bar reveal" id="planTabs">
-    <button class="tab-btn active" onclick="switchTab('plan','p1',this)">🚂 حجز القطار</button>
-    <button class="tab-btn" onclick="switchTab('plan','p2',this)">🚌 حجز الباص</button>
-    <button class="tab-btn" onclick="switchTab('plan','p3',this)">🚲 استئجار السيكل</button>
-  </div>
-
-  <!-- ── PLAN 1: TRAIN ── -->
-  <div class="tab-content active" id="plan-p1">
-
-    <div style="background:linear-gradient(135deg,#1a2f1e,#0f2030);border-radius:var(--r);padding:1.8rem;color:#fff;margin-bottom:2rem" class="reveal">
-      <div style="font-size:.7rem;letter-spacing:3px;opacity:.7;margin-bottom:.4rem;text-transform:uppercase">ÖBB – القطارات النمساوية</div>
-      <div style="font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:700;margin-bottom:.4rem">كل رحلاتك بالقطار</div>
-      <div style="opacity:.75;font-size:.85rem">احجزي جميع الرحلات على موقع oebb.at أو تطبيق ÖBB – كلما بكرت، كلما كان السعر أرخص</div>
-      <a href="https://www.oebb.at" target="_blank" style="display:inline-flex;align-items:center;gap:.5rem;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.3);color:#fff;text-decoration:none;padding:.5rem 1.2rem;border-radius:50px;font-size:.82rem;font-weight:700;margin-top:1rem">🎫 oebb.at – احجزي الآن ←</a>
-    </div>
-
-    <!-- Train Route 1 -->
-    <div class="plan-section reveal">
-      <div class="plan-header" style="background:linear-gradient(135deg,#e8f5e9,#e3f2fd)">
-        <div class="plan-header-icon">🚂</div>
-        <div>
-          <div class="plan-header-title">رحلة 1: فيينا ← زيلامسي | 25 يونيو</div>
-          <div class="plan-header-sub">Wien Hauptbahnhof → Zell am See · مدة ~3.5 ساعة</div>
-        </div>
-      </div>
-      <div class="plan-steps">
-        <div class="plan-step">
-          <div class="plan-step-num">1</div>
-          <div class="plan-step-body">
-            <div class="plan-step-title">افتحي موقع oebb.at أو تطبيق ÖBB</div>
-            <div class="plan-step-desc">اختاري: From = <strong>Wien Hauptbahnhof (Wien Hbf)</strong> · To = <strong>Zell am See</strong><br>التاريخ: 25 يونيو 2026 | المسافرون: 2 بالغ + 1 طفل</div>
-          </div>
-          <div class="plan-step-badge psb-blue">الخطوة الأولى</div>
-        </div>
-        <div class="plan-step">
-          <div class="plan-step-num">2</div>
-          <div class="plan-step-body">
-            <div class="plan-step-title">اختاري قطار الصباح (بعد 11:00)</div>
-            <div class="plan-step-desc">أفضل قطار: <strong>REX / IC</strong> يمر عبر Salzburg ← Bischofshofen ← Zell am See<br>ابحثي عن رحلة تصل زيلامسي قبل 16:00 لتوصلي لكابرون في وقت الـ Check-in</div>
-          </div>
-          <div class="plan-step-badge psb-orange">قبل 11:30 من Wien Hbf</div>
-        </div>
-        <div class="plan-step">
-          <div class="plan-step-num">3</div>
-          <div class="plan-step-body">
-            <div class="plan-step-title">اختاري "Sparschiene" للتوفير</div>
-            <div class="plan-step-desc">تذاكر Sparschiene = أرخص سعر للحجز المبكر · اختاري مقاعد محددة<br>السعر المتوقع: ~29–39 يورو/شخص حسب موعد الحجز</div>
-          </div>
-          <div class="plan-step-badge psb-green">💰 وفري بالحجز المبكر</div>
-        </div>
-        <div class="plan-step">
-          <div class="plan-step-num">4</div>
-          <div class="plan-step-body">
-            <div class="plan-step-title">حملي التذكرة على التطبيق أو اطبعيها</div>
-            <div class="plan-step-desc">تذكرة رقمية على هاتفك كافية ← لا داعي للطباعة<br>اضبطي تنبيه قبل الموعد بـ 30 دقيقة</div>
-          </div>
-          <div class="plan-step-badge psb-blue">📱 رقمي</div>
-        </div>
-      </div>
-      <div class="plan-tip">
-        <strong>🗺 المسار:</strong> Wien Hbf ← Salzburg Hbf (تغيير) ← Bischofshofen ← Zell am See<br>
-        إجمالي المدة: ~3 ساعات 20 دقيقة | التغيير في سالزبورغ عادةً ~10 دقائق فقط
-      </div>
-    </div>
-
-    <!-- Train Route 2 -->
-    <div class="plan-section reveal">
-      <div class="plan-header" style="background:linear-gradient(135deg,#fff8e1,#e8f5e9)">
-        <div class="plan-header-icon">🏘</div>
-        <div>
-          <div class="plan-header-title">رحلة 2: زيلامسي ← هالشتات | يوم الرحلة</div>
-          <div class="plan-header-sub">Zell am See → Hallstatt Bahnhof + Ferry · ~2 ساعة</div>
-        </div>
-      </div>
-      <div class="plan-steps">
-        <div class="plan-step">
-          <div class="plan-step-num">1</div>
-          <div class="plan-step-body">
-            <div class="plan-step-title">قطار: Zell am See → Attnang-Puchheim</div>
-            <div class="plan-step-desc">ركبي قطار REX من زيلامسي باتجاه الشرق<br>مدة: ~1.5 ساعة | احجزي على oebb.at مسبقاً</div>
-          </div>
-          <div class="plan-step-badge psb-blue">القطار الأول</div>
-        </div>
-        <div class="plan-step">
-          <div class="plan-step-num">2</div>
-          <div class="plan-step-body">
-            <div class="plan-step-title">تغيير قطار: → Hallstatt Bahnhof</div>
-            <div class="plan-step-desc">من Attnang-Puchheim ركبي قطار باتجاه Bad Ischl ← Hallstatt Bahnhof<br>المحطة على الجانب الآخر من البحيرة</div>
-          </div>
-          <div class="plan-step-badge psb-orange">تغيير واحد</div>
-        </div>
-        <div class="plan-step">
-          <div class="plan-step-num">3</div>
-          <div class="plan-step-body">
-            <div class="plan-step-title">⛴ العبّارة: Hallstatt Bahnhof → القرية</div>
-            <div class="plan-step-desc">من المحطة ركبي العبّارة (Ferry) ~5 دقائق لتصلي قرية هالشتات الساحرة<br>تعمل كل 20–30 دقيقة | ~3 يورو/شخص</div>
-          </div>
-          <div class="plan-step-badge psb-green">⛴ 5 دقائق فقط</div>
-        </div>
-      </div>
-      <div class="plan-tip">
-        <strong>💡 نصيحة:</strong> انطلقي مبكراً (7–8 صباحاً من زيلامسي) لتتجنبي الازدحام في هالشتات. القرية تمتلئ بالسياح بعد 11 صباحاً. الإضاءة الصباحية على الجبال رائعة للتصوير 📸
-      </div>
-    </div>
-
-    <!-- Train Route 3 -->
-    <div class="plan-section reveal">
-      <div class="plan-header" style="background:linear-gradient(135deg,#e3f2fd,#fce4ec)">
-        <div class="plan-header-icon">🎵</div>
-        <div>
-          <div class="plan-header-title">رحلة 3: زيلامسي ← سالزبورغ | يوم اختياري</div>
-          <div class="plan-header-sub">Zell am See → Salzburg Hbf · ~1 ساعة 15 دقيقة</div>
-        </div>
-      </div>
-      <div class="plan-steps">
-        <div class="plan-step">
-          <div class="plan-step-num">1</div>
-          <div class="plan-step-body">
-            <div class="plan-step-title">قطار مباشر: Zell am See → Salzburg</div>
-            <div class="plan-step-desc">رحلة مريحة ومباشرة عبر الجبال الخلابة<br>أفضل وقت للانطلاق: 8:00–9:00 صباحاً</div>
-          </div>
-          <div class="plan-step-badge psb-green">مباشر ✓</div>
-        </div>
-        <div class="plan-step">
-          <div class="plan-step-num">2</div>
-          <div class="plan-step-body">
-            <div class="plan-step-title">اشتري تذكرة ذهاب–إياب (Hin und Retour)</div>
-            <div class="plan-step-desc">تذكرة الرجوع أوفر من شراء تذكرتين منفصلتين<br>~15–20 يورو/شخص ذهاباً وإياباً</div>
-          </div>
-          <div class="plan-step-badge psb-orange">💰 ذهاب وإياب أوفر</div>
-        </div>
-      </div>
-      <div class="plan-tip">
-        <strong>🎭 في سالزبورغ:</strong> Getreidegasse (شارع موتزارت) · Hohensalzburg قلعة على الجبل · Mozart Geburtshaus (بيت ولادة موتزارت) · Mirabell Gardens
-      </div>
-    </div>
-
-    <!-- Train Route 4 -->
-    <div class="plan-section reveal">
-      <div class="plan-header" style="background:linear-gradient(135deg,#e8f5e9,#fff8e1)">
-        <div class="plan-header-icon">🏛</div>
-        <div>
-          <div class="plan-header-title">رحلة 4: زيلامسي ← فيينا | 30 يونيو</div>
-          <div class="plan-header-sub">Zell am See → Wien Hauptbahnhof · ~3.5 ساعة</div>
-        </div>
-      </div>
-      <div class="plan-steps">
-        <div class="plan-step">
-          <div class="plan-step-num">1</div>
-          <div class="plan-step-body">
-            <div class="plan-step-title">احجزي مع رحلة الذهاب (25 يونيو) دفعة واحدة</div>
-            <div class="plan-step-desc">عند الحجز على oebb.at: احجزي الذهاب (25 يونيو) والعودة (30 يونيو) معاً<br>توفير في السعر + ضمان المقاعد</div>
-          </div>
-          <div class="plan-step-badge psb-green">💡 احجزي المرتين معاً</div>
-        </div>
-        <div class="plan-step">
-          <div class="plan-step-num">2</div>
-          <div class="plan-step-body">
-            <div class="plan-step-title">اختاري رحلة الصباح (7:00–9:00)</div>
-            <div class="plan-step-desc">للوصول لفيينا قبل 13:00 ← وقت كافٍ للتسجيل في Hotel Triester (Check-in 15:00)<br>اتركي الأمتعة بالفندق واستكشفي فيينا</div>
-          </div>
-          <div class="plan-step-badge psb-orange">الوصول قبل الظهر</div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-  <!-- ── PLAN 2: BUS ── -->
-  <div class="tab-content" id="plan-p2">
-
-    <div style="background:linear-gradient(135deg,#2b5a8a,#1a3a5c);border-radius:var(--r);padding:1.8rem;color:#fff;margin-bottom:2rem" class="reveal">
-      <div style="font-size:.7rem;letter-spacing:3px;opacity:.7;margin-bottom:.4rem;text-transform:uppercase">Postbus & Regionalbus</div>
-      <div style="font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:700;margin-bottom:.4rem">حافلات المنطقة</div>
-      <div style="opacity:.75;font-size:.85rem">الحافلات في منطقة كابرون/زيلامسي مشمولة ببطاقة الصيف Summercard – لا تحتاجين شراء تذكرة منفصلة!</div>
-    </div>
-
-    <div class="plan-grid">
-      <!-- Bus 1 -->
-      <div class="plan-section reveal">
-        <div class="plan-header" style="background:linear-gradient(135deg,#e3f2fd,#e8f5e9)">
-          <div class="plan-header-icon">🚌</div>
-          <div>
-            <div class="plan-header-title">Bus 680 – كابرون ↔ زيلامسي</div>
-            <div class="plan-header-sub">الأهم والأكثر استخداماً</div>
-          </div>
-        </div>
-        <div class="plan-steps">
-          <div class="plan-step">
-            <div class="plan-step-num">1</div>
-            <div class="plan-step-body">
-              <div class="plan-step-title">محطة الانطلاق في كابرون</div>
-              <div class="plan-step-desc">Kaprun Dorfzentrum (وسط كابرون) ← افتحي Google Maps واكتبي "Bus 680 Kaprun"<br>يمر كل 30–60 دقيقة حسب الوقت</div>
-            </div>
-            <div class="plan-step-badge psb-blue">Kaprun Dorf</div>
-          </div>
-          <div class="plan-step">
-            <div class="plan-step-num">2</div>
-            <div class="plan-step-body">
-              <div class="plan-step-title">الوجهة: Zell am See Bahnhof</div>
-              <div class="plan-step-desc">المحطة النهائية هي محطة القطار في زيلامسي (~15 دقيقة)<br>من هناك: قطار لسالزبورغ أو هالشتات أو الاستكشاف</div>
-            </div>
-            <div class="plan-step-badge psb-green">مجاني بالبطاقة ✓</div>
-          </div>
-          <div class="plan-step">
-            <div class="plan-step-num">3</div>
-            <div class="plan-step-body">
-              <div class="plan-step-title">مواعيد الحافلة</div>
-              <div class="plan-step-desc">ابحثي على موقع <strong>salzburg-verkehr.at</strong> أو تطبيق <strong>Wiener Linien</strong><br>أو Google Maps → اكتبي "Bus 680 Kaprun to Zell am See"</div>
-            </div>
-            <div class="plan-step-badge psb-orange">تحققي أولاً</div>
-          </div>
-        </div>
-        <div class="plan-tip"><strong>⏱ الوقت:</strong> كابرون ← زيلامسي تقريباً 12–15 دقيقة | آخر حافلة عادةً ~22:00</div>
-      </div>
-
-      <!-- Bus 2: Airport transfer -->
-      <div class="plan-section reveal">
-        <div class="plan-header" style="background:linear-gradient(135deg,#fff8e1,#fce4ec)">
-          <div class="plan-header-icon">🚌</div>
-          <div>
-            <div class="plan-header-title">Bus من محطة القطار → Falcon Suites</div>
-            <div class="plan-header-sub">آخر خطوة وصول لكابرون</div>
-          </div>
-        </div>
-        <div class="plan-steps">
-          <div class="plan-step">
-            <div class="plan-step-num">1</div>
-            <div class="plan-step-body">
-              <div class="plan-step-title">من Zell am See Bahnhof</div>
-              <div class="plan-step-desc">بعد نزولك من القطار ← ابحثي عن محطة Bus 680 في نفس المبنى<br>الحافلة تنطلق من أمام المحطة</div>
-            </div>
-            <div class="plan-step-badge psb-blue">نفس المبنى</div>
-          </div>
-          <div class="plan-step">
-            <div class="plan-step-num">2</div>
-            <div class="plan-step-body">
-              <div class="plan-step-title">انزلي عند: Kaprun Ortsmitte أو Kaprun Dorfzentrum</div>
-              <div class="plan-step-desc">هذه أقرب محطة لـ Falcon Suites (Falkenstraße 19)<br>من المحطة: مشي ~5–8 دقائق للفندق</div>
-            </div>
-            <div class="plan-step-badge psb-green">مشي قريب ✓</div>
-          </div>
-          <div class="plan-step">
-            <div class="plan-step-num">3</div>
-            <div class="plan-step-body">
-              <div class="plan-step-title">الـ Falcon Suites: 19 Falkenstraße</div>
-              <div class="plan-step-desc">افتحي Google Maps واكتبي "Falcon Suites Kaprun" – ستريك المسار الدقيق من المحطة<br>الدخول: 16:00–20:00 | PIN: 4909</div>
-            </div>
-            <div class="plan-step-badge psb-orange">📍 مباشرة للفندق</div>
-          </div>
-        </div>
-        <div class="plan-tip"><strong>🧳 نصيحة:</strong> إذا وصلتِ قبل 16:00 يمكنكِ تخزين الأمتعة في الفندق وتجولي في كابرون حتى وقت الـ Check-in</div>
-      </div>
-
-      <!-- Bus 3: Krimml -->
-      <div class="plan-section reveal">
-        <div class="plan-header" style="background:linear-gradient(135deg,#e8f5e9,#e8f4f8)">
-          <div class="plan-header-icon">💧</div>
-          <div>
-            <div class="plan-header-title">Bus إلى شلالات كريمل Krimml</div>
-            <div class="plan-header-sub">مجاني بالبطاقة الصيفية</div>
-          </div>
-        </div>
-        <div class="plan-steps">
-          <div class="plan-step">
-            <div class="plan-step-num">1</div>
-            <div class="plan-step-body">
-              <div class="plan-step-title">من Zell am See: قطار أو حافلة إلى Krimml</div>
-              <div class="plan-step-desc">خيار 1: قطار Zell am See ← Krimml (تغيير في Krimml Bahnhof)<br>خيار 2: حافلة مباشرة من زيلامسي إلى Krimml (~45 دقيقة)</div>
-            </div>
-            <div class="plan-step-badge psb-green">مجاني بالبطاقة</div>
-          </div>
-          <div class="plan-step">
-            <div class="plan-step-num">2</div>
-            <div class="plan-step-body">
-              <div class="plan-step-title">الشلالات على بعد 10 دقائق مشي من المحطة</div>
-              <div class="plan-step-desc">الشلالات الأعلى في النمسا (380م) – 3 مستويات رائعة<br>خصصي 2–3 ساعات للزيارة كاملة | ارتدي حذاءً مريحاً</div>
-            </div>
-            <div class="plan-step-badge psb-blue">💧 أعلى شلالات النمسا</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Bus 4: Grossglockner -->
-      <div class="plan-section reveal">
-        <div class="plan-header" style="background:linear-gradient(135deg,#fce4ec,#fff8e1)">
-          <div class="plan-header-icon">🏔</div>
-          <div>
-            <div class="plan-header-title">Glockner Bus – طريق جروسغلوكنر</div>
-            <div class="plan-header-sub">أجمل طريق جبلي في النمسا</div>
-          </div>
-        </div>
-        <div class="plan-steps">
-          <div class="plan-step">
-            <div class="plan-step-num">1</div>
-            <div class="plan-step-body">
-              <div class="plan-step-title">الحافلة تنطلق من Zell am See</div>
-              <div class="plan-step-desc">Glockner Bus يومي الثلاثاء والخميس (تحققي من الموقع)<br>الانطلاق ~9:00 صباحاً | موقع: grossglockner.at</div>
-            </div>
-            <div class="plan-step-badge psb-orange">الثلاثاء والخميس فقط</div>
-          </div>
-          <div class="plan-step">
-            <div class="plan-step-num">2</div>
-            <div class="plan-step-body">
-              <div class="plan-step-title">السعر: ~20 يورو/شخص</div>
-              <div class="plan-step-desc">يشمل دخول الطريق الجبلي وجولة كاملة بالحافلة<br>احجزي مسبقاً على grossglockner.at</div>
-            </div>
-            <div class="plan-step-badge psb-red">احجزي مسبقاً!</div>
-          </div>
-        </div>
-        <div class="plan-tip"><strong>🗻 لا تفوتوه:</strong> الطريق يصل 2571م فوق سطح البحر مع إطلالة على قمة Großglockner (3798م) أعلى جبال النمسا</div>
-      </div>
-    </div>
-
-  </div>
-
-  <!-- ── PLAN 3: BIKE ── -->
-  <div class="tab-content" id="plan-p3">
-
-    <div style="background:linear-gradient(135deg,#2d5a3d,#4a8c60);border-radius:var(--r);padding:1.8rem;color:#fff;margin-bottom:2rem" class="reveal">
-      <div style="font-size:.7rem;letter-spacing:3px;opacity:.7;margin-bottom:.4rem;text-transform:uppercase">Fahrrad – الدراجة الهوائية</div>
-      <div style="font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:700;margin-bottom:.4rem">يوم الأحد السحري 🚲</div>
-      <div style="opacity:.75;font-size:.85rem">أجمل طريقة لاستكشاف كابرون وزيلامسي – مسارات مصممة خصيصاً للدراجات على طول البحيرة</div>
-    </div>
-
-    <!-- Rent guide -->
-    <div class="plan-section reveal">
-      <div class="plan-header" style="background:linear-gradient(135deg,#e8f5e9,#f0f7f0)">
-        <div class="plan-header-icon">🏪</div>
-        <div>
-          <div class="plan-header-title">أين تستأجرين الدراجات</div>
-          <div class="plan-header-sub">خيارات متعددة في المنطقة</div>
-        </div>
-      </div>
-      <div class="plan-steps">
-        <div class="plan-step">
-          <div class="plan-step-num">1</div>
-          <div class="plan-step-body">
-            <div class="plan-step-title">Intersport Kaprun – الأكثر شيوعاً</div>
-            <div class="plan-step-desc">📍 Kaprun Dorfzentrum (وسط كابرون) – قريب من Falcon Suites<br>دراجات عادية وكهربائية e-bike متاحة | ساعات عمل: 8:30–18:00</div>
-          </div>
-          <div class="plan-step-badge psb-green">الأقرب للفندق ✓</div>
-        </div>
-        <div class="plan-step">
-          <div class="plan-step-num">2</div>
-          <div class="plan-step-body">
-            <div class="plan-step-title">Sport Achleitner – Zell am See</div>
-            <div class="plan-step-desc">📍 Zell am See وسط المدينة | تشكيلة أكبر من الدراجات<br>احجزي مسبقاً عبر الهاتف أو الموقع لضمان التوافر</div>
-          </div>
-          <div class="plan-step-badge psb-blue">تشكيلة أكبر</div>
-        </div>
-        <div class="plan-step">
-          <div class="plan-step-num">3</div>
-          <div class="plan-step-body">
-            <div class="plan-step-title">الأسعار المتوقعة</div>
-            <div class="plan-step-desc">دراجة عادية: ~12–18 يورو/يوم | e-bike كهربائية: ~30–45 يورو/يوم<br>لليوم كامل (8 ساعات) – أوفر بكثير من الساعة</div>
-          </div>
-          <div class="plan-step-badge psb-orange">اليوم أوفر من الساعة</div>
-        </div>
-        <div class="plan-step">
-          <div class="plan-step-num">4</div>
-          <div class="plan-step-body">
-            <div class="plan-step-title">احجزي مسبقاً (للأمان)</div>
-            <div class="plan-step-desc">ابحثي على Google: "Fahrrad mieten Kaprun" أو "bike rental Zell am See"<br>اتصلي أو أرسلي إيميل قبل يوم لتأكيد التوافر</div>
-          </div>
-          <div class="plan-step-badge psb-red">يُنصح بالحجز المسبق</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Bike Route -->
-    <div class="bike-route reveal">
-      <div class="bike-route-header">
-        <div>
-          <div style="font-size:.7rem;letter-spacing:2px;opacity:.8;margin-bottom:.2rem">المسار المقترح ليوم الأحد</div>
-          <div style="font-size:1rem;font-weight:700">🚲 كابرون ← البحيرة ← زيلامسي ← العودة</div>
-        </div>
-        <div style="text-align:center;background:rgba(255,255,255,.2);border-radius:10px;padding:.5rem .9rem">
-          <div style="font-size:1.3rem;font-weight:900">~18</div>
-          <div style="font-size:.7rem;opacity:.8">كيلومتر</div>
-        </div>
-      </div>
-      <div class="bike-route-body">
-        <div class="bike-stops">
-          <div class="bike-stop">
-            <div class="bike-stop-line"><div class="bike-stop-dot" style="background:var(--alpine)"></div><div class="bike-stop-line-bar"></div></div>
-            <div class="bike-stop-content">
-              <div class="bike-stop-name">🏠 Falcon Suites Kaprun</div>
-              <div class="bike-stop-note">نقطة البداية | ابدأي الساعة 9:00–10:00 صباحاً</div>
-              <div class="bike-stop-dist">نقطة الانطلاق</div>
-            </div>
-          </div>
-          <div class="bike-stop">
-            <div class="bike-stop-line"><div class="bike-stop-dot"></div><div class="bike-stop-line-bar"></div></div>
-            <div class="bike-stop-content">
-              <div class="bike-stop-name">🏰 Kaprun Schloss (القلعة)</div>
-              <div class="bike-stop-note">قلعة كابرون التاريخية – توقف سريع للتصوير</div>
-              <div class="bike-stop-dist">~1.5 كم من الفندق</div>
-            </div>
-          </div>
-          <div class="bike-stop">
-            <div class="bike-stop-line"><div class="bike-stop-dot"></div><div class="bike-stop-line-bar"></div></div>
-            <div class="bike-stop-content">
-              <div class="bike-stop-name">🌾 الطريق الريفي بين القرى</div>
-              <div class="bike-stop-note">مسار دراجات مخصص Radweg بين كابرون وزيلامسي – آمن ومنفصل عن السيارات</div>
-              <div class="bike-stop-dist">~5 كم تجول</div>
-            </div>
-          </div>
-          <div class="bike-stop">
-            <div class="bike-stop-line"><div class="bike-stop-dot"></div><div class="bike-stop-line-bar"></div></div>
-            <div class="bike-stop-content">
-              <div class="bike-stop-name">🌊 شاطئ بحيرة زيلامسي (Strandbad)</div>
-              <div class="bike-stop-note">استراحة والغداء هنا 🍗 المنظر الجبلي مع البحيرة لا يُنسى</div>
-              <div class="bike-stop-dist">~9 كم من الانطلاق</div>
-            </div>
-          </div>
-          <div class="bike-stop">
-            <div class="bike-stop-line"><div class="bike-stop-dot"></div><div class="bike-stop-line-bar"></div></div>
-            <div class="bike-stop-content">
-              <div class="bike-stop-name">🏘 وسط Zell am See</div>
-              <div class="bike-stop-note">تجولي بين المحلات والكافيهات – مدينة صغيرة جميلة جداً</div>
-              <div class="bike-stop-dist">~11 كم</div>
-            </div>
-          </div>
-          <div class="bike-stop">
-            <div class="bike-stop-line"><div class="bike-stop-dot"></div><div class="bike-stop-line-bar"></div></div>
-            <div class="bike-stop-content">
-              <div class="bike-stop-name">🌅 جهة جنوب البحيرة – إطلالة بانورامية</div>
-              <div class="bike-stop-note">أفضل نقطة تصوير على البحيرة كاملة مع جبل Kitzsteinhorn خلفها ❄️</div>
-              <div class="bike-stop-dist">~14 كم</div>
-            </div>
-          </div>
-          <div class="bike-stop">
-            <div class="bike-stop-line"><div class="bike-stop-dot" style="background:var(--gold);border-color:var(--gold2)"></div></div>
-            <div class="bike-stop-content">
-              <div class="bike-stop-name">🏠 العودة لـ Falcon Suites</div>
-              <div class="bike-stop-note">عبر نفس مسار الدراجات | استردي الدراجة وقت الإغلاق</div>
-              <div class="bike-stop-dist">~18 كم إجمالاً</div>
-            </div>
-          </div>
-        </div>
-        <div class="plan-tip" style="margin:1rem 0 0">
-          <strong>🗺 استخدمي:</strong> Google Maps + اختاري "Cycling" وابحثي عن "Zell am See Radweg" | <strong>⏱ وقت متوقع:</strong> 3–4 ساعات مع الاستراحات
-        </div>
-      </div>
-    </div>
-
-    <!-- Bike tips -->
-    <div class="plan-section reveal">
-      <div class="plan-header" style="background:linear-gradient(135deg,#fff8e1,#e8f5e9)">
-        <div class="plan-header-icon">💡</div>
-        <div>
-          <div class="plan-header-title">نصائح مهمة للدراجة</div>
-          <div class="plan-header-sub">اقرئيها قبل الانطلاق</div>
-        </div>
-      </div>
-      <div class="plan-steps">
-        <div class="plan-step">
-          <div class="plan-step-num">✓</div>
-          <div class="plan-step-body">
-            <div class="plan-step-title">خوذة إلزامية (Helmet)</div>
-            <div class="plan-step-desc">محل التأجير يوفرها مجاناً أو بسعر رمزي – لا تقودي بدونها</div>
-          </div>
-          <div class="plan-step-badge psb-red">إلزامي للأطفال</div>
-        </div>
-        <div class="plan-step">
-          <div class="plan-step-num">✓</div>
-          <div class="plan-step-body">
-            <div class="plan-step-title">مسارات الدراجات (Radweg) مخصصة وآمنة</div>
-            <div class="plan-step-desc">ابقي على المسار المرسوم باللون الأحمر/الأخضر على الأرض<br>لا تدخلي مسارات السيارات</div>
-          </div>
-          <div class="plan-step-badge psb-green">آمن تماماً ✓</div>
-        </div>
-        <div class="plan-step">
-          <div class="plan-step-num">✓</div>
-          <div class="plan-step-body">
-            <div class="plan-step-title">اصطحبي ماء ووجبات خفيفة</div>
-            <div class="plan-step-desc">الطقس معتدل لكن الشمس حارة على ارتفاع البحيرة<br>خذي قنينة ماء كبيرة + تمر + شوكولاتة للطاقة 🍫</div>
-          </div>
-          <div class="plan-step-badge psb-blue">🌊 ابقي رطبة</div>
-        </div>
-        <div class="plan-step">
-          <div class="plan-step-num">✓</div>
-          <div class="plan-step-body">
-            <div class="plan-step-title">شحن الهاتف 100% قبل الانطلاق</div>
-            <div class="plan-step-desc">ستحتاجين Google Maps طوال الوقت | اصطحبي Power Bank</div>
-          </div>
-          <div class="plan-step-badge psb-orange">📱 Google Maps على cycling</div>
-        </div>
-      </div>
-    </div>
-
-  </div>
 
 </div>
+
+<!-- FLIGHT -->
+
+<section class="page" id="flight">
+
+<div class="section-head">
+
+<div class="section-mini">
+SALAMAIR · J14PDW
 </div>
-<hr class="sec-divider">
 
-<!-- ======================================================
-     ACTIVITIES
-====================================================== -->
-<div id="sec-activities" class="sec-wrap">
-<div class="page">
-  <div class="sec-header reveal">
-    <div class="sec-eyebrow">10 أيام ممتلئة</div>
-    <div class="sec-title">الأنشطة <em>والأماكن</em></div>
-    <div class="sec-rule"></div>
-  </div>
+<div class="section-title">
+تفاصيل <span>الرحلات</span>
+</div>
 
-  <div class="tab-bar reveal" id="actTabs">
-    <button class="tab-btn active" onclick="switchTab('act','a1',this)">🏔 كابرون/زيلامسي</button>
-    <button class="tab-btn" onclick="switchTab('act','a2',this)">🏛 فيينا</button>
-    <button class="tab-btn" onclick="switchTab('act','a3',this)">🗺 رحلات يوم</button>
-    <button class="tab-btn" onclick="switchTab('act','a4',this)">💧 رياضات مائية</button>
-  </div>
-
-  <div class="tab-content active" id="act-a1">
-    <div class="act-grid">
-      <div class="act-card reveal"><div class="act-card-top"><div class="act-emoji">🏔</div><div><div class="act-name">Kitzsteinhorn قمة كابرون</div><div class="act-price">مجاني بالبطاقة الصيفية</div><div class="act-note">ثلج في الصيف على ارتفاع 3000م!</div><span class="act-tag at-free">مجاني ✓</span></div></div></div>
-      <div class="act-card reveal"><div class="act-card-top"><div class="act-emoji">🎿</div><div><div class="act-name">زحليقة ألبية Maisi Flitzer</div><div class="act-price">~18 يورو كبار | ~13 يورو صغار</div><div class="act-note">تجربة رائعة – half coaster half toboggan</div><span class="act-tag at-paid">مدفوع</span><span class="act-tag at-must">يجب!</span></div></div></div>
-      <div class="act-card reveal"><div class="act-card-top"><div class="act-emoji">⛵</div><div><div class="act-name">جولة سفينة بحيرة زيلامسي</div><div class="act-price">مجاني بالبطاقة الصيفية</div><div class="act-note">جولة كاملة حول البحيرة</div><span class="act-tag at-free">مجاني ✓</span></div></div></div>
-      <div class="act-card reveal"><div class="act-card-top"><div class="act-emoji">🌊</div><div><div class="act-name">بحيرة هنترسي</div><div class="act-price">مجاني</div><div class="act-note">مياه كريستالية شفافة لا تُصدق</div><span class="act-tag at-free">مجاني ✓</span></div></div></div>
-      <div class="act-card reveal"><div class="act-card-top"><div class="act-emoji">💧</div><div><div class="act-name">شلالات كريمل</div><div class="act-price">مجاني بالبطاقة الصيفية</div><div class="act-note">أكبر شلالات النمسا – Krimml Waterfalls</div><span class="act-tag at-free">مجاني ✓</span></div></div></div>
-      <div class="act-card reveal"><div class="act-card-top"><div class="act-emoji">💎</div><div><div class="act-name">بحيرة جوساسوس</div><div class="act-price">مجاني</div><div class="act-note">بحيرة جبلية مخفية بلون زمرد</div><span class="act-tag at-free">مجاني ✓</span></div></div></div>
-      <div class="act-card reveal"><div class="act-card-top"><div class="act-emoji">🌿</div><div><div class="act-name">خوانق زغموند</div><div class="act-price">مجاني بالبطاقة</div><div class="act-note">ممرات ضيقة بين الصخور والشلالات</div><span class="act-tag at-free">بطاقة ✓</span></div></div></div>
-      <div class="act-card reveal"><div class="act-card-top"><div class="act-emoji">🏰</div><div><div class="act-name">قلعة كابرون Kaprun Castle</div><div class="act-price">مجاني للدخول</div><div class="act-note">قلعة من القرن 12</div><span class="act-tag at-free">مجاني ✓</span></div></div></div>
-      <div class="act-card reveal"><div class="act-card-top"><div class="act-emoji">☕</div><div><div class="act-name">مصنع اللوكر Reber</div><div class="act-price">دخول مجاني + اشتري شوكولاتة</div><div class="act-note">موزارت كوجلن الشهيرة</div><span class="act-tag at-free">دخول مجاني</span></div></div></div>
-      <div class="act-card reveal"><div class="act-card-top"><div class="act-emoji">♨️</div><div><div class="act-name">Tauern Spa كابرون</div><div class="act-price">~30–45 يورو/يوم</div><div class="act-note">أكبر مركز صحي في النمسا – 13 ساونا</div><span class="act-tag at-paid">مدفوع</span></div></div></div>
-    </div>
-    <div style="background:linear-gradient(135deg,#f0f7f0,#e8f4f8);border:1px solid #a5d6a7;border-radius:var(--r);padding:1.5rem;margin-top:1.5rem" class="reveal">
-      <div style="font-weight:700;color:var(--alpine);margin-bottom:.8rem">🎫 بطاقة زيلامسي الصيفية – مشمولة مع الإقامة في Falcon Suites ✓</div>
-      <div class="pass-items">
-        <div class="pass-item">Kitzsteinhorn</div>
-        <div class="pass-item">Schmittenhöhe</div>
-        <div class="pass-item">جولة السفينة</div>
-        <div class="pass-item">خوانق زغموند</div>
-        <div class="pass-item">شلالات كريمل</div>
-        <div class="pass-item">شواطئ البحيرة</div>
-        <div class="pass-item">المواصلات العامة</div>
-      </div>
-    </div>
-  </div>
-
-  <div class="tab-content" id="act-a2">
-    <div class="act-grid">
-      <div class="act-card reveal"><div class="act-card-top"><div class="act-emoji">🏰</div><div><div class="act-name">قصر شونبرون</div><div class="act-price">~18–22 يورو (داخل) | مجاني الحدائق</div><div class="act-note">قصر هابسبورغ الشهير</div><span class="act-tag at-must">يجب!</span></div></div></div>
-      <div class="act-card reveal"><div class="act-card-top"><div class="act-emoji">⛪</div><div><div class="act-name">كاتدرائية سانت ستيفان</div><div class="act-price">مجاني (دخول الكنيسة)</div><div class="act-note">رمز فيينا في القلب التاريخي</div><span class="act-tag at-free">مجاني ✓</span></div></div></div>
-      <div class="act-card reveal"><div class="act-card-top"><div class="act-emoji">🎡</div><div><div class="act-name">عجلة براتر Riesenrad</div><div class="act-price">~14 يورو</div><div class="act-note">عجلة القرن 19 الشهيرة</div><span class="act-tag at-must">أيقوني!</span></div></div></div>
-      <div class="act-card reveal"><div class="act-card-top"><div class="act-emoji">🛍</div><div><div class="act-name">ماريا هيلفر شتراسه</div><div class="act-price">مجاني (التجول)</div><div class="act-note">أشهر شارع تسوق في فيينا – 2 كم</div><span class="act-tag at-free">مجاني ✓</span></div></div></div>
-      <div class="act-card reveal"><div class="act-card-top"><div class="act-emoji">🌿</div><div><div class="act-name">حدائق بيلفيدير</div><div class="act-price">مجاني الحدائق</div><div class="act-note">حدائق باروكية رائعة</div><span class="act-tag at-free">مجاني ✓</span></div></div></div>
-      <div class="act-card reveal"><div class="act-card-top"><div class="act-emoji">☕</div><div><div class="act-name">قهوة فيينا التقليدية</div><div class="act-price">~5–10 يورو</div><div class="act-note">Café Central – تراث UNESCO</div><span class="act-tag at-must">لا تفوتي!</span></div></div></div>
-    </div>
-  </div>
-
-  <div class="tab-content" id="act-a3">
-    <div class="act-grid">
-      <div class="act-card reveal"><div class="act-card-top"><div class="act-emoji">🏘</div><div><div class="act-name">هالشتات Hallstatt</div><div class="act-price">~10 ر.ع تذكرة</div><div class="act-note">أجمل قرية في النمسا – قائمة UNESCO</div><span class="act-tag at-must">لا تفوتي!</span></div></div></div>
-      <div class="act-card reveal"><div class="act-card-top"><div class="act-emoji">🎵</div><div><div class="act-name">سالزبورغ Salzburg</div><div class="act-price">~8 ر.ع تذكرة</div><div class="act-note">مدينة موتزارت التاريخية</div><span class="act-tag at-must">رائعة!</span></div></div></div>
-      <div class="act-card reveal"><div class="act-card-top"><div class="act-emoji">🏔</div><div><div class="act-name">Großglockner Road</div><div class="act-price">Glockner Bus ~20 يورو</div><div class="act-note">أجمل طريق جبلي في النمسا</div><span class="act-tag at-must">مذهل!</span></div></div></div>
-      <div class="act-card reveal"><div class="act-card-top"><div class="act-emoji">🏰</div><div><div class="act-name">قلعة هوهنفيرفن</div><div class="act-price">~18 يورو</div><div class="act-note">قلعة قروسطية مذهلة فوق جبل</div><span class="act-tag at-paid">مدفوع</span></div></div></div>
-    </div>
-  </div>
-
-  <div class="tab-content" id="act-a4">
-    <div class="act-grid">
-      <div class="act-card reveal"><div class="act-card-top"><div class="act-emoji">🏄</div><div><div class="act-name">Stand-Up Paddleboard</div><div class="act-price">~15–20 يورو/ساعة</div><div class="act-note">متاح على شاطئ بحيرة زيلامسي</div><span class="act-tag at-paid">مدفوع</span></div></div></div>
-      <div class="act-card reveal"><div class="act-card-top"><div class="act-emoji">🚤</div><div><div class="act-name">زورق بدواسة</div><div class="act-price">~15–20 يورو/ساعة</div><div class="act-note">خيار هادئ ومريح للعائلة</div><span class="act-tag at-paid">مدفوع</span></div></div></div>
-      <div class="act-card reveal"><div class="act-card-top"><div class="act-emoji">🏊</div><div><div class="act-name">سباحة في البحيرة</div><div class="act-price">مجاني (الشاطئ العام)</div><div class="act-note">المياه تصل 23 درجة في الصيف!</div><span class="act-tag at-free">مجاني ✓</span></div></div></div>
-      <div class="act-card reveal"><div class="act-card-top"><div class="act-emoji">⛵</div><div><div class="act-name">قارب بحيرة زيلامسي</div><div class="act-price">~20 يورو / 30 دقيقة</div><div class="act-note">جولة مع إطلالات جبلية رائعة</div><span class="act-tag at-paid">مدفوع</span></div></div></div>
-    </div>
-  </div>
+<div class="section-line"></div>
 
 </div>
+
+<div class="flight">
+
+<div class="flight-top">
+
+<div>
+✈️ SalamAir · OV811
 </div>
-<hr class="sec-divider">
 
-<!-- ======================================================
-     FOOD
-====================================================== -->
-<div id="sec-food" class="sec-wrap">
-<div class="page">
-  <div class="sec-header reveal">
-    <div class="sec-eyebrow">حلال ومضمون</div>
-    <div class="sec-title">مطاعم <em>وبقالات</em></div>
-    <div class="sec-rule"></div>
-  </div>
-
-  <div class="tab-bar reveal" id="foodTabs">
-    <button class="tab-btn active" onclick="switchTab('food','f1',this)">🍽 زيلامسي/كابرون</button>
-    <button class="tab-btn" onclick="switchTab('food','f2',this)">🏛 فيينا</button>
-    <button class="tab-btn" onclick="switchTab('food','f3',this)">🛒 بقالات حلال</button>
-  </div>
-
-  <div class="tab-content active" id="food-f1">
-    <div class="food-grid">
-      <div class="food-card reveal"><div class="food-emoji">🏺</div><div><div class="food-type">مطعم عربي</div><div class="food-name">Ali Baba</div><div class="food-addr">📍 Zell am See وسط المدينة</div><span class="food-tag ft-halal">🟢 حلال مؤكد</span></div></div>
-      <div class="food-card reveal"><div class="food-emoji">🍚</div><div><div class="food-type">مطعم هندي / حلال</div><div class="food-name">Antonio's Basmati</div><div class="food-addr">📍 Bruckberg 1, 5700 Zell am See</div><span class="food-tag ft-halal">🟢 حلال مؤكد</span></div></div>
-      <div class="food-card reveal"><div class="food-emoji">🌮</div><div><div class="food-type">مطعم كباب</div><div class="food-name">Halal City Kebap</div><div class="food-addr">📍 Zell am See</div><span class="food-tag ft-halal">🟢 حلال</span></div></div>
-      <div class="food-card reveal"><div class="food-emoji">🍔</div><div><div class="food-type">برجر</div><div class="food-name">Burger Factory</div><div class="food-addr">📍 وسط Zell am See</div><span class="food-tag ft-halal">🟢 حلال (تأكد)</span></div></div>
-      <div class="food-card reveal"><div class="food-emoji">🌯</div><div><div class="food-type">مطعم عربي</div><div class="food-name">مطعم بسمة</div><div class="food-addr">📍 Zell am See منطقة البحيرة</div><span class="food-tag ft-halal">🟢 حلال</span></div></div>
-      <div class="food-card reveal"><div class="food-emoji">🥙</div><div><div class="food-type">شاورما وفرايز</div><div class="food-name">MMK</div><div class="food-addr">📍 Zell am See</div><span class="food-tag ft-halal">🟢 حلال</span></div></div>
-    </div>
-  </div>
-
-  <div class="tab-content" id="food-f2">
-    <div class="food-grid">
-      <div class="food-card reveal"><div class="food-emoji">🌿</div><div><div class="food-type">مطعم لبناني</div><div class="food-name">Al Zaytouna</div><div class="food-addr">📍 Vienna – مطبخ لبناني أصيل</div><span class="food-tag ft-halal">🟢 حلال</span></div></div>
-      <div class="food-card reveal"><div class="food-emoji">🥙</div><div><div class="food-type">مطعم تركي</div><div class="food-name">Xtanbul Restaurant</div><div class="food-addr">📍 Vienna</div><span class="food-tag ft-halal">🟢 حلال</span></div></div>
-      <div class="food-card reveal"><div class="food-emoji">🍔</div><div><div class="food-type">برجر حلال</div><div class="food-name">Arizona Burger & Bar</div><div class="food-addr">📍 Landstraßer Hauptstraße 103, Wien</div><span class="food-tag ft-halal">🟢 حلال</span></div></div>
-      <div class="food-card reveal"><div class="food-emoji">🌯</div><div><div class="food-type">مطعم إيراني</div><div class="food-name">Nayeb</div><div class="food-addr">📍 Vienna</div><span class="food-tag ft-halal">🟢 حلال</span></div></div>
-      <div class="food-card reveal"><div class="food-emoji">🇮🇩</div><div><div class="food-type">مطعم إندونيسي</div><div class="food-name">Warung Salam</div><div class="food-addr">📍 Jägerstraße 26/4, 1200 Wien</div><span class="food-tag ft-halal">🟢 حلال</span></div></div>
-      <div class="food-card reveal"><div class="food-emoji">☕</div><div><div class="food-type">كافيه تاريخي</div><div class="food-name">Café Central</div><div class="food-addr">📍 Herrengasse 14, 1010 Wien</div><span class="food-tag ft-arab">☕ تراثي</span></div></div>
-    </div>
-  </div>
-
-  <div class="tab-content" id="food-f3">
-    <div class="food-grid">
-      <div class="food-card reveal"><div class="food-emoji">🥩</div><div><div class="food-type">بقالة حلال – زيلامسي</div><div class="food-name">آدم للحوم والدجاج</div><div class="food-addr">📍 Zell am See – لحوم طازجة حلال</div><span class="food-tag ft-halal">🟢 حلال مؤكد</span></div></div>
-      <div class="food-card reveal"><div class="food-emoji">🌙</div><div><div class="food-type">بقالة عربية</div><div class="food-name">علاء الدين</div><div class="food-addr">📍 Zell am See – منتجات عربية وشرقية</div><span class="food-tag ft-arab">🔵 عربية</span></div></div>
-      <div class="food-card reveal"><div class="food-emoji">🛒</div><div><div class="food-type">سوبرماركت كبير</div><div class="food-name">HOFER (Aldi)</div><div class="food-addr">الأرخص في النمسا للمستلزمات اليومية</div><span class="food-tag ft-shop">💰 وفير</span></div></div>
-      <div class="food-card reveal"><div class="food-emoji">🏪</div><div><div class="food-type">سوبرماركت – فيينا</div><div class="food-name">BILLA / SPAR</div><div class="food-addr">📍 في كل مكان في فيينا</div><span class="food-tag ft-shop">🟡 عام</span></div></div>
-    </div>
-    <div class="note-box reveal" style="margin-top:1.2rem"><strong>💡 نصيحة:</strong> اشتري الفواكه والخضروات من HOFER أو BILLA – أسعارها أقل بكثير. للحلال: آدم للحوم أو علاء الدين في زيلامسي.</div>
-  </div>
+<div>
+24 June 2026
+</div>
 
 </div>
+
+<div class="flight-body">
+
+<div class="route">
+
+<div class="air">
+<div class="air-code">MCT</div>
+<div class="air-city">مسقط</div>
+<div class="air-time">08:35</div>
 </div>
-<hr class="sec-divider">
 
-<!-- ======================================================
-     PACKING
-====================================================== -->
-<div id="sec-packing" class="sec-wrap">
-<div class="page">
-  <div class="sec-header reveal">
-    <div class="sec-eyebrow">تجهيز الحقيبة</div>
-    <div class="sec-title">قائمة <em>الأمتعة</em></div>
-    <div class="sec-rule"></div>
-  </div>
-  <div style="font-size:.82rem;color:var(--ink3);margin-bottom:1.5rem">اضغط/ي على الغرض لتشطيبه ✓</div>
+<div class="route-middle">
+<div>✈️ رحلة مباشرة</div>
+<div>6h 55m</div>
+</div>
 
-  <div class="pack-section reveal">
-    <div class="pack-section-title">🍳 مستلزمات الطبخ (من عُمان)</div>
-    <div class="pack-grid">
-      <div class="pack-item" onclick="tog(this)"><div class="pcb"></div>بهارات كاملة</div>
-      <div class="pack-item" onclick="tog(this)"><div class="pcb"></div>عيش (أرز)</div>
-      <div class="pack-item" onclick="tog(this)"><div class="pcb"></div>خضروات مجففة</div>
-      <div class="pack-item" onclick="tog(this)"><div class="pcb"></div>عدة القهوة</div>
-      <div class="pack-item" onclick="tog(this)"><div class="pcb"></div>بخور وفحم</div>
-      <div class="pack-item" onclick="tog(this)"><div class="pcb"></div>زيت طبخ</div>
-      <div class="pack-item" onclick="tog(this)"><div class="pcb"></div>ملح وبهارات</div>
-    </div>
-  </div>
-
-  <div class="pack-section reveal">
-    <div class="pack-section-title">👕 ملابس</div>
-    <div class="pack-grid">
-      <div class="pack-item" onclick="tog(this)"><div class="pcb"></div>ملابس صيفية خفيفة</div>
-      <div class="pack-item" onclick="tog(this)"><div class="pcb"></div>جاكيت للجبال</div>
-      <div class="pack-item" onclick="tog(this)"><div class="pcb"></div>حذاء مشي جبلي</div>
-      <div class="pack-item" onclick="tog(this)"><div class="pcb"></div>شنطة ظهر يومية</div>
-      <div class="pack-item" onclick="tog(this)"><div class="pcb"></div>لباس سباحة</div>
-      <div class="pack-item" onclick="tog(this)"><div class="pcb"></div>مناشف خفيفة</div>
-    </div>
-  </div>
-
-  <div class="pack-section reveal">
-    <div class="pack-section-title">📱 إلكترونيات وأساسيات</div>
-    <div class="pack-grid">
-      <div class="pack-item" onclick="tog(this)"><div class="pcb"></div>جواز السفر ✈️</div>
-      <div class="pack-item" onclick="tog(this)"><div class="pcb"></div>وثائق الحجوزات</div>
-      <div class="pack-item" onclick="tog(this)"><div class="pcb"></div>شاحن هاتف</div>
-      <div class="pack-item" onclick="tog(this)"><div class="pcb"></div>محول أوروبي 🔌</div>
-      <div class="pack-item" onclick="tog(this)"><div class="pcb"></div>باور بنك</div>
-      <div class="pack-item" onclick="tog(this)"><div class="pcb"></div>سماعات</div>
-      <div class="pack-item" onclick="tog(this)"><div class="pcb"></div>كاميرا</div>
-    </div>
-  </div>
-
-  <div class="pack-section reveal">
-    <div class="pack-section-title">🌞 للخارج والطبيعة</div>
-    <div class="pack-grid">
-      <div class="pack-item" onclick="tog(this)"><div class="pcb"></div>نظارة شمسية</div>
-      <div class="pack-item" onclick="tog(this)"><div class="pcb"></div>واقي شمس SPF 50</div>
-      <div class="pack-item" onclick="tog(this)"><div class="pcb"></div>كريم للثلج</div>
-      <div class="pack-item" onclick="tog(this)"><div class="pcb"></div>قبعة صيفية</div>
-      <div class="pack-item" onclick="tog(this)"><div class="pcb"></div>مظلة خفيفة</div>
-      <div class="pack-item" onclick="tog(this)"><div class="pcb"></div>قفازات خفيفة</div>
-    </div>
-  </div>
+<div class="air">
+<div class="air-code">VIE</div>
+<div class="air-city">فيينا</div>
+<div class="air-time">13:30</div>
+</div>
 
 </div>
+
 </div>
+
+</div>
+
+</section>
+
+<!-- HOTELS -->
+
+<section class="page" id="hotels">
+
+<div class="section-head">
+
+<div class="section-mini">
+3 CONFIRMED HOTELS
+</div>
+
+<div class="section-title">
+الفنادق <span>المحجوزة</span>
+</div>
+
+<div class="section-line"></div>
+
+</div>
+
+<div class="grid">
+
+<!-- hotel -->
+
+<div class="hotel">
+
+<img class="hotel-img"
+src="https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1200&auto=format&fit=crop">
+
+<div class="hotel-body">
+
+<div class="hotel-tag">
+🏛 فيينا · الليلة الأولى
+</div>
+
+<h3>
+PLAZA Premium Wien
+</h3>
+
+<div class="hotel-info">
+
+📍 Vienna, Austria
+<br>
+🕒 دخول: 24 يونيو بعد 15:00
+<br>
+🚪 خروج: 25 يونيو قبل 11:00
+
+</div>
+
+<div class="hotel-badges">
+
+<div class="badge">
+✨ واي فاي
+</div>
+
+<div class="badge">
+❄️ تكييف
+</div>
+
+<div class="badge">
+🛏 Twin Room
+</div>
+
+</div>
+
+<div class="note">
+💳 الفندق يطلب تأمين عند الوصول يتم استرجاعه بعد المغادرة.
+</div>
+
+</div>
+
+</div>
+
+<!-- hotel -->
+
+<div class="hotel">
+
+<img class="hotel-img"
+src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop">
+
+<div class="hotel-body">
+
+<div class="hotel-tag">
+🏔 كابرون · 5 ليالٍ
+</div>
+
+<h3>
+Falcon Suites Kaprun
+</h3>
+
+<div class="hotel-info">
+
+📍 Kaprun, Austria
+<br>
+🕒 25 يونيو – 30 يونيو
+<br>
+🌿 شقة بإطلالة جبلية
+
+</div>
+
+<div class="hotel-badges">
+
+<div class="badge">
+🏔 Summer Card
+</div>
+
+<div class="badge">
+🍳 مطبخ
+</div>
+
+<div class="badge">
+🚿 بيدي
+</div>
+
+</div>
+
+<div class="note">
+🎫 بطاقة الصيف تشمل الجبال والأنشطة والمواصلات العامة مجاناً.
+</div>
+
+</div>
+
+</div>
+
+<!-- hotel -->
+
+<div class="hotel">
+
+<img class="hotel-img"
+src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?q=80&w=1200&auto=format&fit=crop">
+
+<div class="hotel-body">
+
+<div class="hotel-tag">
+🏙 فيينا · الليالي الأخيرة
+</div>
+
+<h3>
+Hotel Triester Vienna
+</h3>
+
+<div class="hotel-info">
+
+📍 Vienna Center
+<br>
+🕒 30 يونيو – 3 يوليو
+<br>
+🚇 قريب من المترو
+
+</div>
+
+<div class="hotel-badges">
+
+<div class="badge">
+☕ إفطار
+</div>
+
+<div class="badge">
+📶 WiFi
+</div>
+
+<div class="badge">
+✨ 4 Stars
+</div>
+
+</div>
+
+<div class="note">
+📍 موقع ممتاز للتسوق واستكشاف وسط فيينا.
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- PLAN -->
+
+<section class="page" id="plan">
+
+<div class="section-head">
+
+<div class="section-mini">
+DAILY ROADMAP
+</div>
+
+<div class="section-title">
+خطة <span>الرحلة</span>
+</div>
+
+<div class="section-line"></div>
+
+</div>
+
+<div class="timeline">
+
+<div class="day">
+
+<div class="day-card">
+
+<h3>
+🛫 اليوم الأول – السفر
+</h3>
+
+<ul>
+<li>الوصول لمطار مسقط قبل 4 ساعات</li>
+<li>رحلة مباشرة لفيينا</li>
+<li>الذهاب للفندق بالقطار والمترو</li>
+<li>راحة واستكشاف المنطقة</li>
+</ul>
+
+</div>
+
+</div>
+
+<div class="day">
+
+<div class="day-card">
+
+<h3>
+🚂 اليوم الثاني – الانتقال لكابرون
+</h3>
+
+<ul>
+<li>قطار ÖBB من فيينا</li>
+<li>الوصول لزيلامسي</li>
+<li>باص 680 إلى كابرون</li>
+<li>استلام الشقة وبطاقة الصيف</li>
+</ul>
+
+</div>
+
+</div>
+
+<div class="day">
+
+<div class="day-card">
+
+<h3>
+🏔 أيام الطبيعة والبحيرات
+</h3>
+
+<ul>
+<li>Kitzsteinhorn</li>
+<li>بحيرة زيلامسي</li>
+<li>شلالات كريمل</li>
+<li>هالشتات وسالزبورغ</li>
+</ul>
+
+</div>
+
+</div>
+
+<div class="day">
+
+<div class="day-card">
+
+<h3>
+🚲 يوم الدراجات
+</h3>
+
+<ul>
+<li>استئجار دراجات</li>
+<li>التجول حول البحيرة</li>
+<li>غداء بإطلالة جبلية</li>
+<li>تصوير وغروب جميل</li>
+</ul>
+
+</div>
+
+</div>
+
+<div class="day">
+
+<div class="day-card">
+
+<h3>
+🏛 العودة لفيينا
+</h3>
+
+<ul>
+<li>التسوق</li>
+<li>قصر شونبرون</li>
+<li>براتر</li>
+<li>العودة لمسقط ✈️</li>
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ACTIVITIES -->
+
+<section class="page" id="activities">
+
+<div class="section-head">
+
+<div class="section-mini">
+BEST PLACES
+</div>
+
+<div class="section-title">
+الأنشطة <span>والأماكن</span>
+</div>
+
+<div class="section-line"></div>
+
+</div>
+
+<div class="activities">
+
+<div class="activity">
+
+<div class="emoji">
+🏔
+</div>
+
+<h4>
+Kitzsteinhorn
+</h4>
+
+<p>
+قمة ثلجية مذهلة بارتفاع 3000 متر فوق السحاب.
+</p>
+
+</div>
+
+<div class="activity">
+
+<div class="emoji">
+🏘
+</div>
+
+<h4>
+Hallstatt
+</h4>
+
+<p>
+أجمل قرية نمساوية بإطلالة ساحرة على البحيرة.
+</p>
+
+</div>
+
+<div class="activity">
+
+<div class="emoji">
+🎵
+</div>
+
+<h4>
+Salzburg
+</h4>
+
+<p>
+مدينة موتزارت التاريخية والكلاسيكية الأوروبية.
+</p>
+
+</div>
+
+<div class="activity">
+
+<div class="emoji">
+🚲
+</div>
+
+<h4>
+Cycling Day
+</h4>
+
+<p>
+مسارات دراجات خيالية حول البحيرات والجبال.
+</p>
+
+</div>
+
+<div class="activity">
+
+<div class="emoji">
+💧
+</div>
+
+<h4>
+Krimml Falls
+</h4>
+
+<p>
+أكبر شلالات في النمسا بمناظر طبيعية مدهشة.
+</p>
+
+</div>
+
+<div class="activity">
+
+<div class="emoji">
+🎡
+</div>
+
+<h4>
+Vienna Prater
+</h4>
+
+<p>
+العجلة الشهيرة وأجواء فيينا الليلية الجميلة.
+</p>
+
+</div>
+
+</div>
+
+</section>
 
 <!-- FOOTER -->
+
 <footer>
-  <div class="f-logo">🇦🇹 النمسا 2026</div>
-  <p>فيينا · كابرون · هالشتات · سالزبورغ</p>
-  <p style="margin-top:.5rem">✈️ <strong style="color:#fff">24 يونيو – 3 يوليو 2026</strong></p>
-  <p style="margin-top:1rem;font-size:.75rem;opacity:.4">رقية · إبراهيم · وعَد</p>
+
+<h2>
+Austria 2026
+</h2>
+
+<p>
+فيينا · كابرون · زيلامسي · هالشتات · سالزبورغ
+</p>
+
+<p style="margin-top:1rem">
+✈️ 24 June — 3 July 2026
+</p>
+
 </footer>
 
-<button id="scrollUp" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
-
-<script>
-function switchTab(group, id, btn) {
-  document.querySelectorAll('[id^="'+group+'-"]').forEach(t => t.classList.remove('active'));
-  document.getElementById(group+'-'+id).classList.add('active');
-  btn.closest('.tab-bar').querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-  btn.classList.add('active');
-}
-
-function tog(el) {
-  el.classList.toggle('done');
-  el.querySelector('.pcb').textContent = el.classList.contains('done') ? '✓' : '';
-}
-
-const revObs = new IntersectionObserver((entries) => {
-  entries.forEach(e => {
-    if (e.isIntersecting) {
-      e.target.classList.add('visible');
-      revObs.unobserve(e.target);
-    }
-  });
-}, { threshold: 0.05, rootMargin: '0px 0px -40px 0px' });
-
-document.querySelectorAll('.reveal').forEach((el, i) => {
-  el.style.transitionDelay = (i % 6) * 0.07 + 's';
-  revObs.observe(el);
-});
-
-window.addEventListener('scroll', () => {
-  const btn = document.getElementById('scrollUp');
-  if (window.scrollY > 400) btn.classList.add('show');
-  else btn.classList.remove('show');
-});
-</script>
 </body>
 </html>
