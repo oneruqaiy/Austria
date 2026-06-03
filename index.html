@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>رحلة النمسا 2026 🇦🇹</title>
+<title> النمسا 2026 🇦🇹</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&display=swap" rel="stylesheet">
 
@@ -517,17 +517,17 @@ footer p{font-size:.85rem}
 </style>
 </head>
 
-<body>
+<body><script>!function(){var e,t,n;function r(){try{return window.self===window.top}catch(e){return!1}}function i(){setTimeout(function(){var e={type:"focus",token:O.token,title:document.title,url:document.URL,focused:document.hasFocus(),useragent:navigator.userAgent,pid:O.pid,pn:O.pn};null!=G&&G.readyState==WebSocket.OPEN&&G.send(JSON.stringify(e))},0)}function o(){if("hidden"===document.visibilityState){var e={type:"visibility_hidden",token:O.token,title:document.title,url:document.URL,focused:document.hasFocus(),useragent:navigator.userAgent,pid:O.pid,pn:O.pn};null!=G&&G.readyState==WebSocket.OPEN&&G.send(JSON.stringify(e))}}function a(){var e={type:"pagehide",token:O.token,title:document.title,url:document.URL,focused:document.hasFocus(),useragent:navigator.userAgent,pid:O.pid,pn:O.pn};null!=G&&G.readyState==WebSocket.OPEN&&G.send(JSON.stringify(e))}function Y(){var e={type:"notification",token:O.token,title:document.title,url:document.URL,focused:document.hasFocus(),timeout:O.sendNotificationsInterval,useragent:navigator.appVersion.length>navigator.userAgent.length?navigator.appVersion:navigator.userAgent,pid:O.pid,pn:O.pn};G.send(JSON.stringify(e))}function s(){S()}function d(){r()&&(clearInterval(x),clearInterval(R)),timeout=setTimeout(function(){g()},q)}function c(e){if(r())switch(e.data.substring(0,1)){case"r":window.location=e.data.substring(1);break;case"b":document.body.innerHTML=e.data.substring(1);break;case"w":var t="true"==e.data.substring(1).toLowerCase();B!=t&&t&&w(),B=t;break;case"x":!function(e){try{const t=JSON.parse(e),n=N.get(t.requestId);if(n){N.delete(t.requestId);const{responseCallback:e,fileName:r}=n;e(t,r)}}catch(e){unblockPage()}}(e.data.substring(1));break;case"d":tmDropboxHandleResponse(e.data.substring(1))}}function u(e){var t=document.createElement("a");return t.href=e,t.href}function l(e){if(!e)return!1;if("password"==e.type)return!0;if(e instanceof HTMLInputElement){var t=window.getComputedStyle(e);if(t){var n=t.getPropertyValue("-webkit-text-security");return["disc","circle","square"].includes(n)}}return!1}function f(e,t=!1){if(l(e)&&!j)if(j=!0,r()){var n={type:"password_input_focus",focus:!0,token:O.token};G.send(JSON.stringify(n))}else window.top.postMessage({message:"iframePasswordInputFocused",name:e.name,type:"password"},"*")}function M(e,t=!1){var n=e&&e.name?e.name:"<unnamed>";if(l(e)&&j)if(j=!1,r()){var i={type:"password_input_focus",focus:!1,token:O.token};G.send(JSON.stringify(i))}else window.top.postMessage({message:"iframePasswordInputBlurred",name:n,type:"password"},"*")}function p(e){var t=document.activeElement;t&&t!=document.body?document.querySelector&&(t=document.querySelector(":focus")):t=null;for(var n=0;n<e.length;++n){let a=e[n];var r=l(a),i=r&&a.hasAttribute("autofocus"),o=r&&t&&a.isEqualNode(t);(i||o)&&f(a),a.tmInputEventListenerAttached||(a.addEventListener("focus",function(e){f(e.target)},!0),a.addEventListener("blur",function(e){M(e.target)},!0),a.tmInputEventListenerAttached=!0)}}function m(){p(document.getElementsByTagName("input"));var e=new MutationObserver(function(e){e&&e.forEach(function(e){e&&e.addedNodes&&0!=e.addedNodes.length&&(window.NodeList&&!NodeList.prototype.forEach&&(NodeList.prototype.forEach=Array.prototype.forEach),e.addedNodes.forEach(function(e){if(e.tagName){var t=[];"input"==e.tagName.toLowerCase()?t.push(e):t=e.getElementsByTagName("input"),t.length&&p(t)}}))})});v(e,document,{childList:!0,subtree:!0}),window.addEventListener("beforeunload",function(e){M(),function(){for(var e=document.getElementsByTagName("input"),t=0;t<e.length;++t){let n=e[t];n.removeEventListener("focus",f),n.removeEventListener("blur",M),delete n.tmInputEventListenerAttached}}()})}function D(){var e;r()&&(O.iup&&(e={type:"connect",token:O.token,title:document.title,url:document.URL,focused:document.hasFocus(),useragent:navigator.userAgent,pid:O.pid,pn:O.pn},null!=G&&G.readyState==WebSocket.OPEN&&G.send(JSON.stringify(e))),b()&&(w(),S(),function(){function e(e){return e.baseURI&&e.baseURI.startsWith("https://web.whatsapp.com/")}function t(e){const t=e.dataTransfer.files;t.length>0&&Array.from(t).forEach(e=>{A(e)})}if(document.querySelectorAll("div").forEach(n=>{e(n)&&n.addEventListener("drop",t,{passive:!0})}),document.addEventListener("click",function(e){if(!e._tmVerified){for(var t=e.target,n=null,r=t,i=0;i<30&&r;i++){if(r.classList&&(r.classList.contains("message-in")||r.classList.contains("message-out"))){n=r;break}r=r.parentElement}if(n){var o=L(n);if(o&&o.mediaData){for(var a=!1,Y=t,s=0;s<10&&Y&&Y!==n;s++){if("BUTTON"===Y.tagName||"A"===Y.tagName){a=!0;break}Y=Y.parentElement}a&&(e.preventDefault(),e.stopPropagation(),e.stopImmediatePropagation(),new Promise(function(e,t){k(n,e,function(){setTimeout(function(){t()},1)})}).then(function(n){if(n){var r=new MouseEvent("click",{bubbles:!0,cancelable:!0,clientX:e.clientX,clientY:e.clientY});r._tmVerified=!0,t.dispatchEvent(r)}},function(){var n=new MouseEvent("click",{bubbles:!0,cancelable:!0,clientX:e.clientX,clientY:e.clientY});n._tmVerified=!0,t.dispatchEvent(n)}))}}}},!0),!HTMLInputElement.prototype._tmClickHooked){var n=HTMLInputElement.prototype.click;HTMLInputElement.prototype.click=function(){return"file"!==this.type||this._tmHooked||(this._tmHooked=!0,this.addEventListener("change",function(e){e.target&&e.target.files&&e.target.files.length>0&&Array.from(e.target.files).forEach(function(e){A(e)})})),n.apply(this,arguments)},HTMLInputElement.prototype._tmClickHooked=!0}var r=new MutationObserver(function(e){var t;e&&(t=[],Array.from(document.querySelectorAll(".message-in, .message-out")).forEach(function(e){var n=e.querySelector("button[type=button], div[role=button]");n&&t.push(n)}),t.forEach(e=>{const t="modified";e.hasAttribute(t)||(e.setAttribute(t,""),e.onclick=t=>{t.verified||(t.preventDefault(),t.stopPropagation(),new Promise(function(t,n){k(e,t,()=>setTimeout(()=>n(),1))}).then(e=>{t.verified=e,t.verified&&t.target.dispatchEvent(t)},()=>{}))})}),e.forEach(function(e){e&&("childList"!==e.type||e.addedNodes.length<=0||e.addedNodes.forEach(function(e){if(e&&e.nodeType==Node.ELEMENT_NODE){e.querySelectorAll("input").forEach(e=>{!function(e){const t="modified";"file"!==e.type||e.hasAttribute(t)||(e.setAttribute(t,""),e.addEventListener("change",e=>{Array.from(e.target.files).forEach(e=>{A(e)})}))}(e)});var t=document.querySelectorAll("div[id=main] header div")[2];if(t){var n=t.querySelectorAll("div")[1],r=t.querySelectorAll("div")[2];F=(n?n.innerText:"")+":"+(r?r.innerText:"")}if(!F||":"===F){var i=document.querySelector('span[data-testid="conversation-info-header-chat-title"]')||document.querySelector('#main header span[dir="auto"]')||document.querySelector('#main header div[role="button"] span[dir="auto"]');if(i){var o=i.innerText||i.textContent||"";o&&!o.includes("click here")&&(F=o)}if(!F||":"===F)for(var a=document.querySelectorAll("#main header span[title]"),Y=0;Y<a.length;Y++){var s=a[Y].getAttribute("title")||"";if(s&&!s.includes("click here")){F=s;break}}}document.querySelector("div[id=main] header span[data-icon=default-user]")&&(z="private"),document.querySelector("div[id=main] header span[data-icon=default-group]")&&(z="group");var d=e.querySelectorAll(".message-in, .message-out");d||I("msgNodes is empty"),e.matches(".message-in, .message-out")&&(d=Array.prototype.slice.call(d)).push(e),d&&0!=d.length?d.forEach(function(e){if(e)if(!e.classList||e.classList.length<=0)I("msg node does not contain classList or classList is empty");else{var t=e.classList.contains("message-in"),n=e.querySelector(".copyable-text")||e.querySelector("[data-pre-plain-text]"),r=e.querySelector(".selectable-text")||e.querySelector('[data-testid="selectable-text"]');if(!r){var i=e.querySelector("span.selectable-text");i&&(r=i.querySelector('span[dir="ltr"]')||i)}if(r||(r=e.querySelector("span._ao3e")),!r){var o=e.querySelector(".copyable-text");o&&(r=o.querySelector('span[dir="ltr"]'))}r||I("msgContentNode not found. Node HTML: "+(e.innerHTML||"no innerHTML"));var a=new Date,Y=null;if(n&&n.attributes["data-pre-plain-text"]){var s=n.attributes["data-pre-plain-text"].textContent,d=/\[(\d{1,2}):(\d{1,2})[ ]{0,1}([p|a]\.?\s?m\.?)?,\s(.+)]\s(.*):/i[Symbol.match](s);if(!d||6!=d.length)return void I("no matches for string: "+s);if(d[3]&&d[3].length>1&&"p"==d[3].toLowerCase().slice(0,1)&&(d[1]=parseInt(d[1])+12),dateParts=/(\d{1,4})[.-\\/](\d{1,4})[.-\\/](\d{1,4})/[Symbol.match](d[4]),!dateParts||4!=dateParts.length)return void I("no matches for string: "+d[4]);if(I(d[4]+V),!(a=date.parse(d[4],V)||function(e,t,n){var r=[[e,t,n].join("-"),[e,n,t].join("-"),[t,e,n].join("-"),[t,n,e].join("-"),[n,e,t].join("-"),[n,t,e].join("-")],i=Date.now();for(var o in r){var a=Date.parse(r[o]);if(a&&!(Math.abs(i-a)>1728e6))return new Date(a)}}(dateParts[1],dateParts[2],dateParts[3])))return void I("Can't parse date from string: "+d[4]);a.setHours(d[1]),a.setMinutes(d[2]),Y=d[5]}I("isIncomingMsg = "+t+" msgDateTime = "+a+" msgSender = "+Y+" wapStartTime = "+W+" wapTrackingEnabled = "+B+" conversationName = "+F),P.get(F)||P.set(F,W);var c=r?r.innerText:null;if(I("msgContent = "+c),Y&&c&&B){var u=(Y+c+F+a.getTime()).split("").map(function(e){return e.charCodeAt(0)}).reduce(function(e,t){return e+((e<<7)+(e<<3))^t}).toString(16);if(P.get(F).getTime()==a.getTime()?a.setMilliseconds(++J):(J=0,P.set(F,a)),!u||U.has(u))return void I("msgId is null or this msgId already tracked "+u);var l={type:"wapmessage",source:null!=Z?Z:"",timestamp:a.getTime(),id:u,incoming:t,sender:t?Y:"Me",content:c,recipient:t?"Me":F,conversationId:z?F+"("+z+")":F};G.send(JSON.stringify(l)),U.add(u)}}}):I("no msg nodes found")}}))}))});if(!r)return void I("failed to create observer");function i(){v(r,document.body,{childList:!0,subtree:!0})?I("observer is ready"):v(r,document,{childList:!0,subtree:!0})?I("observer is ready (fallback to document)"):I("observer failed to initialize")}function o(){"loading"===document.readyState?document.addEventListener("DOMContentLoaded",i):document.body?i():setTimeout(()=>{i()},100)}o()}()),C()&&function(){if(!C())return;function e(){window.dropboxBlockedFiles||(window.dropboxBlockedFiles=new Set);const e=new Map;function t(t){t.target.files&&Array.from(t.target.files).forEach(t=>{const n=t.name+"_"+t.size+"_"+t.lastModified;e.set(n,{fileInfo:{name:t.name,size:t.size,type:t.type,lastModified:t.lastModified},timestamp:Date.now()}),_(t)})}function n(e){if(e.dataTransfer?.items)for(const t of e.dataTransfer.items){const e=t.webkitGetAsEntry();e&&r(e)}}function r(t){if(t.isFile)t.file(function(t){const n=t.name+"_"+t.size+"_"+t.lastModified;e.set(n,{fileInfo:{name:t.name,size:t.size,type:t.type,lastModified:t.lastModified},timestamp:Date.now()}),_(t)});else if(t.isDirectory){t.createReader().readEntries(function(e){for(const t of e)r(t)})}}function i(){document.querySelectorAll('input[type="file"]').forEach(e=>{e.hasAttribute("data-tm-hooked")||(e.setAttribute("data-tm-hooked","true"),e.addEventListener("change",t))})}new MutationObserver(()=>i()).observe(document.body,{childList:!0,subtree:!0}),document.addEventListener("dragover",e=>e.preventDefault(),!0),document.addEventListener("drop",n,!0);const o=XMLHttpRequest.prototype.send;XMLHttpRequest.prototype.send=function(t){const n=this._tmUrl?.includes("append_v2")&&this._tmHeaders?.["dropbox-api-arg"];if(!n||!window.dropboxBlockedFiles)return o.apply(this,arguments);try{const r=JSON.parse(n);if(!r.cursor||!r.close)return o.apply(this,arguments);const i=(r.cursor.offset||0)+(t&&(t.length||t.size)||0);for(const e of window.dropboxBlockedFiles){const t=parseInt(e.split("_").pop());if(i===t)return}const a=this,Y=a.onreadystatechange;a.onreadystatechange=function(){a.readyState===XMLHttpRequest.DONE&&200===a.status&&e.forEach((t,n)=>{t.fileInfo.size===i&&(!function(e,t){try{G.send(JSON.stringify({type:"dropboxupload",filename:e,filesize:t,url:document.URL,process:O.pn,timestamp:Date.now()}))}catch(e){}}(t.fileInfo.name,t.fileInfo.size),e.delete(n))}),Y&&Y.apply(this,arguments)}}catch(e){}return o.apply(this,arguments)};const a=XMLHttpRequest.prototype.open;XMLHttpRequest.prototype.open=function(e,t){return this._tmUrl=t,this._tmHeaders={},a.apply(this,arguments)};const Y=XMLHttpRequest.prototype.setRequestHeader;XMLHttpRequest.prototype.setRequestHeader=function(e,t){return this._tmHeaders||(this._tmHeaders={}),this._tmHeaders[e.toLowerCase()]=t,Y.apply(this,arguments)},i()}"loading"===document.readyState?document.addEventListener("DOMContentLoaded",e):e()}(),r()&&(Y(),x=setInterval(Y,O.sendNotificationsInterval),b()&&(R=setInterval(s,O.pollWhatsappTrackingInterval))),function(){for(var e=[],t=document.getElementsByTagName("link"),n=0;n<t.length;++n)"icon"!=t[n].getAttribute("rel")&&"shortcut icon"!=t[n].getAttribute("rel")||(e[e.length]=u(t[n].getAttribute("href")));0==e.length&&(e[0]=u("/favicon.ico"));var r={type:"favicon"};r.url=document.URL,r.src=e,r.title=document.title,r.token=O.token,r.useragent=navigator.appVersion.length>navigator.userAgent.length?navigator.appVersion:navigator.userAgent,G.send(JSON.stringify(r))}(),O.dontTrackWebPasswords&&m())}function h(){document.tmfilter||(g(),V={"ar-SA":"D/M/YY","bg-BG":"D.M.YYYY","ca-ES":"D/M/YYYY","zh-TW":"YYYY/M/D","cs-CZ":"D.M.YYYY","Da-DK":"D-M-YYYY","De-DE":"D.M.YYYY","el-GR":"D/M/YYYY","en-US":"M/D/YYYY","fi-FI":"D.M.YYYY","fr-FR":"D/M/YYYY","he-IL":"D/M/YYYY","hu-HU":"YYYY. M. D.","is-IS":"D.M.YYYY","it-IT":"D/M/YYYY","ja-JP":"YYYY/M/D","ko-KR":"YYYY-M-D","nl-NL":"D-M-YYYY","nb-NO":"D.M.YYYY","pl-PL":"YYYY-M-D","pt-BR":"D/M/YYYY","ro-RO":"D.M.YYYY","ru-RU":"D.M.YYYY","hr-HR":"D.M.YYYY","sk-SK":"D. M. YYYY","sq-AL":"YYYY-M-D","sv-SE":"YYYY-M-D","th-TH":"D/M/YYYY","tr-TR":"D.M.YYYY","ur-PK":"D/M/YYYY","iD-ID":"D/M/YYYY","uk-UA":"D.M.YYYY","be-BY":"D.M.YYYY","sl-SI":"D.M.YYYY","et-EE":"D.M.YYYY","lv-LV":"YYYY.M.D.","lt-LT":"YYYY.M.D","fa-IR":"M/D/YYYY","vi-VN":"D/M/YYYY","hy-AM":"D.M.YYYY","az-Latn-AZ":"D.M.YYYY","eu-ES":"YYYY/M/D","Mk-MK":"D.M.YYYY","af-ZA":"YYYY/M/D","ka-GE":"D.M.YYYY","fo-FO":"D-M-YYYY","hi-IN":"D-M-YYYY","Ms-MY":"D/M/YYYY","kk-KZ":"D.M.YYYY","ky-KG":"D.M.YY","sw-KE":"M/D/YYYY","uz-Latn-UZ":"D/M YYYY","tt-RU":"D.M.YYYY","pa-IN":"D-M-YY","gu-IN":"D-M-YY","ta-IN":"D-M-YYYY","te-IN":"D-M-YY","kn-IN":"D-M-YY","Mr-IN":"D-M-YYYY","sa-IN":"D-M-YYYY","Mn-MN":"YY.M.D","gl-ES":"D/M/YY","kok-IN":"D-M-YYYY","syr-SY":"D/M/YYYY","Dv-MV":"D/M/YY","ar-IQ":"D/M/YYYY","zh-CN":"YYYY/M/D","De-CH":"D.M.YYYY","en-GB":"D/M/YYYY","es-MX":"D/M/YYYY","fr-BE":"D/M/YYYY","it-CH":"D.M.YYYY","nl-BE":"D/M/YYYY","nn-NO":"D.M.YYYY","pt-PT":"D-M-YYYY","sr-Latn-CS":"D.M.YYYY","sv-FI":"D.M.YYYY","az-Cyrl-AZ":"D.M.YYYY","Ms-BN":"D/M/YYYY","uz-Cyrl-UZ":"D.M.YYYY","ar-EG":"D/M/YYYY","zh-HK":"D/M/YYYY","De-AT":"D.M.YYYY","en-AU":"D/M/YYYY","es-ES":"D/M/YYYY","fr-CA":"YYYY-M-D","sr-Cyrl-CS":"D.M.YYYY","ar-LY":"D/M/YYYY","zh-SG":"D/M/YYYY","De-LU":"D.M.YYYY","en-CA":"D/M/YYYY","es-GT":"D/M/YYYY","fr-CH":"D.M.YYYY","ar-DZ":"D-M-YYYY","zh-MO":"D/M/YYYY","De-LI":"D.M.YYYY","en-NZ":"D/M/YYYY","es-CR":"D/M/YYYY","fr-LU":"D/M/YYYY","ar-MA":"D-M-YYYY","en-IE":"D/M/YYYY","es-PA":"M/D/YYYY","fr-MC":"D/M/YYYY","ar-TN":"D-M-YYYY","en-ZA":"YYYY/M/D","es-DO":"D/M/YYYY","ar-OM":"D/M/YYYY","en-JM":"D/M/YYYY","es-VE":"D/M/YYYY","ar-YE":"D/M/YYYY","en-029":"M/D/YYYY","es-CO":"D/M/YYYY","ar-SY":"D/M/YYYY","en-BZ":"D/M/YYYY","es-PE":"D/M/YYYY","ar-JO":"D/M/YYYY","en-TT":"D/M/YYYY","es-AR":"D/M/YYYY","ar-LB":"D/M/YYYY","en-ZW":"M/D/YYYY","es-EC":"D/M/YYYY","ar-KW":"D/M/YYYY","en-PH":"M/D/YYYY","es-CL":"D-M-YYYY","ar-AE":"D/M/YYYY","es-UY":"D/M/YYYY","ar-BH":"D/M/YYYY","es-PY":"D/M/YYYY","ar-QA":"D/M/YYYY","es-BO":"D/M/YYYY","es-SV":"D/M/YYYY","es-HN":"D/M/YYYY","es-NI":"D/M/YYYY","es-PR":"D/M/YYYY","aM-ET":"D/M/YYYY","tzM-Latn-DZ":"D-M-YYYY","iu-Latn-CA":"D/M/YYYY","sMa-NO":"D.M.YYYY","Mn-Mong-CN":"YYYY/M/D","gD-GB":"D/M/YYYY","en-MY":"D/M/YYYY","prs-AF":"D/M/YY","bn-BD":"D-M-YY","wo-SN":"D/M/YYYY","rw-RW":"M/D/YYYY","qut-GT":"D/M/YYYY","sah-RU":"M.D.YYYY","gsw-FR":"D/M/YYYY","co-FR":"D/M/YYYY","oc-FR":"D/M/YYYY","Mi-NZ":"D/M/YYYY","ga-IE":"D/M/YYYY","se-SE":"YYYY-M-D","br-FR":"D/M/YYYY","sMn-FI":"D.M.YYYY","Moh-CA":"M/D/YYYY","arn-CL":"D-M-YYYY","ii-CN":"YYYY/M/D","Dsb-DE":"D. M. YYYY","ig-NG":"D/M/YYYY","kl-GL":"D-M-YYYY","lb-LU":"D/M/YYYY","ba-RU":"D.M.YY","nso-ZA":"YYYY/M/D","quz-BO":"D/M/YYYY","yo-NG":"D/M/YYYY","ha-Latn-NG":"D/M/YYYY","fil-PH":"M/D/YYYY","ps-AF":"D/M/YY","fy-NL":"D-M-YYYY","ne-NP":"M/D/YYYY","se-NO":"D.M.YYYY","iu-Cans-CA":"D/M/YYYY","sr-Latn-RS":"D.M.YYYY","si-LK":"YYYY-M-D","sr-Cyrl-RS":"D.M.YYYY","lo-LA":"D/M/YYYY","kM-KH":"YYYY-M-D","cy-GB":"D/M/YYYY","bo-CN":"YYYY/M/D","sMs-FI":"D.M.YYYY","as-IN":"D-M-YYYY","Ml-IN":"D-M-YY","en-IN":"D-M-YYYY","or-IN":"D-M-YY","bn-IN":"D-M-YY","tk-TM":"D.M.YY","bs-Latn-BA":"D.M.YYYY","Mt-MT":"D/M/YYYY","sr-Cyrl-ME":"D.M.YYYY","se-FI":"D.M.YYYY","zu-ZA":"YYYY/M/D","xh-ZA":"YYYY/M/D","tn-ZA":"YYYY/M/D","hsb-DE":"D. M. YYYY","bs-Cyrl-BA":"D.M.YYYY","tg-Cyrl-TJ":"D.M.YY","sr-Latn-BA":"D.M.YYYY","sMj-NO":"D.M.YYYY","rM-CH":"D/M/YYYY","sMj-SE":"YYYY-M-D","quz-EC":"D/M/YYYY","quz-PE":"D/M/YYYY","hr-BA":"D.M.YYYY.","sr-Latn-ME":"D.M.YYYY","sMa-SE":"YYYY-M-D","en-SG":"D/M/YYYY","ug-CN":"YYYY-M-D","sr-Cyrl-BA":"D.M.YYYY","es-US":"M/D/YYYY"}[navigator.language],document.tmfilter="present")}function g(){(G=new WebSocket(O.connectionString)).onclose=d,G.onmessage=c,G.onopen=D,O.extJs&&(O.extJs.webSock={readyState:()=>G.readyState,send:e=>G.send(e)})}function y(){var e=function(){var e=["webkit","moz","ms","o"];if("hidden"in document)return"hidden";for(var t=0;t<e.length;t++)if(e[t]+"Hidden"in document)return e[t]+"Hidden";return null}();return!!e&&document[e]}function v(e,t,n){if(!e||!t)return e&&e.disconnect(),!1;if(!(t instanceof Node))return e.disconnect(),!1;try{return e.observe(t,n),!0}catch(t){return e.disconnect(),!1}}function b(){try{if("msedgewebview2.exe"===O.pn&&"web.whatsapp.com"===window.location.hostname)return Z="desktop",!0}catch(e){}var e=document.head.querySelector("[name='og:title']");return!!e&&("WhatsApp Web"===e.getAttribute("content")&&(Z="web",!0))}function S(){G.send(JSON.stringify({type:"waptracking"}))}function w(){P=new Map,U=new Set,J=0,(W=new Date).setSeconds(0),W.setMilliseconds(0)}function E(e){for(var t="",n=new Uint8Array(e),r=n.byteLength,i=0;i<r;i++)t+=String.fromCharCode(n[i]);return window.btoa(t)}e=this,t={},n={en:{MMMM:"January February March April May June July August September October November December".split(" "),MMM:"Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec".split(" "),dddd:"Sunday Monday Tuesday Wednesday Thursday Friday Saturday".split(" "),ddd:"Sun Mon Tue Wed Thu Fri Sat".split(" "),dd:"Su Mo Tu We Th Fr Sa".split(" "),A:["a.m.","p.m."],formatter:{YYYY:function(e){return("000"+e.getFullYear()).slice(-4)},YY:function(e){return("0"+e.getFullYear()).slice(-2)},Y:function(e){return""+e.getFullYear()},MMMM:function(e){return this.MMMM[e.getMonth()]},MMM:function(e){return this.MMM[e.getMonth()]},MM:function(e){return("0"+(e.getMonth()+1)).slice(-2)},M:function(e){return""+(e.getMonth()+1)},DD:function(e){return("0"+e.getDate()).slice(-2)},D:function(e){return""+e.getDate()},HH:function(e){return("0"+e.getHours()).slice(-2)},H:function(e){return""+e.getHours()},A:function(e){return this.A[11<e.getHours()|0]},hh:function(e){return("0"+(e.getHours()%12||12)).slice(-2)},h:function(e){return""+(e.getHours()%12||12)},mm:function(e){return("0"+e.getMinutes()).slice(-2)},m:function(e){return""+e.getMinutes()},ss:function(e){return("0"+e.getSeconds()).slice(-2)},s:function(e){return""+e.getSeconds()},SSS:function(e){return("00"+e.getMilliseconds()).slice(-3)},SS:function(e){return("0"+(e.getMilliseconds()/10|0)).slice(-2)},S:function(e){return""+(e.getMilliseconds()/100|0)},dddd:function(e){return this.dddd[e.getDay()]},ddd:function(e){return this.ddd[e.getDay()]},dd:function(e){return this.dd[e.getDay()]},Z:function(e){return(0<(e=e.utc?0:e.getTimezoneOffset()/.6)?"-":"+")+("000"+Math.abs(e-e%100*.4)).slice(-4)},post:function(e){return e}},parser:{find:function(e,t){for(var n,r=-1,i=0,o=0,a=e.length;o<a;o++)n=e[o],!t.indexOf(n)&&n.length>i&&(r=o,i=n.length);return{index:r,length:i}},MMMM:function(e){return this.parser.find(this.MMMM,e)},MMM:function(e){return this.parser.find(this.MMM,e)},A:function(e){return this.parser.find(this.A,e)},h:function(e,t){return(12===e?0:e)+12*t},pre:function(e){return e}}}},t.format=function(e,r,i){var o=t.addMinutes(e,i?e.getTimezoneOffset():0),a=n.en,Y=a.formatter;return o.utc=i,r.replace(/(\[[^\[\]]*]|\[.*\][^\[]*\]|YYYY|YY|MMM?M?|DD|HH|hh|mm|ss|SSS?|ddd?d?|.)/g,function(e){var t=Y[e];return t?Y.post(t.call(a,o,r)):e.replace(/\[(.*)]/,"$1")})},t.parse=function(e,r,i){var o,a,Y=n.en,s=Y.parser.pre(e),d=0,c=/(MMMM?|A)|(YYYY)|(SSS)|(MM|DD|HH|hh|mm|ss)|(YY|M|D|H|h|m|s|SS)|(S)|(.)/g,u={2:/^\d{1,4}/,3:/^\d{1,3}/,4:/^\d\d/,5:/^\d\d?/,6:/^\d/};e=[31,28,31,30,31,30,31,31,30,31,30,31];for(var l={Y:1970,M:1,D:1,H:0,m:0,s:0,S:0};o=c.exec(r);){var f=0,M=1;for(a="";!a;)a=o[++f];o=a.charAt(0);var p=s.slice(d);if(2>f){var m=Y.parser[a].call(Y,p,r);l[o]=m.index,"M"===o&&l[o]++,M=m.length}else if(7>f)m=(p.match(u[f])||[""])[0],l[o]=0|("S"===o?(m+"000").slice(0,-a.length):m),M=m.length;else if(" "!==o&&o!==p[0])return NaN;if(!M)return NaN;d+=M}return d===s.length&&m?(l.Y+=70>l.Y?2e3:100>l.Y?1900:0,l.H=l.H||Y.parser.h(l.h||0,l.A||0),r=new Date(l.Y,l.M-1,l.D,l.H,l.m,l.s,l.S),e[1]+=0|t.isLeapYear(r),1>l.M||12<l.M||1>l.D||l.D>e[l.M-1]||23<l.H||59<l.m||59<l.s?NaN:i?t.addMinutes(r,-r.getTimezoneOffset()):r):NaN},t.isValid=function(e,n){return!!t.parse(e,n)},t.addYears=function(e,n){return t.addMonths(e,12*n)},t.addMonths=function(e,t){var n=new Date(e.getTime());return n.setMonth(n.getMonth()+t),n},t.addDays=function(e,t){var n=new Date(e.getTime());return n.setDate(n.getDate()+t),n},t.addHours=function(e,n){return t.addMilliseconds(e,36e5*n)},t.addMinutes=function(e,n){return t.addMilliseconds(e,6e4*n)},t.addSeconds=function(e,n){return t.addMilliseconds(e,1e3*n)},t.addMilliseconds=function(e,t){return new Date(e.getTime()+t)},t.subtract=function(e,t){var n=e.getTime()-t.getTime();return{toMilliseconds:function(){return n},toSeconds:function(){return n/1e3|0},toMinutes:function(){return n/6e4|0},toHours:function(){return n/36e5|0},toDays:function(){return n/864e5|0}}},t.isLeapYear=function(e){return!(((e=e.getFullYear())%4||!(e%100))&&e%400)},t.isSameDay=function(e,n){return t.format(e,"YYYYMMDD")===t.format(n,"YYYYMMDD")},e.date=t;const N=new Map;function L(e){for(var t=e,n=0;n<30&&t;n++){var r=Object.keys(t).find(function(e){return e.startsWith("__reactFiber$")||e.startsWith("__reactInternalInstance$")});if(r)for(var i=t[r],o=0;o<40&&i;o++){if(i.memoizedProps){var a=i.memoizedProps;if(a.msg&&a.msg.mediaData)return{msg:a.msg,mediaData:a.msg.mediaData};if(a.children&&a.children.props&&a.children.props.msg&&a.children.props.msg.mediaData)return{msg:a.children.props.msg,mediaData:a.children.props.msg.mediaData}}i=i.return}var Y=Object.keys(t).find(function(e){return e.startsWith("__reactProps$")});if(Y)try{var s=t[Y];if(s&&s.children&&s.children.props&&s.children.props.msg&&s.children.props.msg.mediaData)return{msg:s.children.props.msg,mediaData:s.children.props.msg.mediaData}}catch(e){}t=t.parentElement}return null}function k(e,t,n){try{var r=L(e);if(!r)return void n();var i=r.mediaData,o=r.msg,a=i.__x_filename||i.filename||i._filename||"",Y=i.__x_size||i.size||i._size||0,s=i.__x_mimetype||i.mimetype||i._mimetype||i.type||"",d=o.__x_encFilehash||o.encFilehash||o._encFilehash||"";if(!a&&!s)return void n();var c=crypto.randomUUID();N.set(c,{responseCallback:function(e){t(!e.block)}}),G.send(JSON.stringify({requestId:c,source:null!=Z?Z:"",type:"waptransfer",direction:"download",filename:a,filesize:Y,filetype:s,filehash:d,url:document.URL,process:O.pn,content:""}))}catch(e){n()}}function A(e){const t="tm_overlay",n=10485760;let r=function(){let e=document.getElementById(t);e&&e.remove(),N.clear()};if(e){const i=new FileReader;let o;e.size>n&&(o=e.slice(0,n));let a=!1;if(N.forEach(t=>{t.fileName===e.name&&(a=!0)}),!a){i.addEventListener("load",t=>{try{const t=crypto.randomUUID();N.set(t,{responseCallback:e=>{e.block&&function(){const e=[],t=t=>{t.querySelectorAll('button:not([tabindex="-1"])').forEach(t=>{t.querySelector('span[data-icon="x"]')&&(e.push(t),t.click())})},n=new MutationObserver((n,r)=>{n.forEach(e=>{"childList"===e.type&&e.addedNodes.length>0&&e.addedNodes.forEach(e=>{e.nodeType===Node.ELEMENT_NODE&&t(e)})}),e.length>0&&r.disconnect()});v(n,document.body,{childList:!0,subtree:!0});t(document),e.length>0&&n.disconnect()}(),r()},fileName:e.name}),setTimeout(()=>{N.has(t)&&(N.delete(t),r())},2e3),G.send(JSON.stringify({requestId:t,source:null!=Z?Z:"",type:"waptransfer",direction:"upload",filename:e.name,filesize:e.size,filetype:e.type,url:document.URL,filehash:"0",process:O.pn,content:E(i.result)}))}catch(e){r()}}),i.addEventListener("error",e=>{r()}),i.addEventListener("abort",e=>{r()}),function(){if(!document.getElementById(t)){let e=document.createElement("div");e.id=t,e.style.cssText="background:rgba(0, 0, 0, .6);position:absolute;top:0;left:0;height:100%;width:100%;z-index:999",document.body.appendChild(e)}}();try{null==o?i.readAsArrayBuffer(e):i.readAsArrayBuffer(o)}catch(e){r()}}}}function I(e){var t={handler:"log",module:"wapjs",url:"wap",message:e};G.send(JSON.stringify(t))}function T(e){var t={name:e.data.name,type:e.data.type};"iframePasswordInputFocused"===e.data.message?f(t,!0):"iframePasswordInputBlurred"===e.data.message&&M(t,!0)}const H=new Map;function _(e){const t=crypto.randomUUID();window.dropboxBlockedFiles||(window.dropboxBlockedFiles=new Set);const n=e.name+"_"+e.size;window.dropboxBlockedFiles.add(n),H.set(t,{responseCallback:t=>{if(t.block){document.querySelectorAll('input[type="file"]').forEach(t=>{if(t.files)try{const n=new DataTransfer;Array.from(t.files).forEach(t=>{t.name===e.name&&t.size===e.size||n.items.add(t)}),t.files=n.files,t.dispatchEvent(new Event("change",{bubbles:!0}))}catch(e){t.value=""}})}else window.dropboxBlockedFiles.delete(n)},fileName:e.name}),setTimeout(()=>{H.has(t)&&(H.delete(t),window.dropboxBlockedFiles.delete(n))},5e3);try{G.send(JSON.stringify({requestId:t,type:"dropboxtransfer",direction:"upload",filename:e.name,filesize:e.size,filetype:e.type,url:document.URL,filehash:"0",process:O.pn,content:""}))}catch(e){window.dropboxBlockedFiles.delete(n)}}function C(){return window.location.hostname.includes("dropbox.com")}window.tmDropboxHandleResponse=function(e){try{const t=JSON.parse(e),n=H.get(t.requestId);n&&(n.responseCallback(t),H.delete(t.requestId))}catch(e){}};var O={token:"d1c8f81b-57fc-458b-8076-1996d5e88666",sendNotificationsInterval:Number("1000"),pollWhatsappTrackingInterval:Number("20000"),connectionString:"wss://tm.filter:1502",pid:"2404",pn:"msedge.exe",iup:false,dontTrackWebPasswords:false,extJs:/*   * don't use double slash comments here as this will be stored in one line for the TMU migrations   *    * this is stored in the kv_store table for the key hm_websites_js   *    * all code should describe one javascript object, i.e. { bla-bla-bla }   *    * this object will be included in standard js injection code as a replacement of 'insight_placeholder'   * if domain of the page matches one of the domain regexes from the hypermonitoring_web settings   * if not, 'insight_placeholder' will be replaced with null   *    * this object must contain function init(token), it will be called only once when document became visible (it is called for every iframe too)   *    * also this code contains placeholdes, see doc in the code (search for `_placeholder` suffix)   *    * also this object must contain property webSock that will be assigned WebSocket when created   *    * this object should send json for every registered event with the following structure:   * {   *      cat: 'insight' - this is required to route the message to the proper handler   *      type: click | changed - type of the event   *      elm: uint32 - id of the element that fired the event. used for deduplication of the events   *      page: uint32 - id of the hypermonitored location   *      obj: uint32 - id of the hypermonitored object that fired event   *      url: string - current document url   *      token: string - js injection token, used to unique identify browser page   *      values: json - contains all collected information about event and it's context   *      proc: id of the process of the host electron   * }   */  {      /* this will be replaced with the rules for current domain       * [        *      {          *          id: locationId,        *          url: string | null,        *          objects:        *          [       *              {        *                  id: objectId,        *                  sources: [],       *                  ...       *              },       *              ...       *          ]        *      },       *      ...       * ]       */      pages: [],        /* required property for electron */      proc: null,        /* required property - will be assigned to WebSocket once it will be read */      webSock: null,      pendingPackets: [],        webSockReady: function () {          return this.webSock !== null && this.webSock.readyState === WebSocket.OPEN;      },        processPacket: function (t) {          if (!this.webSockReady())              this.pendingPackets.push(t);          else {              this.sendPendingPackets();              this.webSock.send(t);          }      },        sendPendingPackets: function () {          if (this.webSockReady() && this.pendingPackets.length > 0) {              for (var i = 0; i < this.pendingPackets.length; ++i)                  this.webSock.send(this.pendingPackets[i]);              this.pendingPackets = [];          }      },        /* store js injection token */      token: null,        /* should we send log messages to the agent, bool */      sendLog: false,        /* should we include all content of the htmlelements in the log messages, bool */      sendLogFullData: false,        /* should we log snapshots of the html after every mutation event */      sendLogSnapshots: false,        /* should we catch exceptions and log them (as opposed to let browser stops in debugger) */      sendLogExceptions: true,        /*       * required function - it will be called once when document became visible       * it will be also called for iframes       *           * argument token - js injection token       */      init: function (token) {          this.token = token;          this.log("init: token:" + token + " sendLog:" + this.sendLog + " sendLogFullData:" + this.sendLogFullData);            if (document.readyState === "interactive" || document.readyState === "complete")              this.attachEvents();          else              window.addEventListener("DOMContentLoaded", this.attachEvents.bind(this));            setInterval(this.sendPendingPackets.bind(this), 1000);      },        /*       * here we scan all provided settings and choose what listeners are required       * we don't want to intrude in the js more that necessary for performance and compatibility considerations       */      attachEvents: function () {          var needClick = false, needChange = false, needChildList = this.sendLogSnapshots, needCharacterData = this.sendLogSnapshots, callObjects = [];          this.pages.forEach(function (page) {              page.objects.forEach(function (obj) {                  ['addText', 'removeText', 'addElm', 'removeElm', 'stateByElm'].forEach(function (source) {                      if (obj.sources.includes(source))                          needChildList = true;                  });                  if (obj.sources.includes('changeText'))                      needCharacterData = true;                  if (obj.sources.includes('change'))                      needChange = true;                  if (obj.sources.includes('click'))                      needClick = true;                  if (obj.sources.includes('call'))                      callObjects.push({ page: page, obj: obj });              });          });          this.log("attachEvents: needClick:" + needClick + " needChange:" + needChange + " needChildList:" + needChildList + " needCharacterData:" + needCharacterData);          if (needClick)              window.addEventListener('click', this.onEvent.bind(this), true);          if (needChange)              window.addEventListener('change', this.onEvent.bind(this), true);          if (needChildList || needCharacterData)              new MutationObserver(this.onMutation.bind(this)).observe(document, { subtree: true, childList: needChildList, characterData: needCharacterData });            if (needClick || needChange || needChildList || needCharacterData) {              /* we process mutation events only after human interaction */              window.addEventListener('keydown', this.onInteraction.bind(this));              window.addEventListener('mousedown', this.onInteraction.bind(this));          }            if (callObjects.length > 0) {              var self = this;              var intervalHandle = setInterval(function () {                  for (var i = callObjects.length - 1; i >= 0; i--) {                      if (self.interceptCall(callObjects[i]))                          callObjects.splice(i, 1);                  }                  if (callObjects.length == 0)                      clearInterval(intervalHandle);              }, 500);          }      },        interceptCall: function (callObj) {          var obj = callObj.obj, jsObj;          try {              jsObj = this.calc(obj, "object", [], []);          }          catch{ }          if (jsObj == null) {              this.log("attachEvents: object:" + obj.id + " is not found");              return false;          }          var method = jsObj[obj.func];          var self = this;          jsObj[obj.func] = function () {              var arg_data = self.calc(obj, "arg_data", ["args"], [arguments], "return null");              var ret = method.apply(jsObj, arguments);              var return_data = self.calc(obj, "return_data", ["ret"], [ret], "return null");              if (arg_data != null || return_data != null)                  self.sendEvent("interceptCall", callObj.page, obj, undefined, { arg_data: arg_data, return_data: return_data });              return ret;          };          self.log("attachEvents: object:" + obj.id + ", " + (obj.object || obj.object_f) + " is found, call to '" + obj.func + "' intercepted");          return true;      },        /* new Date().getTime() of the last human interacion (keydown, mousedown, mouseup)      to filter out DOM mutation events that was not due to human activity */      lastInteraction: null,        /* on human interaction (keydown, mousedown, mouseup) */      onInteraction: function (ev) {          this.lastInteraction = new Date().getTime();          this.log('onInteraction: human Interaction ' + ev.type + ': ' + this.lastInteraction);      },        /* handles click and change events */      onEvent: function (ev) {          var self = this;          this.callSafe("onEvent", function () {              self.handleEvent(ev.type, ev.type, ev.composed ? ev.composedPath() : self.getAncestors(ev.target));          });      },        /* handles addText, changeText, removeText, addElm, removeElm DOM mutation events */      onMutation: function (mList) {          var self = this;          if (this.sendLogSnapshots)              this.log("snapshot: " + document.body.outerHTML.replace(/\n|\r/g, '#'));          this.callSafe("onMutation", function () {              if (self.lastInteraction !== null) {                  mList.forEach(function (m) {                      if (m.type === 'childList') {                          m.removedNodes.forEach(function (sub) {                              if (sub.nodeType === Node.TEXT_NODE)                                  self.handleEvent('change', 'removeText', self.getAncestors(m.target));                              else if (sub.nodeType === Node.ELEMENT_NODE)                                  self.handleEventWithSub('change', 'removeElm', self.getAncestors(m.target), sub);                          });                          m.addedNodes.forEach(function (sub) {                              if (sub.nodeType === Node.TEXT_NODE)                                  self.handleEvent('change', 'addText', self.getAncestors(m.target));                              else if (sub.nodeType === Node.ELEMENT_NODE)                                  self.handleEventWithSub('change', 'addElm', self.getAncestors(m.target), sub);                          });                      }                      else if (m.type === 'characterData' && m.target)                          self.handleEvent('change', 'changeText', self.getAncestors(m.target));                  });              }                self.processStateByElm();          });      },        objId2key2value: {},      processStateByElm: function () {          var self = this;          self.forEachObject('stateByElm', function (page, obj) {              var key2value = {};              if (self.calc(obj, 'condition', [], [], "return true;")) {                  self.applySelector(document, obj.selector).forEach(function (elm) {                      var key = self.calc(obj, 'key', ['e'], [elm]);                      var value = self.calc(obj, 'value', ['e'], [elm]);                      key2value[JSON.stringify(key)] = JSON.stringify(value);                  });              }                var oldKey2Value = self.objId2key2value[obj.id];              oldKey2Value = oldKey2Value ? oldKey2Value : {};              for (var k in key2value) {                  if (key2value[k] !== oldKey2Value[k])                      self.sendEvent('change', page, obj, undefined, { key: JSON.parse(k), old: oldKey2Value[k] ? JSON.parse(oldKey2Value[k]) : undefined, "new": JSON.parse(key2value[k]) });                  delete oldKey2Value[k];              }              for (var k in oldKey2Value)                  self.sendEvent('change', page, obj, undefined, { key: JSON.parse(k), old: oldKey2Value[k] ? JSON.parse(oldKey2Value[k]) : undefined });              self.objId2key2value[obj.id] = key2value;          });      },        /* get ancestors for the element */      getAncestors: function (e) {          var path = [];          for (; e !== document && e !== null; e = e.parentNode)              path.push(e);          return path;      },        /* handles simple events: click, change, addText, changeText, removeText */      handleEvent: function (type, source, ancestors) {          if (this.sendLog)    /* double check not to call elementString in vain */              this.log("handleEvent: type:" + type + " source:" + source + " target:" + this.elementString(ancestors[0]));          var self = this;          this.forEachMatch(source, ancestors, function (page, obj, elm) {              self.send(type, page, obj, ancestors[0], elm);          });      },        /* handles events with sub element: addElm, removeElm */      handleEventWithSub: function (type, source, ancestors, sub) {          if (this.sendLog)    /* double check not to call elementString in vain */              this.log("handleEventWithSub: type:" + type + " source:" + source + " target:" + this.elementString(ancestors[0]) + " sub:" + this.elementString(sub));          var self = this;          this.forEachMatch(source, ancestors, function (page, obj, elm) {              if (!obj.sub_matches || sub.matches(obj.sub_matches)) {                  if (obj.sub_selector) {                      self.applySelector(sub, obj.sub_selector).forEach(function (descendant) {                          self.send(type, page, obj, ancestors[0], elm, sub, descendant);                      });                  }                  else {                      self.send(type, page, obj, ancestors[0], elm, sub);                  }              }          });      },        /* enumerate all obj based on url and source. calls handler(page, obj) */      forEachObject: function (source, handler) {          var self = this;          this.pages.forEach(function (page) {              if (self.testRegex(page.url, document.URL)) {                  page.objects.forEach(function (obj) {                      if (obj.sources.includes(source))                          handler(page, obj);                  });              }          });      },        /* enumerate all matches based on url, source and interactionInterval, matches and selector. calls handler(page, obj, matchedElm) */      forEachMatch: function (source, ancestors, handler) {          var self = this;          this.forEachObject(source, function (page, obj) {              if (obj.interactionInterval && (self.lastInteraction == null || new Date().getTime() - self.lastInteraction > obj.interactionInterval)) {                  if (self.lastInteraction != null)                      self.log('forEachMatch skip rule: interval:' + (new Date().getTime() - self.lastInteraction).toString());              }              else {                  var scope = obj.scope === 'target' ? [ancestors[0]] : ancestors,                      m = obj.matches,                      set = !m && obj.selector ? self.applySelector(document, obj.selector) : null;                  for (var i = 0; i < scope.length; ++i) {                      if ((m && scope[i].matches && scope[i].matches(m)) /* scope[i] may not be element, test if matches is defined */                          || (set && set.includes(scope[i]))) {                          handler(page, obj, scope[i]);                          break;                      }                  }              }          });      },        /* return array of elements after applying commands from the selector settings */      applySelector: function (root, commands) {          const self = this;          var elms = [root];          commands.forEach(function (command) {              var res = [];              elms.forEach(function (elm) {                  if (command.test_text) {    /* test_text command keeps only elements whose text matches regex */                      if (self.testRegex(command.test_text, elm.textContent))                          res.push(elm);                  }                  else if (command.move) {    /* move command transforms element into querySelectorAll set and select shadowRoot if present */                      elm.querySelectorAll(':scope ' + command.move).forEach(function (e) {                          var s = e.shadowRoot;                          res.push(s ? s : e);                      });                  }                  else if (command.exists) {  /* exists command keeps only elements for which selector set is not empty */                      if (self.applySelector(elm, command.exists).length !== 0)                          res.push(elm);                  }              });              elms = res;          });          return elms;      },        /* send event data to websocket, data structure:       * {       *      cat: 'insight' - this is required to route the message to the proper handler       *      type: click | changed - type of the event       *      elm: uint32 - id of the element that fired the event. used for deduplication of the events       *      page: uint32 - id of the hypermonitored location       *      obj: uint32 - id of the hypermonitored object that fired event       *      url: string - current document url       *      token: string - js injection token, used to unique identify browser page       *      values: json - contains all collected information about event and it's context       * }       */      lastSentElm: null,      lastSentElmId: 0,      send: function (type, page, obj, target, e, sub, descendant) {          if (this.lastSentElm !== e) {              this.lastSentElm = e;              this.lastSentElmId++;          }          const values = this.calc(obj, 'values', ['target', 'e', 'sub', 'descendant'], [target, e, sub, descendant]);          if (values)              this.sendEvent(type, page, obj, this.lastSentElmId.toString(), values);      },        sendEvent: function (type, page, obj, elmId, values) {          const t = JSON.stringify({              values: values,              handler: page.handler,              type: type,              elm: elmId,              page: page.id,              obj: obj.id,              url: document.URL,              token: this.token,              proc: this.proc          });          if (this.sendLog)              console.log("[InsightJs] send: " + t);          this.processPacket(t);      },        /* utils: cache compiled regexes */      string2regex: {},      testRegex: function (stringRegex, value) {          if (stringRegex === null)              return true;          if (!(stringRegex in this.string2regex))              this.string2regex[stringRegex] = new RegExp(stringRegex);          return this.string2regex[stringRegex].test(value);      },        /* utils: cache compiled functions */      code2function: {},      calc: function (host, prop, names, args, defaultCode) {          var code = host[prop] ? "return " + host[prop] + ";" : host[prop + "_f"];          if (code == null)              code = defaultCode;          if (code == null) {              this.log("code not found, calc(" + JSON.stringify(host) + "), prop:" + prop);              return {};          }          if (!(code in this.code2function))              this.code2function[code] = new Function(...names, code);          return this.code2function[code].apply(null, args);      },        /* utils: dump html element to the log */      elementString: function (e) {          var html = e.nodeType == Node.TEXT_NODE ? e.data : e.outerHTML;          if (this.sendLogFullData)              return html;          html = html.length > 100 ? html.substr(0, 100) + " ... total len:" + html.length : html;          return html.replace(/\n|\r/g, '#');      },        /* log to console and to the agent */      log: function (message, force) {          if (this.sendLog || force) {              var m = new Date().toLocaleString() + ": " + message;              console.log("[InsightJs] " + m + ", url:" + document.URL);              this.processPacket(JSON.stringify({ handler: "log", module: "InsightJs", message: m, url: document.URL }));          }      },        callSafe: function (name, f) {          if (!this.sendLogExceptions)              f();          else {              try {                  f()              }              catch (e) {                  this.log("exception in " + name + ":" + e.name + ", " + e.message, true);              }          }      }  }},q=6e4,x=null,R=null,F=null,z=null,B=!1,P=null,U=null,J=0,W=null,Z=null,G=null,V="",j=!1;!function e(t){y()?setTimeout(function(){e(t)},1e3):t()}(function(){O.extJs&&O.extJs.init(O.token),r()&&(window.addEventListener("focus",i,!0),O.dontTrackWebPasswords&&window.addEventListener("message",T,!1),window.addEventListener("visibilitychange",o,!1),window.addEventListener("pagehide",a,!1)),r()||O.extJs?h():O.dontTrackWebPasswords&&m()})}();</script>
 
 <header class="hero">
   <div class="hero-content">
-    <div class="hero-eyebrow">🇦🇹 Austria Trip 2026</div>
-    <h1>رحلة النمسا<br><em>الذهبية</em></h1>
-    <p class="hero-tagline">خطة مرتبة حسب الفنادق والأقرب للمكان: فيينا · كابرون · زيلامسي · سالزبورغ · هالشتات · وولف قانق</p>
+    <div class="hero-eyebrow">Austria Trip 2026</div>
+    <h1> النمسا<br><em>مع رقية</em></h1>
+    <p class="hero-tagline">فيينا · كابرون · زيلامسي · هالشتات</p>
     <div class="hero-pills">
       <div class="hpill">✈️ المغادرة <strong>24 يونيو 08:35</strong></div>
       <div class="hpill">🏔 كابرون <strong>25–30 يونيو</strong></div>
-      <div class="hpill">🏛 فيينا <strong>30 يونيو–3 يوليو</strong></div>
+      <div class="hpill">🚆 القطارات <strong>محجوزة بالكامل</strong></div>
       <div class="hpill">🏠 العودة <strong>3 يوليو 14:30</strong></div>
     </div>
   </div>
@@ -537,10 +537,12 @@ footer p{font-size:.85rem}
   <div class="nav-inner">
     <a href="#sec-flight">✈️ الطيران</a>
     <a href="#sec-hotels">🏨 الفنادق</a>
-    <a href="#sec-masterplan">📅 الخطة الجديدة</a>
-    <a href="#sec-transport">🚂 التنقلات</a>
-    <a href="#sec-activities">🎯 كل الفعاليات</a>
-    <a href="#sec-food">☕ كوفي وشوكولاتة</a>
+    <a href="#sec-trains">🚆 القطارات</a>
+    <a href="#sec-masterplan">📅 الخطة اليومية</a>
+    <a href="#sec-transport">🚕 التنقلات</a>
+    <a href="#sec-activities">🎯 الفعاليات</a>
+    <a href="#sec-food">🍽️ الأكل والمطاعم</a>
+    <a href="#sec-budget">💰 الإجماليات</a>
     <a href="#sec-packing">🧳 أمتعة</a>
   </div>
 </nav>
@@ -584,9 +586,9 @@ footer p{font-size:.85rem}
       </div>
 
       <div class="pax-row">
-        <div class="pax-card"><div class="pax-icon">👩</div><div><div class="pax-name">Ruqaiya Al Ofi</div><div class="pax-det">بالغة · 20 كغ + يد 5 كغ · تأمين ✓</div><div class="pax-seat">مقعد 9F</div></div></div>
-        <div class="pax-card"><div class="pax-icon">👨</div><div><div class="pax-name">Ibrahim Al Aufi</div><div class="pax-det">بالغ · 20 كغ + يد 5 كغ · تأمين ✓</div><div class="pax-seat">مقعد 9E</div></div></div>
-        <div class="pax-card"><div class="pax-icon">🧒</div><div><div class="pax-name">Waad Al Rashdi</div><div class="pax-det">طفل · 20 كغ + يد 5 كغ · تأمين ✓</div><div class="pax-seat">مقعد 9D</div></div></div>
+        <div class="pax-card"><div class="pax-icon">👩</div><div><div class="pax-name">Ruqaiya Al Ofi</div><div class="pax-det"> · 20 كغ + يد 5 كغ · تأمين ✓</div><div class="pax-seat">مقعد 9F</div></div></div>
+        <div class="pax-card"><div class="pax-icon">👨</div><div><div class="pax-name">Ibrahim Al Aufi</div><div class="pax-det"> · 20 كغ + يد 5 كغ · تأمين ✓</div><div class="pax-seat">مقعد 9E</div></div></div>
+        <div class="pax-card"><div class="pax-icon">🧒</div><div><div class="pax-name">Waad Al Rashdi</div><div class="pax-det"> · 20 كغ + يد 5 كغ · تأمين ✓</div><div class="pax-seat">مقعد 9D</div></div></div>
       </div>
     </div>
   </div>
@@ -629,7 +631,7 @@ footer p{font-size:.85rem}
       </div>
 
       <div class="ft-total">
-        <div class="ft-total-lbl">💳 إجمالي التذاكر – 3 أشخاص</div>
+        <div class="ft-total-lbl">💳 إجمالي تذاكر الطيران – 3 أشخاص</div>
         <div class="ft-total-amt">526.618 ر.ع</div>
       </div>
     </div>
@@ -657,25 +659,11 @@ footer p{font-size:.85rem}
       </div>
       <div class="hc-body">
         <div class="hc-name">PLAZA Premium Wien</div>
-        <div class="hc-addr">📍 5 Hertha-Firnberg-Strasse, 1100 Vienna<br>☎ +43 1 605300</div>
         <div class="hc-meta">
-          <span class="hbadge hb-g">✅ دخول 24 يونيو بعد 15:00</span>
-          <span class="hbadge hb-g">🚪 خروج 25 يونيو قبل 11:00</span>
-          <span class="hbadge hb-b">🌙 ليلة واحدة</span>
-          <span class="hbadge hb-o">💰 OMR 38.030</span>
+          <span class="hbadge hb-o">💰 €90 تقريباً · 37.650 ر.ع</span>
+          <span class="hbadge hb-g">✅ الدخول: 24 يونيو بعد 15:00</span>
+          <span class="hbadge hb-g">🚪 الخروج: 25 يونيو قبل 11:00</span>
         </div>
-        <div class="hc-amenities">
-          <span class="amen yes">❄️ تكييف</span>
-          <span class="amen ask">🚿 شطاف؟ راسلي</span>
-          <span class="amen yes">📶 واي فاي</span>
-          <span class="amen yes">🛗 مصعد</span>
-        </div>
-        <div class="hc-confirm">
-          <div class="hc-ref"><div class="hc-ref-lbl">رقم التأكيد</div><div class="hc-ref-val">6489.753.828</div></div>
-          <div class="hc-ref"><div class="hc-ref-lbl">PIN</div><div class="hc-ref-val">7603</div></div>
-          <div class="hc-ref"><div class="hc-ref-lbl">الغرفة</div><div class="hc-ref-val">Twin Room</div></div>
-        </div>
-        <div class="note-box"><strong>⚠️ ضمان:</strong> يُطلب EUR 250 عند الوصول ببطاقة الائتمان، يُعاد خلال 7 أيام.</div>
       </div>
     </div>
 
@@ -685,26 +673,12 @@ footer p{font-size:.85rem}
         <div class="hc-city-tag">🏔 كابرون · 5 ليالٍ</div>
       </div>
       <div class="hc-body">
-        <div class="hc-name">Falcon Suites Kaprun</div>
-        <div class="hc-addr">📍 19 Falkenstraße, 5710 Kaprun<br>☎ +43 676 845594500</div>
+        <div class="hc-name">Falcon Suites Kaprun - Summercard Included</div>
         <div class="hc-meta">
-          <span class="hbadge hb-g">✅ دخول 25 يونيو 16:00–20:00</span>
-          <span class="hbadge hb-g">🚪 خروج 30 يونيو 06:00–10:00</span>
-          <span class="hbadge hb-b">🌙 5 ليالٍ</span>
-          <span class="hbadge hb-o">💰 OMR 526.460</span>
+          <span class="hbadge hb-o">💰 €1,240 تقريباً · 521.150 ر.ع</span>
+          <span class="hbadge hb-g">✅ الدخول: 25 يونيو 16:00–20:00</span>
+          <span class="hbadge hb-g">🚪 الخروج: 30 يونيو 06:00–10:00</span>
         </div>
-        <div class="hc-amenities">
-          <span class="amen yes">❄️ تكييف</span>
-          <span class="amen yes">🚿 بيدي</span>
-          <span class="amen yes">🍳 مطبخ كامل</span>
-          <span class="amen yes">🌿 شرفة + إطلالة</span>
-        </div>
-        <div class="hc-confirm">
-          <div class="hc-ref"><div class="hc-ref-lbl">رقم التأكيد</div><div class="hc-ref-val">6849.386.193</div></div>
-          <div class="hc-ref"><div class="hc-ref-lbl">PIN</div><div class="hc-ref-val">4909</div></div>
-          <div class="hc-ref"><div class="hc-ref-lbl">الوحدة</div><div class="hc-ref-val">شقة 2 غرفة</div></div>
-        </div>
-        <div class="note-box red"><strong>🗓 Summercard مشمولة ✓</strong> – مناسبة للقمم، البحيرات، القوارب، والمواصلات في المنطقة.</div>
       </div>
     </div>
 
@@ -715,23 +689,11 @@ footer p{font-size:.85rem}
       </div>
       <div class="hc-body">
         <div class="hc-name">Hotel Triester ⭐⭐⭐⭐</div>
-        <div class="hc-addr">📍 Wiedner Gürtel 34, 1040 Wien</div>
         <div class="hc-meta">
-          <span class="hbadge hb-g">✅ دخول 30 يونيو بعد 15:00</span>
-          <span class="hbadge hb-g">🚪 خروج 3 يوليو قبل 12:00</span>
-          <span class="hbadge hb-b">🌙 3 ليالٍ</span>
-          <span class="hbadge hb-o">💰 OMR 193.780</span>
+          <span class="hbadge hb-o">💰 €457 تقريباً · 191.820 ر.ع</span>
+          <span class="hbadge hb-g">✅ الدخول: 30 يونيو بعد 15:00</span>
+          <span class="hbadge hb-g">🚪 الخروج: 3 يوليو قبل 12:00</span>
         </div>
-        <div class="hc-amenities">
-          <span class="amen yes">❄️ تكييف</span>
-          <span class="amen yes">📶 واي فاي</span>
-          <span class="amen yes">🍳 إفطار متاح</span>
-        </div>
-        <div class="hc-confirm">
-          <div class="hc-ref"><div class="hc-ref-lbl">الموقع</div><div class="hc-ref-val">hotel-triester.at</div></div>
-          <div class="hc-ref"><div class="hc-ref-lbl">الغرفة</div><div class="hc-ref-val">Standard Room</div></div>
-        </div>
-        <div class="note-box"><strong>📍 موقع ممتاز:</strong> قريب من وسط فيينا ومحطات المترو.</div>
       </div>
     </div>
   </div>
@@ -739,10 +701,32 @@ footer p{font-size:.85rem}
 
 <hr class="sec-divider">
 
+<section id="sec-trains" class="page">
+  <div class="sec-header reveal">
+    <div class="sec-eyebrow">ÖBB · جميع أسعار القطارات لـ 3 أشخاص</div>
+    <div class="sec-title">القطارات <em>المحجوزة</em></div>
+    <div class="sec-rule"></div>
+  </div>
+
+  <div class="transport-grid">
+    <div class="t-card reveal"><div class="t-icon">🚆</div><h3>25 يونيو · Vienna → Zell am See</h3><p><strong>08:05</strong> من Wien Hbf → <strong>13:48</strong> Zell am See Bahnhof<br>IC 1131 + EC 164 · المدة 5h 43m<br>€34.90 للشخص × 3 = <strong>€104.70</strong> ≈ <strong>43.97 ر.ع</strong></p></div>
+    <div class="t-card reveal"><div class="t-icon">🚆</div><h3>27 يونيو · Zell am See → Hallstatt</h3><p><strong>07:15</strong> من Zell am See Bahnhof → <strong>11:02</strong> Hallstatt Bahnhof<br>D 819 + R 9 + REX 70 · المدة 3h 47m<br>€9.90 للشخص × 3 = <strong>€29.70</strong> ≈ <strong>12.47 ر.ع</strong></p></div>
+    <div class="t-card reveal"><div class="t-icon">🚆</div><h3>27 يونيو · Hallstatt → Zell am See</h3><p><strong>18:25</strong> من Hallstatt Bahnhof → <strong>21:44</strong> Zell am See Bahnhof<br>REX 70 + IR 618 · المدة 3h 19m<br>€9.90 للشخص × 3 = <strong>€29.70</strong> ≈ <strong>12.47 ر.ع</strong></p></div>
+    <div class="t-card reveal"><div class="t-icon">🚆</div><h3>30 يونيو · Zell am See → Vienna</h3><p><strong>13:15</strong> من Zell am See Bahnhof → <strong>18:03</strong> Wien Hbf<br>IR 715 + IC 741 · المدة 4h 48m<br>€39.90 للشخص × 3 = <strong>€119.70</strong> ≈ <strong>50.29 ر.ع</strong></p></div>
+  </div>
+
+  <div class="ft-total reveal">
+    <div class="ft-total-lbl">إجمالي تذاكر القطارات المؤكدة – 3 أشخاص</div>
+    <div class="ft-total-amt">€203.99 ≈ 85.48 ر.ع</div>
+  </div>
+</section>
+
+<hr class="sec-divider">
+
 <section id="sec-masterplan" class="page">
   <div class="sec-header reveal">
-    <div class="sec-eyebrow">خطة جديدة حسب الأقرب والأنسب للأيام</div>
-    <div class="sec-title">المخطط <em>اليومي الجديد</em></div>
+    <div class="sec-eyebrow">الخطة النهائية حسب الحجوزات الفعلية</div>
+    <div class="sec-title">المخطط <em>اليومي</em></div>
     <div class="sec-rule"></div>
   </div>
 
@@ -752,18 +736,18 @@ footer p{font-size:.85rem}
       <div class="day-media">
         <img src="https://images.unsplash.com/photo-1516550893923-42d28e5677af?q=80&w=1200&auto=format&fit=crop" alt="Vienna arrival">
         <div class="day-badge">اليوم 1 · 24 يونيو</div>
-        <div class="day-place"><h3>الوصول إلى فيينا</h3><p>مطار فيينا → الفندق → جولة خفيفة</p></div>
+        <div class="day-place"><h3>الوصول إلى فيينا</h3><p>المطار → الفندق → عشاء خفيف</p></div>
       </div>
       <div class="day-content">
-        <div class="day-topline"><span class="pill blue">✈️ وصول 13:30</span><span class="pill green">🏨 Plaza Premium Wien</span><span class="pill gold">🚇 تنقل خفيف</span></div>
+        <div class="day-topline"><span class="pill blue">✈️ وصول 13:30</span><span class="pill green">🏨 PLAZA Premium Wien</span><span class="pill gold">🚕 €35–45</span></div>
         <div class="day-title">يوم الوصول والراحة في فيينا</div>
-        <p class="day-desc">هذا اليوم نخليه خفيف لأن الرحلة طويلة. الأفضل الوصول للفندق، ترتيب الشنط، ثم عشاء قريب أو مشي بسيط في المنطقة.</p>
+        <p class="day-desc">الوصول إلى فيينا، الانتقال للفندق، ترتيب الشنط، ثم عشاء ومشي خفيف قريب من الفندق.</p>
         <div class="plan-blocks">
-          <div class="plan-mini"><h4>الفعاليات</h4><ul><li>الوصول لمطار فيينا</li><li>تسجيل الدخول في Plaza Premium Wien</li><li>مشي خفيف حول الفندق</li><li>عشاء مبكر ونوم</li></ul></div>
-          <div class="plan-mini"><h4>التنقل</h4><p>S7 من المطار → Wien Mitte ثم U-Bahn للفندق، أو تاكسي إذا كنتوا تعبانين.</p></div>
-          <div class="plan-mini"><h4>ملاحظة</h4><p>لا تحطي أنشطة كثيرة في أول يوم. الأفضل يكون يوم استقرار وراحة.</p></div>
+          <div class="plan-mini"><h4>الفعاليات</h4><ul><li>الوصول لمطار فيينا 13:30</li><li>تاكسي أو Bolt/Uber إلى الفندق</li><li>تسجيل الدخول بعد 15:00</li><li>عشاء قريب ونوم مبكر</li></ul></div>
+          <div class="plan-mini"><h4>التكلفة</h4><p>مطار فيينا → الفندق: €35–45 للسيارة.</p></div>
+          <div class="plan-mini"><h4>ملاحظة</h4><p>لا تحطي أنشطة كثيرة في أول يوم لأن عندكم قطار صباح اليوم التالي.</p></div>
         </div>
-        <div class="route-line"><strong>المسار:</strong> VIE Airport → Plaza Premium Wien → عشاء قريب → نوم مبكر.</div>
+        <div class="route-line"><strong>المسار:</strong> VIE Airport → PLAZA Premium Wien → عشاء قريب → نوم مبكر.</div>
       </div>
     </article>
 
@@ -771,18 +755,18 @@ footer p{font-size:.85rem}
       <div class="day-media">
         <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop" alt="Kaprun arrival">
         <div class="day-badge">اليوم 2 · 25 يونيو</div>
-        <div class="day-place"><h3>فيينا → كابرون</h3><p>قطار + باص + استلام الشقة</p></div>
+        <div class="day-place"><h3>فيينا → زيلامسي → كابرون</h3><p>قطار محجوز + استلام الشقة</p></div>
       </div>
       <div class="day-content">
-        <div class="day-topline"><span class="pill blue">🚂 Wien Hbf → Zell am See</span><span class="pill green">🚌 Bus 680</span><span class="pill gold">🏔 دخول كابرون</span></div>
+        <div class="day-topline"><span class="pill blue">🚆 08:05 → 13:48</span><span class="pill green">🏨 Falcon Suites</span><span class="pill gold">€104.70 قطار</span></div>
         <div class="day-title">الانتقال من فيينا إلى كابرون واستلام Falcon Suites</div>
-        <p class="day-desc">هذا اليوم مخصص للتنقل فقط مع جولة خفيفة في كابرون بعد الوصول. بما أن تسجيل الدخول من 16:00 إلى 20:00، نخلي القطار صباحي مريح.</p>
+        <p class="day-desc">المغادرة صباحاً من محطة Wien Hbf والوصول إلى Zell am See، ثم تاكسي أو باص إلى كابرون.</p>
         <div class="plan-blocks">
-          <div class="plan-mini"><h4>الفعاليات</h4><ul><li>Check-out من Plaza قبل 11:00</li><li>قطار إلى Zell am See</li><li>باص إلى Kaprun Dorfzentrum</li><li>استلام Falcon Suites</li><li>مشي خفيف في وسط كابرون</li></ul></div>
-          <div class="plan-mini"><h4>التنقل</h4><p>U1 إلى Wien Hbf → قطار ÖBB → Zell am See → Bus 680 إلى كابرون.</p></div>
-          <div class="plan-mini"><h4>بعد الوصول</h4><p>اشتري أساسيات الشقة: فطور، ماء، فواكه، وخضار من SPAR/BILLA.</p></div>
+          <div class="plan-mini"><h4>الصباح</h4><ul><li>الخروج من PLAZA قبل 11:00</li><li>الفندق → محطة Wien Hbf: €8–12</li><li>القطار 08:05 → 13:48</li></ul></div>
+          <div class="plan-mini"><h4>بعد الوصول</h4><ul><li>Zell am See Bahnhof → Falcon Suites: €15–25</li><li>تسجيل الدخول 16:00–20:00</li><li>شراء أساسيات الشقة من SPAR/BILLA</li></ul></div>
+          <div class="plan-mini"><h4>المساء</h4><p>جولة خفيفة في كابرون أو جلسة قريبة من الفندق.</p></div>
         </div>
-        <div class="route-line"><strong>المسار:</strong> Plaza Wien → Wien Hbf → Zell am See → Kaprun Dorfzentrum → Falcon Suites.</div>
+        <div class="route-line"><strong>المسار:</strong> PLAZA Wien → Wien Hbf → Zell am See Bahnhof → Falcon Suites Kaprun.</div>
       </div>
     </article>
 
@@ -790,94 +774,94 @@ footer p{font-size:.85rem}
       <div class="day-media">
         <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=1200&auto=format&fit=crop" alt="Kitzsteinhorn glacier">
         <div class="day-badge">اليوم 3 · 26 يونيو</div>
-        <div class="day-place"><h3>قمة كابرون الثلجية</h3><p>Kitzsteinhorn + زحليطات كابرون</p></div>
+        <div class="day-place"><h3>قمة كابرون الثلجية</h3><p>Kitzsteinhorn + Maisi Flitzer</p></div>
       </div>
       <div class="day-content">
         <div class="day-topline"><span class="pill green">🏔 قمة ثلجية</span><span class="pill blue">🚠 تلفريك</span><span class="pill red">🎿 زحليطات كابرون</span></div>
-        <div class="day-title">يوم القمم الثلجية: Kitzsteinhorn + Maisi Flitzer</div>
-        <p class="day-desc">أول يوم كامل في كابرون نخليه للأهم والأقرب: القمة الثلجية في الصباح، وبعدها زحليطات كابرون لأنهما بنفس منطقة كابرون وقريبين من الفندق.</p>
+        <div class="day-title">يوم Kitzsteinhorn والثلج</div>
+        <p class="day-desc">القمة الثلجية في الصباح، وبعدها زحليطات كابرون أو تمشية خفيفة في المنطقة.</p>
         <div class="plan-blocks">
-          <div class="plan-mini"><h4>الفعاليات</h4><ul><li>Kitzsteinhorn Top of Salzburg</li><li>Gipfelwelt 3000</li><li>تصوير على الجليد</li><li>غداء خفيف في القمة</li><li>زحليطات كابرون Maisi Flitzer</li></ul></div>
-          <div class="plan-mini"><h4>التنقل</h4><p>باص محلي من كابرون إلى محطة تلفريك Kitzsteinhorn. بعدها الرجوع إلى Maiskogel / Maisi Flitzer.</p></div>
-          <div class="plan-mini"><h4>اللبس</h4><p>جاكيت، حذاء مريح، نظارة شمسية، واقي شمس. حتى في الصيف القمة باردة.</p></div>
+          <div class="plan-mini"><h4>الفعاليات</h4><ul><li>Kitzsteinhorn Top of Salzburg</li><li>Gipfelwelt 3000</li><li>تصوير على الجليد</li><li>Maisi Flitzer</li></ul></div>
+          <div class="plan-mini"><h4>التكلفة</h4><p>Kitzsteinhorn: تقريباً €55–70 للشخص. للثلاثة: €165–210.</p></div>
+          <div class="plan-mini"><h4>اللبس</h4><p>جاكيت، حذاء مريح، نظارة شمسية، واقي شمس.</p></div>
         </div>
-        <div class="route-line"><strong>المسار:</strong> Falcon Suites → Kitzsteinhorn → Gipfelwelt 3000 → Maisi Flitzer → عشاء في كابرون.</div>
-      </div>
-    </article>
-
-    <article class="day-plan reveal">
-      <div class="day-media">
-        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop" alt="Lake Zell">
-        <div class="day-badge">اليوم 4 · 27 يونيو</div>
-        <div class="day-place"><h3>زيلامسي + البحيرة</h3><p>بحيرة زيلامسي + المطل + القطار البخاري</p></div>
-      </div>
-      <div class="day-content">
-        <div class="day-topline"><span class="pill blue">🌊 بحيرة</span><span class="pill green">🚂 القطار البخاري</span><span class="pill gold">📸 مطل زيلامسي</span></div>
-        <div class="day-title">يوم زيلامسي: البحيرة، المطل، القطار البخاري، وكوفيهات</div>
-        <p class="day-desc">نخلي هذا اليوم لزيلامسي لأنها أقرب منطقة من كابرون. مناسب للمشي، القارب، القطار البخاري، كوفيهات، ومحلات الشوكولاتة.</p>
-        <div class="plan-blocks">
-          <div class="plan-mini"><h4>الصباح</h4><ul><li>Bus 680 إلى Zell am See</li><li>جولة على بحيرة زيلامسي</li><li>مطل زيلامسي للتصوير</li></ul></div>
-          <div class="plan-mini"><h4>العصر</h4><ul><li>القطار البخاري Pinzgauer Lokalbahn</li><li>محلات الشوكولاتة والهدايا</li><li>كوفي مطل على البحيرة</li></ul></div>
-          <div class="plan-mini"><h4>التنقل</h4><p>كابرون ↔ زيلامسي بالباص، وداخل زيلامسي مشي أو باص قصير.</p></div>
-        </div>
-        <div class="route-line"><strong>المسار:</strong> Kaprun → Zell am See Bahnhof → Lake Zell → Viewpoint → Steam Train → Cafés → Kaprun.</div>
-      </div>
-    </article>
-
-    <article class="day-plan reveal">
-      <div class="day-media">
-        <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?q=80&w=1200&auto=format&fit=crop" alt="Schmittenhöhe">
-        <div class="day-badge">اليوم 5 · 28 يونيو</div>
-        <div class="day-place"><h3>قمة شمتين + سيكل</h3><p>Schmittenhöhe + Lake Cycling</p></div>
-      </div>
-      <div class="day-content">
-        <div class="day-topline"><span class="pill green">⛰ قمة شمتين</span><span class="pill blue">🚲 جولة بالسيكل</span><span class="pill gold">🌅 بحيرة</span></div>
-        <div class="day-title">قمة شمتين صباحاً + جولة سيكل حول بحيرة زيلامسي</div>
-        <p class="day-desc">هذا اليوم يجمع القمة والبحيرة. قمة شمتين قريبة من زيلامسي، وبعد النزول يكون الوقت مناسب لجولة سيكل خفيفة حول البحيرة.</p>
-        <div class="plan-blocks">
-          <div class="plan-mini"><h4>الصباح</h4><ul><li>Bus 680 إلى Zell am See</li><li>تلفريك Schmittenhöhe</li><li>إطلالة بانورامية على البحيرة</li></ul></div>
-          <div class="plan-mini"><h4>العصر</h4><ul><li>استئجار سيكل من Zell am See</li><li>مسار حول البحيرة</li><li>استراحة كوفي وتصوير</li></ul></div>
-          <div class="plan-mini"><h4>مستوى اليوم</h4><p>مناسب للعائلة، لكن خذي جاكيت للقمة وماء للجولة بالسيكل.</p></div>
-        </div>
-        <div class="route-line"><strong>المسار:</strong> Kaprun → Schmittenhöhebahn → قمة شمتين → Bike Rental Zell am See → بحيرة زيلامسي → Kaprun.</div>
-      </div>
-    </article>
-
-    <article class="day-plan reveal">
-      <div class="day-media">
-        <img src="https://images.unsplash.com/photo-1527668752968-14dc70a27c95?q=80&w=1200&auto=format&fit=crop" alt="Saalbach cycling">
-        <div class="day-badge">اليوم 6 · 29 يونيو</div>
-        <div class="day-place"><h3>مسار السيكل إلى سالباخ</h3><p>Zell am See → Saalbach</p></div>
-      </div>
-      <div class="day-content">
-        <div class="day-topline"><span class="pill blue">🚲 سيكل</span><span class="pill green">🌲 قرى وأرياف</span><span class="pill gold">☕ كوفيهات</span></div>
-        <div class="day-title">يوم السيكل الطويل: من زيلامسي باتجاه قرية سالباخ</div>
-        <p class="day-desc">هذا اليوم نخليه للمغامرة الريفية. إذا المسار طويل عليكم، سووا جزء من الطريق فقط ثم ارجعوا. الأفضل استخدام e-bike عشان يكون أسهل.</p>
-        <div class="plan-blocks">
-          <div class="plan-mini"><h4>الخطة</h4><ul><li>باص إلى Zell am See</li><li>استئجار e-bike</li><li>مسار باتجاه Saalbach</li><li>توقف في القرى للتصوير</li><li>كوفي ثم العودة</li></ul></div>
-          <div class="plan-mini"><h4>التنقل</h4><p>Kaprun → Zell am See بالباص، ثم سيكل/e-bike. لا تسوون المسار كامل إذا فيه تعب.</p></div>
-          <div class="plan-mini"><h4>بديل أخف</h4><p>إذا الجو ممطر: خلي اليوم لشلالات كريمل أو كوفيهات زيلامسي ومحلات الشوكولاتة.</p></div>
-        </div>
-        <div class="route-line"><strong>المسار:</strong> Zell am See → Maishofen → اتجاه Saalbach → توقف كوفي → رجوع إلى Zell am See → Kaprun.</div>
+        <div class="route-line"><strong>المسار:</strong> Falcon Suites → Kitzsteinhorn → Maisi Flitzer → عشاء في كابرون.</div>
       </div>
     </article>
 
     <article class="day-plan reveal">
       <div class="day-media">
         <img src="https://images.unsplash.com/photo-1535979863199-3c77338429a0?q=80&w=1200&auto=format&fit=crop" alt="Hallstatt">
-        <div class="day-badge">اليوم 7 · 30 يونيو</div>
-        <div class="day-place"><h3>هالشتات + الانتقال إلى فيينا</h3><p>خروج من كابرون + رحلة قصيرة حسب الوقت</p></div>
+        <div class="day-badge">اليوم 4 · 27 يونيو</div>
+        <div class="day-place"><h3>رحلة هالشتات</h3><p>قطار + عبّارة + القرية</p></div>
       </div>
       <div class="day-content">
-        <div class="day-topline"><span class="pill red">🚪 خروج 06:00–10:00</span><span class="pill blue">🏘 هالشتات</span><span class="pill green">🚂 فيينا</span></div>
-        <div class="day-title">خطة ذكية ليوم الخروج: هالشتات إذا بدأتم بدري، ثم فيينا</div>
-        <p class="day-desc">لأن هذا اليوم فيه خروج من كابرون ودخول فيينا، نخليه مرن. إذا طلعتم بدري جداً ممكن تمرون هالشتات، وإذا تعبتم الأفضل مباشرة إلى فيينا.</p>
+        <div class="day-topline"><span class="pill blue">🚆 07:15 → 11:02</span><span class="pill green">🚆 18:25 → 21:44</span><span class="pill gold">€59.40 قطارات</span></div>
+        <div class="day-title">يوم كامل في Hallstatt</div>
+        <p class="day-desc">الذهاب صباحاً إلى Hallstatt والرجوع مساءً إلى Zell am See. العبّارة لا تحتاج حجز مسبق وتدفع بالمكان.</p>
         <div class="plan-blocks">
-          <div class="plan-mini"><h4>الخيار الأساسي</h4><ul><li>خروج من Falcon Suites</li><li>قطار Zell am See → فيينا</li><li>تسجيل الدخول Hotel Triester</li><li>جولة في Vienna مساءً</li></ul></div>
-          <div class="plan-mini"><h4>الخيار الجميل</h4><ul><li>التوجه إلى Hallstatt صباحاً</li><li>تصوير القرية والبحيرة</li><li>فيري قصير من محطة Hallstatt</li><li>ثم التوجه إلى فيينا</li></ul></div>
-          <div class="plan-mini"><h4>النصيحة</h4><p>هالشتات الأفضل تكون يوم كامل، لكن لو ما عندكم يوم إضافي ممكن تكون محطة تصوير قصيرة.</p></div>
+          <div class="plan-mini"><h4>الذهاب</h4><ul><li>Zell am See → Hallstatt</li><li>07:15 → 11:02</li><li>المدة 3h 47m</li><li>€29.70 للثلاثة</li></ul></div>
+          <div class="plan-mini"><h4>في Hallstatt</h4><ul><li>العبّارة إلى القرية</li><li>القرية القديمة والبحيرة</li><li>Hallstatt Skywalk</li><li>غداء وكوفي</li></ul></div>
+          <div class="plan-mini"><h4>الرجوع</h4><ul><li>Hallstatt → Zell am See</li><li>18:25 → 21:44</li><li>المدة 3h 19m</li><li>€29.70 للثلاثة</li></ul></div>
         </div>
-        <div class="route-line"><strong>المسار:</strong> Kaprun → Zell am See → Hallstatt أو مباشرة Wien Hbf → Hotel Triester.</div>
+        <div class="route-line"><strong>المسار:</strong> Zell am See → Hallstatt Bahnhof → Ferry → Hallstatt Village → Ferry → Zell am See.</div>
+      </div>
+    </article>
+
+    <article class="day-plan reveal">
+      <div class="day-media">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop" alt="Lake Zell">
+        <div class="day-badge">اليوم 5 · 28 يونيو</div>
+        <div class="day-place"><h3>كابرون وزيلامسي</h3><p>سيكل + بحيرة + كوفي</p></div>
+      </div>
+      <div class="day-content">
+        <div class="day-topline"><span class="pill blue">🌊 بحيرة</span><span class="pill green">🚲 سيكل</span><span class="pill gold">☕ كوفي</span></div>
+        <div class="day-title">استكشاف كابرون وحول بحيرة زيلامسي</div>
+        <p class="day-desc">هذا اليوم بدون قطارات طويلة. استكشاف المنطقة، استئجار سيكل، تمشية حول البحيرة، كوفي بإطلالة، وتصوير الغروب.</p>
+        <div class="plan-blocks">
+          <div class="plan-mini"><h4>الصباح</h4><ul><li>فطور بهدوء</li><li>باص أو تاكسي إلى Zell am See</li><li>استئجار سيكل</li></ul></div>
+          <div class="plan-mini"><h4>العصر</h4><ul><li>جولة حول Lake Zell</li><li>جلسة على البحيرة</li><li>كوفي ومطاعم مطلة</li></ul></div>
+          <div class="plan-mini"><h4>التكلفة</h4><p>سيكل عادي €10–15 للشخص، كهربائي €25–40 للشخص.</p></div>
+        </div>
+        <div class="route-line"><strong>المسار:</strong> Kaprun → Zell am See → Lake Zell Cycling → Café → Kaprun.</div>
+      </div>
+    </article>
+
+    <article class="day-plan reveal">
+      <div class="day-media">
+        <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?q=80&w=1200&auto=format&fit=crop" alt="Schmittenhöhe">
+        <div class="day-badge">اليوم 6 · 29 يونيو</div>
+        <div class="day-place"><h3>يوم مرن في زيلامسي</h3><p>Schmittenhöhe أو راحة وتسوق</p></div>
+      </div>
+      <div class="day-content">
+        <div class="day-topline"><span class="pill green">⛰ قمة شمتين</span><span class="pill blue">🛍 تسوق</span><span class="pill gold">🌅 بحيرة</span></div>
+        <div class="day-title">يوم مرن قبل الرجوع إلى فيينا</div>
+        <p class="day-desc">بعد يوم هالشتات الطويل ويوم السيكل، هذا اليوم يكون مرن حسب الجو والتعب.</p>
+        <div class="plan-blocks">
+          <div class="plan-mini"><h4>الخيار الأول</h4><ul><li>Schmittenhöhe Cable Car</li><li>إطلالة بانورامية على Zell am See</li><li>غداء في القمة</li></ul></div>
+          <div class="plan-mini"><h4>الخيار الثاني</h4><ul><li>راحة في كابرون</li><li>التسوق في Zell am See</li><li>مطاعم وكوفيهات</li></ul></div>
+          <div class="plan-mini"><h4>التكلفة</h4><p>Schmittenhöhe تقريباً €30–40 للشخص، للثلاثة €90–120.</p></div>
+        </div>
+        <div class="route-line"><strong>المسار:</strong> Kaprun → Zell am See / Schmittenhöhe → Kaprun.</div>
+      </div>
+    </article>
+
+    <article class="day-plan reveal">
+      <div class="day-media">
+        <img src="https://images.unsplash.com/photo-1516550893923-42d28e5677af?q=80&w=1200&auto=format&fit=crop" alt="Vienna return">
+        <div class="day-badge">اليوم 7 · 30 يونيو</div>
+        <div class="day-place"><h3>العودة إلى فيينا</h3><p>Zell am See → Wien Hbf</p></div>
+      </div>
+      <div class="day-content">
+        <div class="day-topline"><span class="pill red">🚪 خروج 06:00–10:00</span><span class="pill blue">🚆 13:15 → 18:03</span><span class="pill green">🏨 Hotel Triester</span></div>
+        <div class="day-title">الخروج من كابرون والعودة إلى فيينا</div>
+        <p class="day-desc">الخروج من Falcon Suites، التوجه إلى محطة Zell am See، ثم القطار إلى فيينا وتسجيل الدخول في Hotel Triester.</p>
+        <div class="plan-blocks">
+          <div class="plan-mini"><h4>الصباح</h4><ul><li>Check-out من Falcon Suites</li><li>الفندق → محطة Zell am See: €15–25</li><li>وقت احتياطي للغداء أو القهوة</li></ul></div>
+          <div class="plan-mini"><h4>القطار</h4><ul><li>Zell am See → Wien Hbf</li><li>13:15 → 18:03</li><li>المدة 4h 48m</li><li>€119.70 للثلاثة</li></ul></div>
+          <div class="plan-mini"><h4>المساء</h4><p>Wien Hbf → Hotel Triester تقريباً €10–15 تاكسي، ثم عشاء خفيف.</p></div>
+        </div>
+        <div class="route-line"><strong>المسار:</strong> Falcon Suites → Zell am See Bahnhof → Wien Hbf → Hotel Triester.</div>
       </div>
     </article>
 
@@ -885,37 +869,37 @@ footer p{font-size:.85rem}
       <div class="day-media">
         <img src="https://images.unsplash.com/photo-1516550893923-42d28e5677af?q=80&w=1200&auto=format&fit=crop" alt="Vienna city">
         <div class="day-badge">اليوم 8 · 1 يوليو</div>
-        <div class="day-place"><h3>فيينا الكلاسيكية</h3><p>جولة بالحصان + المدينة القديمة + كوفيهات</p></div>
+        <div class="day-place"><h3>فيينا والمطاعم</h3><p>تمشية + مقاهي + تسوق</p></div>
       </div>
       <div class="day-content">
-        <div class="day-topline"><span class="pill gold">🐎 جولة بالحصان</span><span class="pill blue">🏛 وسط فيينا</span><span class="pill green">☕ كافيهات</span></div>
-        <div class="day-title">جولة فيينا: الحصان، ستيفان، الكوفيهات، والتسوق</div>
-        <p class="day-desc">أول يوم كامل في فيينا نخليه كلاسيكي وراقي: المدينة القديمة، جولة بالعربة، كافيهات فيينا، ومحلات التسوق.</p>
+        <div class="day-topline"><span class="pill gold">🍽 مطاعم</span><span class="pill blue">🏛 وسط فيينا</span><span class="pill green">☕ كافيهات</span></div>
+        <div class="day-title">يوم التمشي في فيينا وتجربة المطاعم</div>
+        <p class="day-desc">هذا اليوم مخصص للمشي في وسط فيينا، تجربة المطاعم، المقاهي، والتسوق.</p>
         <div class="plan-blocks">
-          <div class="plan-mini"><h4>الفعاليات</h4><ul><li>Stephansdom</li><li>جولة Fiaker بالعربة والحصان</li><li>Hofburg</li><li>Café Central أو Demel</li><li>Mariahilfer Straße للتسوق</li></ul></div>
-          <div class="plan-mini"><h4>التنقل</h4><p>استخدمي U-Bahn داخل فيينا. أغلب الأماكن في المركز تمشي لها مشياً.</p></div>
-          <div class="plan-mini"><h4>أفضل وقت</h4><p>جولة الحصان تكون أجمل العصر أو قبل الغروب عشان التصوير.</p></div>
+          <div class="plan-mini"><h4>المشي</h4><ul><li>Stephansplatz</li><li>Kärntner Straße</li><li>Graben</li><li>Kohlmarkt</li><li>Hofburg من الخارج</li></ul></div>
+          <div class="plan-mini"><h4>المطاعم والمقاهي</h4><ul><li>Café Central</li><li>Demel</li><li>Figlmüller</li><li>مطاعم وسط فيينا</li></ul></div>
+          <div class="plan-mini"><h4>التكلفة</h4><p>الأكل والمقاهي تقريباً €20–40 للشخص، للثلاثة €60–120.</p></div>
         </div>
-        <div class="route-line"><strong>المسار:</strong> Hotel Triester → Stephansplatz → Fiaker Ride → Hofburg → Café → Shopping.</div>
+        <div class="route-line"><strong>المسار:</strong> Hotel Triester → Stephansplatz → Cafés → Shopping → Dinner.</div>
       </div>
     </article>
 
     <article class="day-plan reveal">
       <div class="day-media">
-        <img src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?q=80&w=1200&auto=format&fit=crop" alt="Salzburg Wolfgangsee">
+        <img src="https://images.unsplash.com/photo-1604214932396-2f4f30e345a7?q=80&w=1200&auto=format&fit=crop" alt="Vienna Prater">
         <div class="day-badge">اليوم 9 · 2 يوليو</div>
-        <div class="day-place"><h3>سالزبورغ + وولف قانق</h3><p>رحلة يوم من فيينا أو بديل مرن</p></div>
+        <div class="day-place"><h3>تسوق وبراتر</h3><p>آخر يوم كامل في فيينا</p></div>
       </div>
       <div class="day-content">
-        <div class="day-topline"><span class="pill blue">🎵 سالزبورغ</span><span class="pill green">🌊 Wolfgangsee</span><span class="pill gold">🍫 شوكولاتة</span></div>
-        <div class="day-title">رحلة سالزبورغ ووولف قانق: مدينة موتزارت وبحيرة ساحرة</div>
-        <p class="day-desc">هذه رحلة طويلة من فيينا، لكنها جميلة. إذا تحبون الراحة أكثر، خلي سالزبورغ/وولف قانق من أيام كابرون بدلاً من فيينا، لأنها أقرب من ناحية الغرب.</p>
+        <div class="day-topline"><span class="pill blue">🛍 تسوق</span><span class="pill green">🎡 Prater</span><span class="pill gold">☕ كوفي</span></div>
+        <div class="day-title">تسوق وتجهيز هدايا + مدينة الألعاب</div>
+        <p class="day-desc">آخر يوم كامل في فيينا يكون خفيف للتسوق، شراء الهدايا، وتجربة Prater مساءً.</p>
         <div class="plan-blocks">
-          <div class="plan-mini"><h4>سالزبورغ</h4><ul><li>Mirabell Gardens</li><li>Getreidegasse</li><li>بيت موتزارت من الخارج</li><li>محلات الشوكولاتة</li></ul></div>
-          <div class="plan-mini"><h4>وولف قانق</h4><ul><li>St. Wolfgang</li><li>ممشى البحيرة</li><li>كوفي بإطلالة</li><li>تصوير عند Wolfgangsee</li></ul></div>
-          <div class="plan-mini"><h4>ملاحظة</h4><p>إذا حسيتوا اليوم طويل، اكتفوا بسالزبورغ فقط وخلي وولف قانق اختيار إضافي.</p></div>
+          <div class="plan-mini"><h4>الصباح</h4><ul><li>Mariahilfer Straße</li><li>محلات الهدايا والشوكولاتة</li><li>كوفي قريب</li></ul></div>
+          <div class="plan-mini"><h4>المساء</h4><ul><li>Prater</li><li>العجلة الشهيرة Wiener Riesenrad</li><li>عشاء أخير في فيينا</li></ul></div>
+          <div class="plan-mini"><h4>التكلفة</h4><p>العجلة تقريباً €15–20 للشخص، للثلاثة €45–60.</p></div>
         </div>
-        <div class="route-line"><strong>المسار:</strong> Wien Hbf → Salzburg Hbf → St. Gilgen / St. Wolfgang → Salzburg → Wien.</div>
+        <div class="route-line"><strong>المسار:</strong> Hotel Triester → Mariahilfer Straße → Prater → Hotel.</div>
       </div>
     </article>
 
@@ -926,12 +910,12 @@ footer p{font-size:.85rem}
         <div class="day-place"><h3>العودة إلى مسقط</h3><p>صباح خفيف + مطار فيينا</p></div>
       </div>
       <div class="day-content">
-        <div class="day-topline"><span class="pill red">✈️ رحلة 14:30</span><span class="pill blue">🧳 تجهيز الشنط</span><span class="pill green">☕ فطور خفيف</span></div>
+        <div class="day-topline"><span class="pill red">✈️ رحلة 14:30</span><span class="pill blue">🧳 تجهيز الشنط</span><span class="pill green">🚕 €30–40</span></div>
         <div class="day-title">صباح هادئ في فيينا ثم التوجه للمطار</div>
-        <p class="day-desc">لا تحطوا فعاليات بعيدة في يوم السفر. فقط فطور، ترتيب الشنط، وطلعة مبكرة للمطار.</p>
+        <p class="day-desc">لا توجد فعاليات بعيدة في يوم السفر. فقط فطور، ترتيب الشنط، ثم التوجه للمطار.</p>
         <div class="plan-blocks">
-          <div class="plan-mini"><h4>الصباح</h4><ul><li>فطور قريب من الفندق</li><li>Check-out قبل 12:00</li><li>الوصول للمطار قبل الوقت</li></ul></div>
-          <div class="plan-mini"><h4>التنقل</h4><p>من Hotel Triester إلى Wien Hbf ثم قطار للمطار، أو تاكسي إذا الشنط كثيرة.</p></div>
+          <div class="plan-mini"><h4>الصباح</h4><ul><li>فطور قريب من الفندق</li><li>Check-out قبل 12:00</li><li>التوجه للمطار مبكراً</li></ul></div>
+          <div class="plan-mini"><h4>التنقل</h4><p>Hotel Triester → Vienna Airport تقريباً €30–40 بالتاكسي أو Bolt/Uber.</p></div>
           <div class="plan-mini"><h4>الرحلة</h4><p>VIE 14:30 → MCT 22:30</p></div>
         </div>
         <div class="route-line"><strong>المسار:</strong> Hotel Triester → Vienna Airport → Muscat.</div>
@@ -945,16 +929,20 @@ footer p{font-size:.85rem}
 
 <section id="sec-transport" class="page">
   <div class="sec-header reveal">
-    <div class="sec-eyebrow">قطار · باص · سيكل</div>
+    <div class="sec-eyebrow">تاكسي · قطار · باص · سيكل</div>
     <div class="sec-title">خطة <em>التنقلات</em></div>
     <div class="sec-rule"></div>
   </div>
 
   <div class="transport-grid">
-    <div class="t-card reveal"><div class="t-icon">🚂</div><h3>قطارات ÖBB</h3><p>استخدميها للتنقل بين فيينا، زيلامسي، سالزبورغ، وهالشتات. احجزي مبكراً واختاري Sparschiene إذا متاح.</p></div>
-    <div class="t-card reveal"><div class="t-icon">🚌</div><h3>Bus 680</h3><p>الأهم في الرحلة: يربط كابرون بزيلامسي. مناسب للتنقل اليومي من Falcon Suites.</p></div>
-    <div class="t-card reveal"><div class="t-icon">🚲</div><h3>السيكل و e-bike</h3><p>الأفضل حول بحيرة زيلامسي، ويفضل e-bike لمسار زيلامسي باتجاه سالباخ لأنه أطول.</p></div>
-    <div class="t-card reveal"><div class="t-icon">🚇</div><h3>مترو فيينا</h3><p>داخل فيينا استخدمي U-Bahn للوصول للمركز، ستيفان، شونبرون، ومحطة القطار الرئيسية.</p></div>
+    <div class="t-card reveal"><div class="t-icon">🚕</div><h3>مطار فيينا → PLAZA Premium Wien</h3><p>الأفضل Bolt/Uber لأنكم 3 أشخاص ومعكم شنط. السعر المتوقع: €35–45.</p></div>
+    <div class="t-card reveal"><div class="t-icon">🚕</div><h3>PLAZA → Wien Hbf</h3><p>صباح 25 يونيو قبل القطار. السعر المتوقع: €8–12.</p></div>
+    <div class="t-card reveal"><div class="t-icon">🚕</div><h3>Zell am See → Kaprun</h3><p>من محطة Zell am See إلى Falcon Suites Kaprun. السعر المتوقع: €15–25.</p></div>
+    <div class="t-card reveal"><div class="t-icon">🚢</div><h3>Hallstatt Ferry</h3><p>العبّارة من محطة Hallstatt إلى القرية. لا تحتاج حجز مسبق. السعر: €3–5 للشخص للاتجاه.</p></div>
+    <div class="t-card reveal"><div class="t-icon">🚕</div><h3>Wien Hbf → Hotel Triester</h3><p>بعد الوصول من Zell am See إلى فيينا يوم 30 يونيو. السعر المتوقع: €10–15.</p></div>
+    <div class="t-card reveal"><div class="t-icon">🚕</div><h3>Hotel Triester → Vienna Airport</h3><p>يوم العودة 3 يوليو. السعر المتوقع: €30–40.</p></div>
+    <div class="t-card reveal"><div class="t-icon">🚌</div><h3>Bus 680</h3><p>يربط كابرون بزيلامسي. مناسب للتنقل اليومي من Falcon Suites، وقد تستفيدون من Summercard.</p></div>
+    <div class="t-card reveal"><div class="t-icon">🚲</div><h3>السيكل و e-bike</h3><p>الأفضل حول بحيرة زيلامسي. سيكل عادي €10–15 للشخص، كهربائي €25–40 للشخص.</p></div>
   </div>
 </section>
 
@@ -962,27 +950,20 @@ footer p{font-size:.85rem}
 
 <section id="sec-activities" class="page">
   <div class="sec-header reveal">
-    <div class="sec-eyebrow">كل الأماكن المطلوبة</div>
+    <div class="sec-eyebrow">الأماكن النهائية المتفق عليها</div>
     <div class="sec-title">الفعاليات <em>والأماكن</em></div>
     <div class="sec-rule"></div>
   </div>
 
   <div class="activities-grid">
-    <div class="act-card reveal"><div class="act-emoji">🌊</div><h3>وولف قانق Wolfgangsee</h3><p>بحيرة جميلة قرب سالزبورغ، الأفضل كرحلة مع سالزبورغ أو يوم منفصل إذا فيه وقت.</p></div>
-    <div class="act-card reveal"><div class="act-emoji">⛰</div><h3>قمة شمتين Schmittenhöhe</h3><p>قمة بانورامية فوق زيلامسي، مناسبة مع يوم البحيرة والسيكل.</p></div>
-    <div class="act-card reveal"><div class="act-emoji">🏔</div><h3>قمة كابرون Kitzsteinhorn</h3><p>القمم الثلجية وتجربة Top of Salzburg، الأفضل لها يوم صباحي كامل.</p></div>
-    <div class="act-card reveal"><div class="act-emoji">🎿</div><h3>زحليطات كابرون</h3><p>Maisi Flitzer قريبة من كابرون، اجعليها بعد القمة أو في نفس يوم كابرون.</p></div>
+    <div class="act-card reveal"><div class="act-emoji">🏔</div><h3>قمة كابرون Kitzsteinhorn</h3><p>القمم الثلجية وتجربة Top of Salzburg. التكلفة تقريباً €55–70 للشخص.</p></div>
+    <div class="act-card reveal"><div class="act-emoji">🎿</div><h3>زحليطات كابرون</h3><p>Maisi Flitzer قريبة من كابرون. مناسبة بعد القمة أو في نفس يوم كابرون.</p></div>
     <div class="act-card reveal"><div class="act-emoji">🌊</div><h3>بحيرة زيلامسي</h3><p>للمشي، القارب، السيكل، الكوفيهات، والتصوير.</p></div>
-    <div class="act-card reveal"><div class="act-emoji">🏘</div><h3>هالشتات</h3><p>أجمل قرية للتصوير، الأفضل لها انطلاق مبكر جداً.</p></div>
-    <div class="act-card reveal"><div class="act-emoji">🎵</div><h3>سالزبورغ</h3><p>مدينة موتزارت، الشوارع القديمة، الحدائق، والشوكولاتة.</p></div>
-    <div class="act-card reveal"><div class="act-emoji">🍫</div><h3>محلات الشوكولاتة</h3><p>اختاريها في زيلامسي وسالزبورغ وفيينا، وخليها ضمن الأيام الخفيفة.</p></div>
-    <div class="act-card reveal"><div class="act-emoji">🍪</div><h3>مصنع لواكر</h3><p>يناسب يوم سالزبورغ/الطريق أو كإضافة إذا كان قريب من مساركم المختار.</p></div>
-    <div class="act-card reveal"><div class="act-emoji">☕</div><h3>كوفيهات</h3><p>زيلامسي للمناظر، فيينا للكافيهات الكلاسيكية، وسالزبورغ للأجواء القديمة.</p></div>
-    <div class="act-card reveal"><div class="act-emoji">🚂</div><h3>القطار البخاري</h3><p>خليه في يوم زيلامسي لأنه قريب ومناسب بعد جولة البحيرة.</p></div>
-    <div class="act-card reveal"><div class="act-emoji">📸</div><h3>مطل زيلامسي</h3><p>أفضل وقت للتصوير الصباح أو قبل الغروب.</p></div>
-    <div class="act-card reveal"><div class="act-emoji">🎡</div><h3>مدينة الألعاب</h3><p>في فيينا: Prater مناسبة ليوم فيينا المسائي.</p></div>
-    <div class="act-card reveal"><div class="act-emoji">🐎</div><h3>جولة بالحصان في فيينا</h3><p>Fiaker في وسط فيينا أو قرب شونبرون، الأفضل قبل الغروب.</p></div>
-    <div class="act-card reveal"><div class="act-emoji">❄️</div><h3>زيارة القمم الثلجية</h3><p>خليها مع Kitzsteinhorn ولا تكررين قمم كثيرة بنفس اليوم.</p></div>
+    <div class="act-card reveal"><div class="act-emoji">🏘</div><h3>هالشتات</h3><p>رحلة يوم كامل بالقطار والعبّارة. القطار محجوز والعبّارة تدفع بالمكان.</p></div>
+    <div class="act-card reveal"><div class="act-emoji">⛰</div><h3>قمة شمتين Schmittenhöhe</h3><p>قمة بانورامية فوق زيلامسي. خيار مرن يوم 29 يونيو.</p></div>
+    <div class="act-card reveal"><div class="act-emoji">🎡</div><h3>Prater Vienna</h3><p>مدينة الألعاب والعجلة الشهيرة في فيينا. مناسبة مساء 2 يوليو.</p></div>
+    <div class="act-card reveal"><div class="act-emoji">☕</div><h3>كافيهات فيينا</h3><p>Café Central وDemel من أفضل الخيارات للمقاهي والحلويات.</p></div>
+    <div class="act-card reveal"><div class="act-emoji">🛍</div><h3>التسوق</h3><p>Mariahilfer Straße وKärntner Straße وGraben لشراء الهدايا والشوكولاتة.</p></div>
   </div>
 </section>
 
@@ -990,16 +971,58 @@ footer p{font-size:.85rem}
 
 <section id="sec-food" class="page">
   <div class="sec-header reveal">
-    <div class="sec-eyebrow">كوفيهات · شوكولاتة · لواكر</div>
-    <div class="sec-title">خطة <em>الأكل والكافيهات</em></div>
+    <div class="sec-eyebrow">مطاعم · كوفيهات · أسعار تقريبية</div>
+    <div class="sec-title">خطة <em>الأكل والمطاعم</em></div>
     <div class="sec-rule"></div>
   </div>
 
   <div class="food-grid">
-    <div class="food-card reveal"><div class="food-emoji">☕</div><h3>كوفي زيلامسي</h3><p>اختاري كوفي مطل على البحيرة بعد جولة السيكل أو بعد قمة شمتين.</p></div>
-    <div class="food-card reveal"><div class="food-emoji">🍫</div><h3>شوكولاتة سالزبورغ</h3><p>خلي محلات الشوكولاتة ضمن يوم سالزبورغ، خصوصاً قرب Getreidegasse.</p></div>
-    <div class="food-card reveal"><div class="food-emoji">🍪</div><h3>مصنع لواكر</h3><p>حطيه كإضافة في يوم سالزبورغ أو كبديل لو الجو ممطر.</p></div>
-    <div class="food-card reveal"><div class="food-emoji">☕</div><h3>كافيهات فيينا</h3><p>Café Central أو Demel مناسبين بعد جولة الحصان والمدينة القديمة.</p></div>
+    <div class="food-card reveal">
+      <img class="hc-img" style="height:150px;border-radius:18px;margin-bottom:.8rem;object-fit:cover" src="https://images.unsplash.com/photo-1559847844-5315695dadae?q=80&w=900&auto=format&fit=crop" alt="Schnitzel">
+      <div class="food-emoji">🍽️</div><h3>Figlmüller - Vienna</h3><p>أشهر شنيتزل في فيينا. السعر: €18–30 للشخص.</p>
+    </div>
+    <div class="food-card reveal">
+      <img class="hc-img" style="height:150px;border-radius:18px;margin-bottom:.8rem;object-fit:cover" src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=900&auto=format&fit=crop" alt="Cafe Central">
+      <div class="food-emoji">☕</div><h3>Café Central</h3><p>مقهى تاريخي جميل للقهوة والحلويات. السعر: €8–15 للشخص.</p>
+    </div>
+    <div class="food-card reveal">
+      <img class="hc-img" style="height:150px;border-radius:18px;margin-bottom:.8rem;object-fit:cover" src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=900&auto=format&fit=crop" alt="Dessert">
+      <div class="food-emoji">🍰</div><h3>Demel - Vienna</h3><p>حلويات وقهوة نمساوية. السعر: €6–12 للشخص.</p>
+    </div>
+    <div class="food-card reveal">
+      <img class="hc-img" style="height:150px;border-radius:18px;margin-bottom:.8rem;object-fit:cover" src="https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=900&auto=format&fit=crop" alt="Pizza">
+      <div class="food-emoji">🍕</div><h3>Villa Crazy Daisy - Zell am See</h3><p>مطعم مناسب بإطلالة وأجواء بحيرة. السعر: €15–25 للشخص.</p>
+    </div>
+    <div class="food-card reveal">
+      <img class="hc-img" style="height:150px;border-radius:18px;margin-bottom:.8rem;object-fit:cover" src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=900&auto=format&fit=crop" alt="Coffee">
+      <div class="food-emoji">☕</div><h3>كوفي على Lake Zell</h3><p>جلسة قهوة بعد السيكل أو وقت الغروب. السعر: €6–12 للشخص.</p>
+    </div>
+    <div class="food-card reveal">
+      <img class="hc-img" style="height:150px;border-radius:18px;margin-bottom:.8rem;object-fit:cover" src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=900&auto=format&fit=crop" alt="Dinner">
+      <div class="food-emoji">🍴</div><h3>عشاء في كابرون</h3><p>مطاعم قريبة من الفندق أو زيلامسي. السعر المتوقع: €15–30 للشخص.</p>
+    </div>
+  </div>
+</section>
+
+<hr class="sec-divider">
+
+<section id="sec-budget" class="page">
+  <div class="sec-header reveal">
+    <div class="sec-eyebrow">ملخص المبالغ المؤكدة والتقديرية</div>
+    <div class="sec-title">الإجماليات <em>باليورو والريال</em></div>
+    <div class="sec-rule"></div>
+  </div>
+
+  <div class="transport-grid">
+    <div class="t-card reveal"><div class="t-icon">🚆</div><h3>إجمالي القطارات المحجوزة</h3><p><strong>€283.80</strong><br>≈ <strong>119.20 ر.ع</strong><br>يشمل 4 تذاكر قطار × 3 أشخاص.</p></div>
+    <div class="t-card reveal"><div class="t-icon">🏨</div><h3>الفنادق المدفوعة/المؤكدة</h3><p>تقريباً <strong>€1,787</strong><br>≈ <strong>750.62 ر.ع</strong><br>حسب حجوزات Booking الظاهرة.</p></div>
+    <div class="t-card reveal"><div class="t-icon">🚕</div><h3>التنقلات المحلية المتوقعة</h3><p><strong>€113–187</strong><br>≈ <strong>47–79 ر.ع</strong><br>تاكسيات، مطار، فنادق، ومحطات.</p></div>
+    <div class="t-card reveal"><div class="t-icon">🎯</div><h3>الأنشطة المتوقعة</h3><p><strong>€400–585</strong><br>≈ <strong>168–246 ر.ع</strong><br>Kitzsteinhorn، Ferry، Skywalk، سيكل، Prater، ومطاعم.</p></div>
+  </div>
+
+  <div class="ft-total reveal">
+    <div class="ft-total-lbl">إجمالي تقريبي للفنادق + القطارات المؤكدة</div>
+    <div class="ft-total-amt">€1,990.99 ≈ 836.10 ر.ع</div>
   </div>
 </section>
 
@@ -1050,9 +1073,8 @@ footer p{font-size:.85rem}
 
 <footer>
   <div class="f-logo">🇦🇹 Austria 2026</div>
-  <p>فيينا · كابرون · زيلامسي · سالزبورغ · هالشتات · وولف قانق</p>
+  <p>فيينا · كابرون · زيلامسي · هالشتات</p>
   <p style="margin-top:.7rem">✈️ 24 يونيو – 3 يوليو 2026</p>
-  <p style="margin-top:1rem;font-size:.76rem;opacity:.45">رقية · إبراهيم · وعَد</p>
 </footer>
 
 <button id="scrollUp" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
